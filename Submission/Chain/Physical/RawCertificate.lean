@@ -55,7 +55,7 @@ theorem target_count (base : Fin 104 → OBase (Fin 9)) (r : ℕ) :
   rw [card_live (fun p => (rawTz base l0 Dr p).1)
     (fun i => 1+8*(Chain.Schedule.targetStages i).length) (fun q => (Dr q).card)
     (fun g i t => rank_main base g i t) (fun _ _ _ => rfl) r,←Nat.mul_add]
-  congr 1
+  refine congrArg (fun n : ℕ => Fintype.card Gauges*n) ?_
   simp only [Fintype.card_fin,Dr_card]
   rw [←Finset.mul_sum,←mainMultiplicity_sum,Native.helper_histogram]
   rw [←Chain.Schedule.productive_from_endpoints r]
@@ -67,7 +67,8 @@ theorem hist_of_price {α ρ : Type} [Fintype α] [DecidableEq α] [Fintype ρ] 
     (h : ∀ φ, w.costR φ=(G:ℝ)*listCost φ P) (r : ℕ) :
     w.hist r=G*BlockAccounting.histFn P r := by
   have hi := PB.hist_eq_price h r
-  rw [listCost_ind] at hi
+  have hl : listCost (PB.ind r) P = (BlockAccounting.histFn P r : ℝ) := listCost_ind P r
+  rw [hl] at hi
   exact_mod_cast hi
 
 /-- Concrete finite word with the all-array live contract and both complete
@@ -85,14 +86,18 @@ theorem rawCert_exists : ∃ (α ρ σ : Type) (_ : Fintype α) (_ : DecidableEq
   have hcost : ∀ φ, w.costR φ=(Fintype.card Gauges:ℝ)*listCost φ Analytic.paidHist := by
     intro φ
     rw [hc φ,native_schedule_price]
+  have hcnt (r : ℕ) :
+      (Finset.univ.filter fun p : PLive Gauges (Fin 104) (Fin 562) => (rawTz base l0 Dr p).1=r).card =
+        Fintype.card Gauges * BlockAccounting.histFn Analytic.targetHist r := by
+    change _=Fintype.card Gauges*Analytic.histCount Analytic.targetHist r
+    rw [Analytic.target_histogram_link]
+    exact target_count base r
   refine ⟨Labels,PRole Gauges (Fin 104) (Fin 562) (Fin 29),PLive Gauges (Fin 104) (Fin 562),
-    _,_,_,_,_,inferInstance,Sum.inl,fun p => (rawTz base l0 Dr p).1,fun p => (rawTz base l0 Dr p).2,w,
+    inferInstance,inferInstance,inferInstance,inferInstance,inferInstance,inferInstance,?_⟩
+  exact ⟨Sum.inl,fun p => (rawTz base l0 Dr p).1,fun p => (rawTz base l0 Dr p).2,w,
     Fintype.card Gauges,Sum.inl_injective,rawTz_indep base l0 Dr,hw,hkernel,Orth.card_pos,
-    ChainG18.card_LC145 l0 (Fintype.card_fin 9),rank_raw base,?_,hist_of_price w _ _ hcost⟩
-  intro r
-  change _=Fintype.card Gauges*Analytic.histCount Analytic.targetHist r
-  rw [Analytic.target_histogram_link]
-  exact target_count base r
+    ChainG18.card_LC145 l0 (Fintype.card_fin 9),rank_raw base,hcnt,hist_of_price w _ _ hcost⟩
+
 end
 end FFTChainDFT.Finite
 #print axioms FFTChainDFT.Finite.rawCert_exists

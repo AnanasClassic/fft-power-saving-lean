@@ -68,10 +68,10 @@ jobs:
         run: python3 scripts/ci_incremental.py
       - name: Check the exact final statement
         if: inputs.targets == 'Submission'
-        run: bash scripts/check_final.sh
+        run: env -u GH_TOKEN bash scripts/check_final.sh
       - name: Audit the complete finite-to-Fourier proof
         if: inputs.targets == 'Submission'
-        run: python3 scripts/audit_axioms.py --file Submission/FinalAudit.lean --receipt certificates/final_axioms.json --scope "concrete GLiveKernelM, finite witness, tensor engine and exact Race.bound"
+        run: env -u GH_TOKEN python3 scripts/audit_axioms.py --file Submission/FinalAudit.lean --receipt certificates/final_axioms.json --scope "concrete GLiveKernelM, finite witness, tensor engine and exact Race.bound"
       - name: Save small development proof cache
         if: always()
         uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830

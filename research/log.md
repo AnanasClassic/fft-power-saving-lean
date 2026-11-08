@@ -334,3 +334,15 @@ composition under a finite sum. Added rfl after sum_ofFn. Remaining finite
 certificate/engine/Fourier/root modules were blocked, not accepted. No local
 Lean builds. Added a manual private test-only workflow using the unchanged
 pinned official verifier; it is not an official public submission.
+
+### CI 42529018390 — count lemma accepted; raw certificate elaboration repairs
+
+Count now passed. RawCertificate exhausted 6,000,000 heartbeats at congr 1 in
+target_count: the congruence heuristic tried to unfold the huge orthogonal
+gauge cardinality. Replaced it with explicit congrArg of multiplication by the
+gauge cardinal, keeping that factor opaque. Used the typed indicator-price
+bridge already used by the upstream PB engine, rather than asking rw to unfold
+PB.ind. Supplied all six Fintype/DecidableEq existential witnesses explicitly,
+and proved target counts before assembling the final dependent tuple.
+These are technical proof repairs; the circuit, histograms and target did not
+change. All builds remain in CI.
