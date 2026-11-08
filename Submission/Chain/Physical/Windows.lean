@@ -52,6 +52,7 @@ theorem mainWindow_at (a i : Fin 40) (M : Γ → T → CMat α) (f : ℕ)
   unfold mainWindow
   by_cases hi : i=a
   · rw [if_pos ((mainSet_mem a i g t).2 hi),if_pos hi]
+    rfl
   · have hm : mainR (Sl := Sl) (C := C) g i t ∉ mainSet a :=
       fun h => hi ((mainSet_mem a i g t).1 h)
     rw [if_neg hm,if_neg hi]

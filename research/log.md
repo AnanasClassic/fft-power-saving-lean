@@ -236,3 +236,17 @@ that clean remote cache. Reuse additionally checks the complete current source
 dependency closure and SHA256 of the .olean/.private/.server bundle. This avoids
 repeating the expensive65 certificates while rejecting stale objects after a
 source change. The clean cache stays on CI; nothing was downloaded to the Mac.
+
+
+## CI iteration42522807081: tensor integration accepted
+
+The independent-branch run accepted RoleSets, FullView, NativeStages and the
+complete generic TensorEng/MixedCost dependency closure, then accepted the new
+Chain.Engine at the actual C/new histograms. It also rechecked the analytic
+moment, strictification and inventory links from source. The only elaboration
+error was Windows.mainWindow_at's positive branch, where rw intentionally did
+not unfold mainMat(mainR...). Added an explicit reflexivity step for that
+remaining definitional equality. Query/FullStep were blocked by Windows, so
+are not yet reported as accepted. The full word and final DFT candidate remain
+pending. The next CI run checks the complete root using the clean449-module
+cache plus the development cache, both solely on the remote runner.
