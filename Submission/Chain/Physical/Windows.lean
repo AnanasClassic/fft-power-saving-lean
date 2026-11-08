@@ -50,7 +50,11 @@ theorem mainWindow_at (a i : Fin 40) (M : Γ → T → CMat α) (f : ℕ)
     (y : Data α (PRole Γ T Sl C) f) (g : Γ) (t : T) :
     mainWindow a M f y (mainR g i t) = if i=a then matAct f (M g t) (y (mainR g i t)) else y (mainR g i t) := by
   unfold mainWindow
-  rw [mainSet_mem]
+  by_cases hi : i=a
+  · rw [if_pos ((mainSet_mem a i g t).2 hi),if_pos hi]
+  · have hm : mainR (Sl := Sl) (C := C) g i t ∉ mainSet a :=
+      fun h => hi ((mainSet_mem a i g t).1 h)
+    rw [if_neg hm,if_neg hi]
 
 theorem mainWindow_fresh (a : Fin 40) (M : Γ → T → CMat α) (f : ℕ)
     (y : Data α (PRole Γ T Sl C) f) (g : Γ) (k : Fin 36) (s : Sl) :

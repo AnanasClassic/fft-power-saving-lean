@@ -1,4 +1,4 @@
-import Submission.Trusted.UniformFourier233
+import Submission.OAI.Computability.FourierTransform.Goal
 
 /-! The requested statement, using the verifier-owned definitions unchanged.
 This definition specifies the goal; it is not a proof of that goal. -/

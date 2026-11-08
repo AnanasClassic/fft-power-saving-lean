@@ -15,7 +15,7 @@ source={};deps={};baseline={};fingerprints={};order=[]
 
 def visit(mod):
     if mod in source:return
-    if not re.fullmatch(r'Submission(?:\.[A-Za-z0-9_]+)+',mod):
+    if not re.fullmatch(r'Submission(?:\.[A-Za-z0-9_]+)*',mod):
         raise SystemExit('Invalid project module '+mod)
     p=ROOT/(mod.replace('.','/')+'.lean')
     s=p.read_bytes();source[mod]=s

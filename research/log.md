@@ -177,3 +177,26 @@ Added the complete raw-certificate invoice/count candidate and generic tensor
 integration at the new moment point. Imported 51 unchanged generic upstream
 engine/reduction source files (780729 bytes), each with an exact SHA256 pin;
 these are source files only, no new local compiler cache.
+
+
+## Exact DFT candidate assembled, verification pending
+
+Connected the new raw finite witness to TensorEng.BU.tensor_engine with the
+new inventory and moment point C=0.003363624. Prepared a fresh Fourier seam at
+eta=0.0033636235 and adapted the complete inherited all-length transfer at
+exact final saving3363623/1000000000. Source attribution and hashes of the
+upstream Fourier modules are in certificates/fourier_lineage.json. No previous
+final DFT theorem is imported to derive the stronger exponent.
+
+Submission.lean now imports the full candidate. Target.lean uses the actual
+owning OpenAI Goal module rather than simultaneously importing the standalone
+trusted-prefix duplicate. The pinned trusted-prefix comparison artifact is
+retained unchanged. The candidate Race.bound has not yet been accepted by
+Lean; all finite integration errors must first be repaired in remote CI,
+followed by a clean build and the independent official checks.
+
+
+CI iteration42520483885 exposed dependent Decidable arguments when rw tried
+to replace a proposition under ite. Changed Windows.mainWindow_at to explicit
+positive/negative membership cases and ite evaluation, which avoids rewriting
+the proposition itself. The module remains pending until the next CI check.

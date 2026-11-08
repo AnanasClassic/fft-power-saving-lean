@@ -1,0 +1,57 @@
+{
+  "Goal": {
+    "upstream_commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+    "upstream_path": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BQT/FourierTB/Goal.lean",
+    "upstream_sha256": "b47402d570be16df3f89f2fcaaa6a9a97623d9bfec8fd2be4bc2859dcd4ba8eb",
+    "adapted_path": "Submission/Chain/Fourier/Goal.lean",
+    "changes": [
+      "namespace suffixChain18",
+      "new kernel seam",
+      "exact rational engine/final exponents"
+    ]
+  },
+  "Merged1": {
+    "upstream_commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+    "upstream_path": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BQT/FourierTB/Merged1.lean",
+    "upstream_sha256": "bb5f0f0b2e2423b8d9386b98242f3560541973219898975c5d9f31985594c329",
+    "adapted_path": "Submission/Chain/Fourier/Merged1.lean",
+    "changes": [
+      "namespace suffixChain18",
+      "new kernel seam",
+      "exact rational engine/final exponents"
+    ]
+  },
+  "WorkingTransform": {
+    "upstream_commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+    "upstream_path": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BQT/FourierTB/WorkingTransform.lean",
+    "upstream_sha256": "57d4e45a6896fecebf318782ec4f3b763b26658fe87a9f30deb10bc2dc1f6055",
+    "adapted_path": "Submission/Chain/Fourier/WorkingTransform.lean",
+    "changes": [
+      "namespace suffixChain18",
+      "new kernel seam",
+      "exact rational engine/final exponents"
+    ]
+  },
+  "Merged2": {
+    "upstream_commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+    "upstream_path": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BQT/FourierTB/Merged2.lean",
+    "upstream_sha256": "79d9fbcc022265c555f6a921f8f656583952eb8780cc6abb499f94fcd192e280",
+    "adapted_path": "Submission/Chain/Fourier/Merged2.lean",
+    "changes": [
+      "namespace suffixChain18",
+      "new kernel seam",
+      "exact rational engine/final exponents"
+    ]
+  },
+  "Main": {
+    "upstream_commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+    "upstream_path": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BQT/FourierTB/Main.lean",
+    "upstream_sha256": "fa5ac5e41b62533d58a14e097b3df49eea381c8127dac8e0317d5dc1156ad312",
+    "adapted_path": "Submission/Chain/Fourier/Main.lean",
+    "changes": [
+      "namespace suffixChain18",
+      "new kernel seam",
+      "exact rational engine/final exponents"
+    ]
+  }
+}

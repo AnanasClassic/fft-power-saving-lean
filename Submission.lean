@@ -10,8 +10,9 @@ import Submission.Inventory
 import Submission.Parameters
 import Submission.MomentReceipt
 import Submission.Target
+import Submission.Chain.Bound
 
 /-!
-Exact DFT research project. Local lemmas only; Race.bound has not been proved.
-See research/audit.md. No replacement statement or extra axioms are introduced.
+Exact DFT research project. The assembled Race.bound proof is under CI validation.
+See research/log.md for current failures and remaining checks. No additional axioms are introduced.
 -/
