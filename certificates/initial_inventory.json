@@ -1,0 +1,111 @@
+{
+  "location": "/Users/vlad/Downloads/fft-chain-lean",
+  "named_archives_available": false,
+  "files": [
+    {
+      "path": "FFTChainDFT/ArrayNormalizer.lean",
+      "sha256": "7eaf8b2f338a3e0e40bd84e906bca081aa43f82c4a1ce9204ed1bb6ca1a4099a",
+      "bytes": 4348
+    },
+    {
+      "path": "FFTChainDFT/Inventory.lean",
+      "sha256": "d51d7e516853232dff231179ccfc2859d17cd1927ffa3955c01ec0ff0048995d",
+      "bytes": 3654
+    },
+    {
+      "path": "FFTChainDFT/MomentReceipt.lean",
+      "sha256": "915aa36b2a5bf92b66b92e048266edf65f2128a72c3d8d2038713bb8a09742a6",
+      "bytes": 1534
+    },
+    {
+      "path": "FFTChainDFT/Normalizer.lean",
+      "sha256": "27b4b17401b39713ec4b152d592a2bc529df18538d25914fc5b79938f920dd25",
+      "bytes": 5141
+    },
+    {
+      "path": "FFTChainDFT/Parameters.lean",
+      "sha256": "221abfc50855bce8726a23e8cbd1f4238b5a81aa2dc1569b5e03ee27f4e53b54",
+      "bytes": 1709
+    },
+    {
+      "path": "FFTChainDFT/TransportedQuery.lean",
+      "sha256": "da158c06469871b0567971284266638257cc314a4a206aa46c3dc7eb3b0b52c5",
+      "bytes": 5359
+    },
+    {
+      "path": "FFTChainDFT.lean",
+      "sha256": "a47140fb526acd974593ae525183373f2d1d66f5cf91bd7e94ca37baf2b82ef5",
+      "bytes": 193
+    },
+    {
+      "path": "OPEN_OBLIGATIONS.md",
+      "sha256": "fc530a5cc6f120e134e87b60a86444758f5c4943a7ec84be915b4b30788582de",
+      "bytes": 3738
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha256": "d39b9cf7bd9a1dfac3518dcf5e07b8fffc958e91d68f078e0ac242480cc907f3",
+      "bytes": 1486
+    },
+    {
+      "path": "README.md",
+      "sha256": "22e81c1cbcda6f9b42a6623c8da434531202faeb2bacc6a333f1c5716b2048c9",
+      "bytes": 4965
+    },
+    {
+      "path": "RESEARCH_LOG.md",
+      "sha256": "eb328082c9ba3f8610f7ecbfcb839ce935b2f12f992d27401e62986e2bd76aea",
+      "bytes": 1729
+    },
+    {
+      "path": "inventory_receipt.json",
+      "sha256": "91ff81741f0c79566bbc78f5b036c579cc1f1359d4b0f7f67b6de9410d32ce29",
+      "bytes": 770
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "42af54fa01dd69282b6260f1c5916b512dbdc6a4fd5eaa828e6a092406d8c55c",
+      "bytes": 223
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "e8173aad377a6d70041e5f7a5d8895ed587628f5cab243c53a18c40a1b7b6bf8",
+      "bytes": 25
+    },
+    {
+      "path": "moment_receipt.json",
+      "sha256": "b3cee47700b36da3e3d0b425cb98711400eb986173d7f4f8089099592bd20c18",
+      "bytes": 1477
+    },
+    {
+      "path": "scripts/check_lean.sh",
+      "sha256": "123c5c16c6066c95ab4b499f01f00c35080467934e63c704514fa605e80c0809",
+      "bytes": 289
+    },
+    {
+      "path": "scripts/check_python.sh",
+      "sha256": "1024ad79b207e464155dc1c96baff2b15f9b06de66917fb8e665f347624d6f7c",
+      "bytes": 263
+    },
+    {
+      "path": "scripts/generate_inventory.py",
+      "sha256": "29eb2d8ade1e8fa570f7e20bdc3fc99b2b779c4089659648d0d60cfac1d9be71",
+      "bytes": 5148
+    },
+    {
+      "path": "scripts/moment_certificate.py",
+      "sha256": "bffe2cba3f606c97b3c6737b0c5a0d992cdd61756d59f3bdef6f1c05ab8de470",
+      "bytes": 3980
+    },
+    {
+      "path": "scripts/verify_array.py",
+      "sha256": "bb51c92ecf75c22601d64322ddee13a49fb4c44e40f979573f09ae55279931a1",
+      "bytes": 1773
+    },
+    {
+      "path": "scripts/verify_core.py",
+      "sha256": "6942899d046afcecd0ef6d1a3a15cc058aa179ddc7936af4ea129e6141d96797",
+      "bytes": 3274
+    }
+  ]
+}

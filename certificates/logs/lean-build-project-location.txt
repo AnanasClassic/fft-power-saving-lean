@@ -1,0 +1,102 @@
+ℹ [8923/8942] Replayed Submission.Work.BlockAccounting.Moment
+info: Submission/Work/BlockAccounting/Moment.lean:139:0: 'OAI.PowerSaving.BlockAccounting.term_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Submission/Work/BlockAccounting/Moment.lean:140:0: 'OAI.PowerSaving.BlockAccounting.log_le_of_le_expsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Submission/Work/BlockAccounting/Moment.lean:141:0: 'OAI.PowerSaving.BlockAccounting.moment_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Submission/Work/BlockAccounting/Moment.lean:142:0: 'OAI.PowerSaving.BlockAccounting.mem_keys_of_histFn_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8924/8942] Replayed Submission.Work.BlockAccounting.Sharp
+info: Submission/Work/BlockAccounting/Sharp.lean:74:0: 'OAI.PowerSaving.BlockAccounting.term_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Submission/Work/BlockAccounting/Sharp.lean:75:0: 'OAI.PowerSaving.BlockAccounting.le_log_of_expbound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8925/8942] Replayed Submission.AnalyticTools
+warning: Submission/AnalyticTools.lean:26:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8926/8942] Replayed Submission.Work.TensorProto.Strictify
+warning: Submission/Work/TensorProto/Strictify.lean:209:6: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Submission/Work/TensorProto/Strictify.lean:239:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Submission/Work/TensorProto/Strictify.lean:241:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Submission/Work/TensorProto/Strictify.lean:233:70: Variable name `hu` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hu
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Submission/Work/TensorProto/Strictify.lean:339:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Submission/Work/TensorProto/Strictify.lean:347:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8927/8942] Replayed Submission.MomentAnalytic
+warning: Submission/MomentAnalytic.lean:567:24: Unused tactic linter: `norm_num` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Submission/MomentAnalytic.lean:567:24: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: Submission/MomentAnalytic.lean:590:0: 'FFTChainDFT.Analytic.finite_moment_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Submission/MomentAnalytic.lean:591:0: 'FFTChainDFT.Analytic.alpha' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Submission/MomentAnalytic.lean:592:0: 'FFTChainDFT.Analytic.gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Submission/MomentAnalytic.lean:593:0: 'FFTChainDFT.Analytic.completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8928/8942] Replayed Submission.TensorCertificate
+warning: Submission/TensorCertificate.lean:92:9: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: Submission/TensorCertificate.lean:97:0: 'FFTChainDFT.Analytic.strictified_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8932/8942] Replayed Submission.InventoryLink
+warning: Submission/InventoryLink.lean:16:45: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [histCount, targetHist, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Submission/InventoryLink.lean:21:43: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [histCount, paidHist, eq_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Submission/InventoryLink.lean:33:52: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [histCount, h, Multiset.count_replicate]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8933/8942] Replayed Submission.ArrayNormalizer
+warning: Submission/ArrayNormalizer.lean:82:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Submission/ArrayNormalizer.lean:85:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Submission/ArrayNormalizer.lean:95:19: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Submission/ArrayNormalizer.lean:98:19: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8934/8942] Replayed Submission.TransportedQuery
+warning: Submission/TransportedQuery.lean:37:48: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Submission/TransportedQuery.lean:40:48: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8936/8942] Replayed Submission.Normalizer
+warning: Submission/Normalizer.lean:105:0: automatically included section variable(s) unused in theorem `FFTChainDFT.Normalizer.scalePair_twice`:
+  [CharZero R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (8942 jobs).

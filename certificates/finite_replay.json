@@ -1,0 +1,81 @@
+{
+  "native": {
+    "endpoint_coefficients": 638401,
+    "events": 22836,
+    "local_helpers": {
+      "1": 14,
+      "2": 8,
+      "3": 4,
+      "4": 107,
+      "5": 14,
+      "6": 2,
+      "7": 9,
+      "8": 19,
+      "9": 385
+    },
+    "local_paid": {
+      "1": 2216,
+      "2": 456,
+      "3": 496,
+      "4": 98,
+      "5": 165,
+      "6": 8,
+      "7": 9,
+      "8": 1
+    },
+    "operations": {
+      "ADD": 18438,
+      "CLEAR": 32,
+      "COPY": 24,
+      "INIT": 32,
+      "MOVE": 3449,
+      "SCALE": 861
+    },
+    "owned_fields": 29,
+    "owned_lifetimes": 32,
+    "peak_owned": 14,
+    "real_scalar_allowance": 189818,
+    "rows_checked": 799
+  },
+  "negative_controls": [
+    "wrong_query",
+    "missing_normalizer_gate",
+    "wrong_idle",
+    "wrong_retained_operand_sign"
+  ],
+  "paid_count": 128116,
+  "paid_rank_mass": 334704,
+  "paired_controller": {
+    "endpoint": "each independent input r maps to q^-1 times its stage monomial",
+    "events": 2598,
+    "independent_matrix_entries": 1600,
+    "macro_counts": {
+      "ADD": 1380,
+      "H": 62,
+      "HI": 62,
+      "IDLE_ONE": 32,
+      "LOCAL": 36,
+      "QUERY": 6,
+      "SCALE": 110,
+      "SHIFT_P": 124,
+      "SWAP": 786
+    },
+    "ring": "Q[q,D1,...,D18]/(q^4-1); no reduction of stage exponents",
+    "roles": 40
+  },
+  "paired_payload_sha256": "27e6143d669ebaef0c43b13a8cd2f38341927001f21fd184c128d37517dafd77",
+  "productive_count": 24392,
+  "productive_rank_mass": 336224,
+  "raw_controller_audit": {
+    "fields": 20,
+    "idle_lines_read_from_word": 16,
+    "scope": "All-ones odd/odd shape; symbolic in every stage variable at the -1 central character; the +1 character is the diagonal product.",
+    "shadows": [
+      "Q=1:+I",
+      "Q=-1:-I"
+    ],
+    "symbolic_entries": 400
+  },
+  "status": "Python finite replay only",
+  "unproved": "Native Clifford lift, all-width operator bridge, physical RAM realization, GLiveKernelM and cost contract"
+}

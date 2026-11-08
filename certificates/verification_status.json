@@ -1,0 +1,45 @@
+{
+  "objective": "incomplete",
+  "exact_saving": "3363623/1000000000",
+  "date": "2026-11-08",
+  "python_certificates": {
+    "status": "passed",
+    "scope": "rational and formal-coordinate replay; not the physical Lean circuit"
+  },
+  "lean_source_elaboration": {
+    "status": "passed",
+    "scope": "completed local lemmas only"
+  },
+  "lean_kernel": {
+    "status": "passed",
+    "scope": "completed local theorems; no Race.bound"
+  },
+  "local_axiom_audit": {
+    "status": "passed",
+    "theorem_count": 24,
+    "permitted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "final_theorem": {
+    "status": "missing",
+    "name": "Race.bound"
+  },
+  "official_comparator": {
+    "status": "not_run",
+    "reason": "final theorem missing"
+  },
+  "nanoda": {
+    "status": "not_run"
+  },
+  "official_lean_verified": {
+    "status": "not_obtained"
+  },
+  "publication": {
+    "repository": "private",
+    "competition_submission": "not_created"
+  },
+  "remaining_obligations": "research/audit.md"
+}

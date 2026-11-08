@@ -1,0 +1,2 @@
+/var/folders/zj/v7pf3pz15pbd7plm2vqsvpp40000gn/T/tmp.SoI3bnQotZ/FinalCheck.lean:6:43: error(lean.unknownIdentifier): Unknown identifier `Race.bound`
+/var/folders/zj/v7pf3pz15pbd7plm2vqsvpp40000gn/T/tmp.SoI3bnQotZ/FinalCheck.lean:7:14: error(lean.unknownIdentifier): Unknown constant `Race.bound`

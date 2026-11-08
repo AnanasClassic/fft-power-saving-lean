@@ -1,0 +1,104 @@
+{
+  "files": {
+    "Submission/Trusted/UniformFourier233.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "prefix_bytes": 13034,
+      "prefix_sha256": "13a02ea2bc92f3530a5408696be2e4281a2efdc1423ec9445f3de12445fe2df9",
+      "sha256": "53da3ac9efcafdd4773671b0dc151319f3a20f0018453261771dddf036f8fc01",
+      "source": "challenges/dft/UniformFourier233.lean",
+      "transform": "Remove only the two challenge placeholder theorems and retain closing scopes; definitions prefix byte-identical"
+    },
+    "Submission/Work/BlockAccounting/Moment.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "248b3b5705d0ed5c629622119a59ae763f5e1559bd612ac834d1608886c98c99",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BlockAccounting/Moment.lean",
+      "transform": "none"
+    },
+    "Submission/Work/BlockAccounting/Sharp.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "18a27678cbcc09ca2e302b8e3e356182e292e71b8cfc517380a9d723ae10f107",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BlockAccounting/Sharp.lean",
+      "transform": "none"
+    },
+    "Submission/Work/TensorProto/Strictify.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "93af61cb95b9e3474a641bf075edf3604511e82f9ad0fad5808205402cb19c2d",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/TensorProto/Strictify.lean",
+      "transform": "none"
+    },
+    "research/vendor/chain-ADAPTERS.md": {
+      "sha256": "6b9e351b3c4e82def5e5ad47af3b0ec1bbadc21d291c57e1cca9afe2b0078fa8"
+    },
+    "research/vendor/chain-CALLER.json": {
+      "sha256": "9a46d79125ea0bfab7112b46c4f907b00364c3ff3c47d2b3d078ea490e7ef4f6"
+    },
+    "research/vendor/chain-LICENSE": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "research/vendor/chain-NOTICE": {
+      "sha256": "039f5005bbe42d76d27a8a4318ac1ae6777afe1cd4417519ea23337994fc137e"
+    },
+    "research/vendor/chain-PROOF.md": {
+      "sha256": "ef26968138b7b9dfeebc9beea9d81b4026bd493df0223011ae6967ea5e5e1910"
+    },
+    "research/vendor/chain_check_root.py": {
+      "sha256": "14c9cda737f9f49365e55bcf4cca489cbae8591738093bec3861a6d03409bc79"
+    },
+    "research/vendor/native_replay.py": {
+      "sha256": "5c6a6892448538eb0f2760eaab4c95ddc955a33ea5183b6ad585a0c49b4c319d"
+    },
+    "research/vendor/owned772-NATIVE-SOURCES.json": {
+      "sha256": "57920b99ce3eb5c1e1086b52754be8e2773b483efdd09a5ab647034e10e47499"
+    },
+    "research/vendor/owned772-PROOF.md": {
+      "sha256": "e9c1ee683f9c7e90d4caf9873414bedddb3f666e84866f413c16375a6cdec31f"
+    },
+    "research/vendor/owned772-SOURCES.json": {
+      "sha256": "1754cb0b0709ac4977966fced0f74687b1e5faeaecca63ff1e692e9beb3715a9"
+    },
+    "research/vendor/owned772-WORD.json.gz": {
+      "sha256": "390c2c8717cf01753631c4cc253d2165ce80cd5df0f4bddbc964d024b8d5a861"
+    },
+    "research/vendor/owned772-independent.py": {
+      "sha256": "7895de02b32fbac3d9745bf1d7ac991a754b2275584b8a7d695acecfb597af45"
+    }
+  },
+  "sources": {
+    "chain_controller": {
+      "commit": "51f54e3c31f2f3a3e056a483b3ed66ae916ad06a",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds"
+    },
+    "croc_base": {
+      "commit": "7c49fe32c55de02c2c873655c804b16e4c3fef0a",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds"
+    },
+    "dft_trusted_model_origin": {
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "url": "https://github.com/openai/math"
+    },
+    "edit_a": {
+      "commit": "5ec9b6dafc1ec54e2c0ca0771e8ed032f7888417",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds"
+    },
+    "edit_b": {
+      "commit": "564a076b113621a93edc4e39968ee4e4a8c9caf0",
+      "url": "https://github.com/aliromman/integer-mult-bounds"
+    },
+    "mathlib": {
+      "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "url": "https://github.com/leanprover-community/mathlib4"
+    },
+    "openai_math": {
+      "commit": "4eaee87548250b2682affda7d05d947c05554bae",
+      "url": "https://github.com/openai/math"
+    },
+    "shea_fourier": {
+      "commit": "0e61af6ce0ef712494c93c902baefa314ef7e23c",
+      "url": "https://github.com/shea256/fourier-transform-below-nlogn"
+    },
+    "verifier": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "url": "https://github.com/bigospeedrun/verifier"
+    }
+  }
+}

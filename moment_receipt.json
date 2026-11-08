@@ -1,0 +1,57 @@
+{
+  "P_moment": {
+    "denominator": 1000000000000000000,
+    "lower_num": 332684687326040946040219,
+    "upper_num": 332684687326040946040220
+  },
+  "T_moment": {
+    "denominator": 1000000000000000000,
+    "lower_num": 332684687377652057255412,
+    "upper_num": 332684687377652057255413
+  },
+  "algorithm": "rational atanh enclosure + alternating exponential enclosure",
+  "all_three_ratio_checks": true,
+  "alpha_cap_num_den": [
+    9999999999,
+    10000000000
+  ],
+  "alpha_ratio": {
+    "denominator": 1000000000000000000,
+    "lower_num": 999999999844864782,
+    "upper_num": 999999999844864783
+  },
+  "atanh_terms": 22,
+  "completion_cap_num_den": [
+    19,
+    20
+  ],
+  "completion_ratio": {
+    "denominator": 1000000000000000000,
+    "lower_num": 945209312649479022,
+    "upper_num": 945209312649479023
+  },
+  "cutoff": 12,
+  "exp_lower_degree": 19,
+  "exp_upper_degree": 18,
+  "finite_saving_den": 125000000,
+  "finite_saving_num": 420453,
+  "floor": 13,
+  "gamma_cap_num_den": [
+    499,
+    500
+  ],
+  "gamma_ratio": {
+    "denominator": 1000000000000000000,
+    "lower_num": 997695769675528000,
+    "upper_num": 997695769675528001
+  },
+  "grid_denominator": 1000000000000000000,
+  "margin": {
+    "denominator": 1000000000000000000,
+    "lower_num": 51611111215192,
+    "upper_num": 51611111215193
+  },
+  "physical_histogram_sha256": "91ff81741f0c79566bbc78f5b036c579cc1f1359d4b0f7f67b6de9410d32ce29",
+  "strict_positive_margin": true,
+  "tensor_power": 12800
+}

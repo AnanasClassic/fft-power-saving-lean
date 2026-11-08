@@ -1,0 +1,13 @@
+This research project retains work from the OpenAI exact DFT framework,
+Jacob Sussman's formal engines and reductions, Halit Ziya KARTAL's DFT
+instantiations, and the CrocSwap integer-multiplication community.
+
+DreamingOfClouds supplies the chain-nested controller and relay-descent work;
+Ali Romman supplies the retained-operand edit and other controller/circuit
+methods; CubeJerry/Jerry Chen supplies the owned772 supplier; Cinna Davis
+supplies thin-query and controller precedents. Other inherited contributors
+retain the specific credits in source headers and research/vendor/*NOTICE.
+
+See research/sources.md, research/NOTICE.verifier, and preserved source notices.
+The new integration is AI-assisted research for the owner of this repository.
+No novelty or official verification status is claimed.

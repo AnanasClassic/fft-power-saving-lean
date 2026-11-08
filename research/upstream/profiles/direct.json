@@ -1,0 +1,213 @@
+{
+  "dft": {
+    "challenge_file": "challenges/dft/UniformFourier233.lean",
+    "challenge_sha256": "3a646acd3ac9cf6ff93e29cc363dbfea0c8953a2e1415f7965bd86e8b2ee62a3",
+    "lean_toolchain": "leanprover/lean4:v4.34.1",
+    "manifest_file": "profiles/lake-manifest.json",
+    "tools_file": "profiles/tools.json",
+    "solution_module": "Submission",
+    "source_roots": [
+      "Submission"
+    ],
+    "theorem_names": [
+      "Race.bound"
+    ],
+    "bound_kind": "saving",
+    "maximum": "1",
+    "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+  },
+  "3sum": {
+    "challenge_file": "challenges/3sum-apsp/EndStatement.lean",
+    "challenge_sha256": "4291e3f05781cea42f9d672ff73ceac1f6d1a0c3021038e94372fa8f7e1ad987",
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "manifest_file": "profiles/anthropic-lake-manifest.json",
+    "tools_file": "profiles/anthropic-tools.json",
+    "solution_module": "Submission",
+    "source_roots": [
+      "Submission"
+    ],
+    "theorem_names": [
+      "Race.bound"
+    ],
+    "bound_kind": "exponent",
+    "maximum": "2",
+    "upstream_commit": "e1a4e6508154ea59f030480661590a9fe3018011",
+    "runner": "github-split"
+  },
+  "apsp": {
+    "challenge_file": "challenges/3sum-apsp/EndStatement.lean",
+    "challenge_sha256": "4291e3f05781cea42f9d672ff73ceac1f6d1a0c3021038e94372fa8f7e1ad987",
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "manifest_file": "profiles/anthropic-lake-manifest.json",
+    "tools_file": "profiles/anthropic-tools.json",
+    "solution_module": "Submission",
+    "source_roots": [
+      "Submission"
+    ],
+    "theorem_names": [
+      "Race.bound"
+    ],
+    "bound_kind": "exponent",
+    "maximum": "3",
+    "upstream_commit": "e1a4e6508154ea59f030480661590a9fe3018011"
+  },
+  "average-sensitivity": {
+    "challenge_file": "challenges/average-sensitivity/VerifierStatement.lean",
+    "challenge_sha256": "7bdf2589dc16ce832a81f9e59de61e8c277ee51ac38a361705dfd1cd4fecc14b",
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "manifest_file": "profiles/anthropic-lake-manifest.json",
+    "tools_file": "profiles/anthropic-tools.json",
+    "solution_module": "Submission",
+    "source_roots": [
+      "Submission"
+    ],
+    "theorem_names": [
+      "Race.bound"
+    ],
+    "bound_kind": "coefficient",
+    "maximum": "8",
+    "upstream_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+  },
+  "catalan": {
+    "challenge_file": "challenges/catalan/Statement.lean",
+    "challenge_sha256": "9ba7370f1256ef680ccf674e653b5456735c478f9ac80fcffc90f130ac4a2ce6",
+    "lean_toolchain": "leanprover/lean4:v4.34.1",
+    "manifest_file": "profiles/lake-manifest.json",
+    "tools_file": "profiles/tools.json",
+    "solution_module": "Submission",
+    "source_roots": [
+      "Submission"
+    ],
+    "theorem_names": [
+      "Race.bound"
+    ],
+    "bound_kind": "exponent",
+    "maximum": "100000000",
+    "upstream_commit": "50672b810873d8371b2b6bdd0057bb6cb2e3da24",
+    "runner": "github-split"
+  },
+  "subset-sum": {
+    "challenge_file": "challenges/subset-sum/Statement.lean",
+    "challenge_sha256": "80bc6d282676fc056a220968a727ab983b8c5a280cb0d9f24561bb3c90867517",
+    "lean_toolchain": "leanprover/lean4:v4.34.1",
+    "manifest_file": "profiles/lake-manifest.json",
+    "tools_file": "profiles/tools.json",
+    "solution_module": "Submission",
+    "source_roots": [
+      "Submission"
+    ],
+    "theorem_names": [
+      "Race.bound"
+    ],
+    "bound_kind": "exponent",
+    "maximum": "1",
+    "upstream_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+  },
+  "snaky": {
+    "challenge_file": "challenges/other-snaky/VerifierStatement.lean",
+    "challenge_sha256": "49e630b3bab9a3d1006b373edd85cf196eba0f45bdb878e0126db16776ed780b",
+    "lean_toolchain": "leanprover/lean4:v4.34.1",
+    "manifest_file": "profiles/lake-manifest.json",
+    "tools_file": "profiles/tools.json",
+    "solution_module": "Submission",
+    "source_roots": [
+      "Submission"
+    ],
+    "theorem_names": [
+      "Race.bound"
+    ],
+    "bound_kind": "moves",
+    "maximum": "100",
+    "upstream_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+  },
+  "heilbronn-triangle": {
+    "challenge_file": "challenges/heilbronn-triangle/VerifierStatement.lean",
+    "challenge_sha256": "efc9772011b2104ba2cb51bd672e1bb974ab1a29f2384922e1c62f54307e32cb",
+    "lean_toolchain": "leanprover/lean4:v4.34.1",
+    "manifest_file": "profiles/lake-manifest.json",
+    "tools_file": "profiles/tools.json",
+    "solution_module": "Submission",
+    "source_roots": [
+      "Submission"
+    ],
+    "theorem_names": [
+      "Race.bound"
+    ],
+    "bound_kind": "saving",
+    "maximum": "5/6",
+    "upstream_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+  },
+  "directed-sssp": {
+    "challenge_file": "challenges/directed-sssp/VerifierStatement.lean",
+    "challenge_sha256": "cf5752049bcffcdbd9f2368cac10a57fc392881d2754a5fa60e7741519d2a6ca",
+    "lean_toolchain": "leanprover/lean4:v4.34.1",
+    "manifest_file": "profiles/lake-manifest.json",
+    "tools_file": "profiles/tools.json",
+    "solution_module": "Submission",
+    "source_roots": [
+      "Submission"
+    ],
+    "theorem_names": [
+      "Race.bound"
+    ],
+    "bound_kind": "density-time",
+    "upstream_commit": "98c53accb47a505482a1781597ae14bf67e81cec",
+    "solution_dependencies": [
+      {
+        "repo_url": "https://github.com/bigospeedrun/c-hd-proof",
+        "commit": "98c53accb47a505482a1781597ae14bf67e81cec",
+        "source_subdir": "formal/lean",
+        "source_roots": [
+          "Frontier"
+        ],
+        "lean_options": {
+          "autoImplicit": true
+        }
+      }
+    ]
+  },
+  "prime-gaps": {
+    "challenge_file": "challenges/prime-gaps/Statement.lean",
+    "challenge_sha256": "c6b81e94927315c805bd34a30796d8d757156790dff243287811f3c53494f969",
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "manifest_file": "profiles/anthropic-lake-manifest.json",
+    "tools_file": "profiles/anthropic-tools.json",
+    "solution_module": "Submission",
+    "source_roots": [
+      "Submission"
+    ],
+    "theorem_names": [
+      "Race.bound"
+    ],
+    "bound_kind": "gap",
+    "maximum": "100000",
+    "upstream_commit": "1faa7b14e82ddebc2772dfb9153922f01b106477",
+    "runner": "github-split",
+    "source_lean_options": {
+      "autoImplicit": false,
+      "maxSynthPendingDepth": 3
+    },
+    "source_data_suffixes": [
+      ".json"
+    ],
+    "solution_dependencies": [
+      {
+        "repo_url": "https://github.com/hanwenzhu/LeanArchitect",
+        "commit": "d9013cc08bd2b5483e837368dfa4cc7ead92a5c2",
+        "source_roots": [
+          "Architect"
+        ],
+        "lean_options": {
+          "autoImplicit": true
+        }
+      },
+      {
+        "repo_url": "https://github.com/kimihiro64/PrimeNumberTheoremAnd",
+        "commit": "0f15a38c619298b5cd786d39a84dd4bb8997324c",
+        "source_roots": [
+          "PrimeNumberTheoremAnd"
+        ]
+      }
+    ]
+  }
+}

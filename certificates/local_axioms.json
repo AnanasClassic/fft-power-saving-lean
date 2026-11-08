@@ -1,0 +1,126 @@
+{
+  "scope": "local theorems only; Race.bound absent",
+  "status": "passed",
+  "theorems": {
+    "FFTChainDFT.Analytic.alpha": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Analytic.completion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Analytic.exponent_separation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Analytic.finite_moment_strict": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Analytic.gamma": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Analytic.paid_multiset_link": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Analytic.productive_multiset_link": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Analytic.strictified_moment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Analytic.strictified_rank_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Analytic.tensor_floor_attained": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Analytic.tensor_floor_fits": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Analytic.tensor_rank_separation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.ArrayNormalizer.normalizer_square": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.ArrayNormalizer.transported_inverse_query_involution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.ArrayNormalizer.transported_query_involution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Inventory.complete_paid_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Inventory.complete_target_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Inventory.paid_block_count": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Inventory.paid_rank_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Inventory.paid_rank_mass": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Inventory.productive_field_count": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Inventory.productive_rank_mass": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Inventory.target_rank_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.saving_gap_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

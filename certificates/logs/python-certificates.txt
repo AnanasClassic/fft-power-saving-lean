@@ -1,0 +1,17 @@
+PASS_INVENTORY generated=Inventory.lean sha256=d51d7e516853232dff231179ccfc2859d17cd1927ffa3955c01ec0ff0048995d
+PASS_NORMALIZER_QUOTIENT_RING
+PASS_INVENTORY_FORMULA_AND_RECEIPT
+PASS_RATIONAL_GAPS_AND_TAILS
+PASS_ARRAY_NORMALIZER_AND_TRANSPORTED_QUERY on 8 Gaussian-rational basis inputs
+margin {'lower_num': 51611111215192, 'upper_num': 51611111215193, 'denominator': 1000000000000000000}
+alpha_ratio {'lower_num': 999999999844864782, 'upper_num': 999999999844864783, 'denominator': 1000000000000000000}
+gamma_ratio {'lower_num': 997695769675528000, 'upper_num': 997695769675528001, 'denominator': 1000000000000000000}
+completion_ratio {'lower_num': 945209312649479022, 'upper_num': 945209312649479023, 'denominator': 1000000000000000000}
+PASS_RATIONAL_MOMENT_CERTIFICATE b3cee47700b36da3e3d0b425cb98711400eb986173d7f4f8089099592bd20c18
+PASS_PYTHON_PREFLIGHT_ONLY (not Lean verification)
+RECONSTRUCTED_NATIVE 22836 29c8938138476b02cfc5977558f5065953c56f7a91926bc0e5de1fcbffecd3e1
+PASS_FINITE_PYTHON_REPLAY 24392 128116 ['wrong_query', 'missing_normalizer_gate', 'wrong_idle', 'wrong_retained_operand_sign']
+PASS_FINITE_PYTHON_REPLAY 24392 128116 ['wrong_query', 'missing_normalizer_gate', 'wrong_idle', 'wrong_retained_operand_sign']
+Generated MomentAnalytic.lean: 32000 bytes
+Proposed margin lower: 5.160947256e-05
+All proposals require successful Lean elaboration and kernel checking.

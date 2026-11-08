@@ -1,0 +1,48 @@
+Big O Speedrun verifier
+
+The trusted DFT challenge is a modified copy of
+lean/ComparatorChallenges/UniformFourier.lean from openai/math at
+fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb, released under Apache-2.0.
+Upstream SHA-256: 4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74.
+OpenAI is credited for the formalization, paper and all-length reduction.
+The verifier's changes are recorded in the challenge header and profile.
+
+The first tested submission is Chafik Boukhalfa's PR #2 to Jacob Sussman's
+wht-power-saving-lean repository. Its source is fetched at an immutable commit
+and is not vendored as the trusted challenge. Its authors and community
+predecessors retain their credit and license notices.
+
+The unchanged 3SUM and APSP statement in challenges/3sum-apsp/EndStatement.lean
+comes from anthropics/formal-math at e1a4e6508154ea59f030480661590a9fe3018011,
+3sum-apsp/EndStatement.lean (Apache-2.0). Anthropic wrote the formalization;
+Josh Alman and Virginia Vassilevska Williams wrote the paper. The upstream
+LICENSE and NOTICE remain next to that statement. Direct submission parsing,
+exact rational target generation, and issue result publication are independent
+Big O Speedrun additions dated 2026-10-10.
+
+The unchanged integer factoring statement in challenges/integer-factoring/Challenge.lean
+comes from IsaacRudich/SubexponentialDeterministicFactoring at
+c91cc3f4947caca8977e81a5d14244f73b5ae2b1, Challenge.lean (Apache-2.0). Isaac Rudich
+and Louis-Martin Rousseau wrote the statement and the proof. The upstream LICENSE
+remains next to that statement, and profiles/factoring-lake-manifest.json is their
+unchanged lake-manifest.json. The rerun profile is a Big O Speedrun addition dated
+2026-10-30.
+
+challenges/integer-factoring-sqrtlog/Challenge.lean is the same upstream Challenge.lean
+(c91cc3f4, Apache-2.0, by Isaac Rudich and Louis-Martin Rousseau), byte for byte, with one
+appended theorem that states their Factoring.SqrtLogLogConjecture as proved. The appended
+theorem and the rerun profile are Big O Speedrun additions dated 2026-10-30. The upstream
+LICENSE remains next to that statement. The profile builds, without changes, sources from
+1337isnot1337/integer-factoring, IsaacRudich/SubexponentialDeterministicFactoring and
+anthropics/formal-math (all Apache-2.0) at pinned commits; none of their files is copied here.
+
+The unchanged statement in challenges/critical-line-zeros/Challenge.lean comes from
+anthropics/formal-math at 16a5ce41304fcdaea4e0be7c132e1c361dc26da5, zeta23/Challenge.lean
+(Apache-2.0, Copyright 2026 Anthropic, PBC). The upstream LICENSE and NOTICE remain next to that
+statement, and profiles/zeta23-lake-manifest.json is their unchanged lake-manifest.json. The rerun
+profile is a Big O Speedrun addition dated 2026-11-05.
+
+The unchanged statement in challenges/van-der-waerden/Challenge.lean comes from openai/math at
+1581d4cbdd69a0faf34b2089614fe2a814316a6a, lean/ComparatorChallenges/QuantitativeVanDerWaerden.lean
+(Apache-2.0). OpenAI wrote the statement and the proof. The upstream LICENSE remains next to that
+statement. The rerun profile is a Big O Speedrun addition dated 2026-11-06.
