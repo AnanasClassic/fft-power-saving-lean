@@ -346,3 +346,11 @@ PB.ind. Supplied all six Fintype/DecidableEq existential witnesses explicitly,
 and proved target counts before assembling the final dependent tuple.
 These are technical proof repairs; the circuit, histograms and target did not
 change. All builds remain in CI.
+
+### CI 42530254270 — raw certificate final rewrite
+
+The explicit congrArg removed the gauge-cardinality timeout. The indicator
+bridge and all six existential instances now elaborate. The only error is
+Native.helper_histogram written with card(Fin9), after the target had simplified
+that card to9. Added a typed lemma obtained by simp only [Fintype.card_fin],
+then rewrite with that exact expression. No circuit or assertion changed.

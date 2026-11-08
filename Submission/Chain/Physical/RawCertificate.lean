@@ -57,7 +57,10 @@ theorem target_count (base : Fin 104 → OBase (Fin 9)) (r : ℕ) :
     (fun g i t => rank_main base g i t) (fun _ _ _ => rfl) r,←Nat.mul_add]
   refine congrArg (fun n : ℕ => Fintype.card Gauges*n) ?_
   simp only [Fintype.card_fin,Dr_card]
-  rw [←Finset.mul_sum,←mainMultiplicity_sum,Native.helper_histogram]
+  have hh : (∑ q : Fin 562, if 9-(Native.provider.ent q).dim=r then 1 else 0) =
+      Inventory.helperPerNative r := by
+    simpa only [Fintype.card_fin] using Native.helper_histogram r
+  rw [←Finset.mul_sum,←mainMultiplicity_sum,hh]
   rw [←Chain.Schedule.productive_from_endpoints r]
   exact Nat.add_comm _ _
 
