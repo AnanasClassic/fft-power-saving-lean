@@ -38,7 +38,7 @@ structure RawStep (op : Op) (price : (ℕ → ℝ) → ℝ) where
   fresh : ∀ f y g k s, run f y (freshR g k s) = matAct f (helperOp W op g k s) (y (freshR g k s))
 
 def liftSimple {op : Op} {price : (ℕ → ℝ) → ℝ}
-    (S : SimpleStep (Sl := Sl) (C := C) d q op price) (h : bankOf op=none) : RawStep d q W op price where
+    (S : SimpleStep (Sl := Sl) (C := C) d q op price) (h : bankOf op=none) : RawStep (Sl := Sl) (C := C) d q W op price where
   run := S.run
   route := S.route
   main := S.main
@@ -99,7 +99,8 @@ include hbase hOk in
 include hbase hOk in
  theorem rawRun_route (op : Op) (h : Schedule.ValidOp op) :
     P4L.ORoute (rawRun I base l hbase hH hOk op) (opcodePrice I l op) := by
-  simpa only [rawRun,dif_pos h] using (rawInstruction I base l hbase hH hOk op h).route
+  exact (rawInstruction I base l hbase hH hOk op h).route.cast
+    (fun f y => by simp only [rawRun,dif_pos h]) (fun _ => rfl)
 
 include hbase hOk in
  theorem rawRun_main (op : Op) (h : Schedule.ValidOp op) (f : ℕ)

@@ -279,3 +279,18 @@ Read the current official verifier head via GitHub: e4195cbf8c813772227a5fe4fd21
 committed2026-11-08T17:39:46Z. The previously pinned195060b source remains the
 upstream proof provenance; current profile/target/tool differences must be
 checked before the final independent verification run.
+
+
+## Full-root CI42526308665
+
+FullStep now passes, including the actual native call's pointwise main
+transformation. RawCompiler found an undetermined scratch-role type in
+liftSimple's result; supplied explicit Sl/C parameters. Its route wrapper
+also required pointwise extensional equality because simp does not unfold a
+partially applied rawRun under ORoute; replaced that step with ORoute.cast.
+The rest of the root remains pending this compiler layer.
+
+The official verifier comparison195060b...e4195cb reports nine newer commits,
+all changes under auto-research/audits. No README, target, tool, dependency,
+checker or execution-policy file changed. The pinned verification profile is
+therefore unchanged at the newly observed head.
