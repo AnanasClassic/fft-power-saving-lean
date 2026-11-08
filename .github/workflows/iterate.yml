@@ -41,8 +41,20 @@ jobs:
           key: ${{ runner.os }}-lean4341-dev-v1-${{ github.sha }}-${{ github.run_id }}
           restore-keys: |
             ${{ runner.os }}-lean4341-dev-v1-
+      - name: Restore pinned dependency cache on CI runner
+        id: mathlib-cache
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: .lake/packages
+          key: ${{ runner.os }}-mathlib-d13f23b723b8a846827a245b89c10fc7d3f11612-lean4341-v1
       - name: Fetch pinned Mathlib cache on CI runner
         run: lake exe cache get
+      - name: Preserve pinned dependency cache on CI runner
+        if: steps.mathlib-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: .lake/packages
+          key: ${{ runner.os }}-mathlib-d13f23b723b8a846827a245b89c10fc7d3f11612-lean4341-v1
       - name: Check changed modules in Lean kernel
         run: python3 scripts/ci_incremental.py
       - name: Save small development proof cache

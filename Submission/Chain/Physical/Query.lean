@@ -53,7 +53,6 @@ def query_step (a b : Fin 40) (hab : a≠b) :
       rw [P4L.walsh_add,P4L.walsh_unframe]
       simp only [Pi.add_apply,Pi.mul_apply]
       rw [FFTChainDFT.PhysicalPhase.inverse_phase_cube]
-      rfl
     · simp only [if_neg hi,Op.eval,State.get_set_ne _ _ _ _ hi,viewAt_get]
   · exact thin_fresh b a 0 U
 end Geometry

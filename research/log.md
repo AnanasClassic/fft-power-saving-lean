@@ -200,3 +200,10 @@ CI iteration42520483885 exposed dependent Decidable arguments when rw tried
 to replace a proposition under ite. Changed Windows.mainWindow_at to explicit
 positive/negative membership cases and ite evaluation, which avoids rewriting
 the proposition itself. The module remains pending until the next CI check.
+
+
+CI iteration42521067514 stopped at an unused open of namespace BC in
+RoleSets, before inspecting dependent modules. Restricted that module's open
+list to the namespaces it actually uses. Removed redundant post-rewrite goal
+closing in Query and simplified the role-parity proof in FullStep. Verification
+continues remotely; no accepted status is inferred from these source edits.

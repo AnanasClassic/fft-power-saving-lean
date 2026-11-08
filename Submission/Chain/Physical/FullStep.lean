@@ -31,10 +31,8 @@ theorem stage_fullID (k : Fin 18) (a b : Fin 40) (h : Schedule.ValidOp (.full k 
 theorem fullID_roles (k : Fin 18) (a b : Fin 40) (h : Schedule.ValidOp (.full k a b)) :
     xOf (Schedule.fullID k a)=a ∧ yOf (Schedule.fullID k a)=b := by
   rcases (Schedule.full_id_values k a b h).2 with ⟨hp,rfl,rfl⟩|⟨hp,rfl,rfl⟩
-  · simp only [xOf,yOf,hp,ite_true]
-    exact ⟨rfl,rfl⟩
-  · simp only [xOf,yOf,hp,show (1:ℕ)≠0 by decide,ite_false]
-    exact ⟨rfl,rfl⟩
+  · constructor <;> simp [xOf,yOf,hp]
+  · constructor <;> simp [xOf,yOf,hp]
 
 theorem native_viewAt (j : Fin 36) (k : Fin 18) (f : ℕ)
     (v : Data (LC (Fin 17) H l) (PRole (Orth (LC (Fin 17) H l)) T Sl C) f)

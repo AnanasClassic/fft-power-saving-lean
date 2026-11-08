@@ -2,7 +2,7 @@ import Submission.Chain.Physical.Roles
 /-! Role sets for the 40-array / 36-bank network. Adapted from Kartal's
 P4L.Seg and BQ19 word adapters; every bank retains all of its native slots. -/
 namespace OAI.PowerSaving.ChainNet
-open Binary Matrix Finset RAM SS CB RF BR BC GF GX XHostTW
+open Binary Matrix Finset
 noncomputable section
 variable {α Γ T Sl C : Type} [Fintype α] [DecidableEq α] [Fintype Γ] [DecidableEq Γ]
   [Fintype T] [DecidableEq T] [Fintype Sl] [DecidableEq Sl] [Fintype C] [DecidableEq C]

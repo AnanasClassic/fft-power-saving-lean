@@ -8,6 +8,8 @@ paired 9+9 finite witness, its histograms, dimension 145 and the proved moment
 at C=0.003363624. The old BQ19 final theorem is not imported or used.
 The generic scaling proofs below preserve their upstream provenance.
 -/
+set_option maxRecDepth 100000
+set_option maxHeartbeats 6000000
 namespace TensorEng
 open OAI.PowerSaving OAI.PowerSaving.Binary OAI.PowerSaving.GF OAI.PowerSaving.MX OAI.PowerSaving.RAM
 open OAI.PowerSaving.RAM.Ty Matrix Finset
