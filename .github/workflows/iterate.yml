@@ -32,6 +32,15 @@ jobs:
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - name: Verify source integrity
         run: python3 scripts/source_guard.py
+      - name: Restore clean kernel-accepted project objects
+        id: full-cache
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: .lake/build
+          key: Linux-lean4341-physical-v2-08e59089c118eb1033917d8304c5e16652f187f4
+      - name: Bind accepted object bundles to their source receipt
+        if: steps.full-cache.outputs.cache-hit == 'true'
+        run: python3 scripts/seed_ci_objects.py
       - name: Restore small development proof cache
         uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
         with:

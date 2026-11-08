@@ -219,3 +219,20 @@ execution outside GitHub Actions, enforcing the user's CI-only build rule.
 Direct text comparison confirms the DFTProgram definition in the actual owning
 OpenAI Goal module is identical to the pinned standalone trusted artifact.
 This is a source check, not an official Comparator result.
+
+
+## Clean CI supplier/controller acceptance
+
+Run42516861735 completed. The supplier/controller build step and both axiom
+audits passed. All65 scalar segment certificates and their aggregate Controller
+were accepted from source. NativeStages was also accepted, including its
+arbitrary-data helper equation. The entire workflow failed at the original
+Windows.mainWindow_at; that source has since been corrected and is being
+rechecked. certificates/ci_clean_controller.json records449 accepted project
+modules, the source commit and the failed overall status.
+
+The development workflow now seeds an exact-source/object-bundle receipt from
+that clean remote cache. Reuse additionally checks the complete current source
+dependency closure and SHA256 of the .olean/.private/.server bundle. This avoids
+repeating the expensive65 certificates while rejecting stale objects after a
+source change. The clean cache stays on CI; nothing was downloaded to the Mac.
