@@ -57,7 +57,9 @@ include hbase hOk in
   change _ = _ * P4L.prodF f (P4L.fr (ChainG18.basisA base l g t)
     (StageSets.targetSet l (Schedule.targetStages i))) z * _
   rw [ht,hqi]
-  simp only [stageD,pivotQ]
+  rw [show stageD base l f g t z = (fun k : Fin 18 =>
+    P4L.prodF f (P4L.fr (ChainG18.basisA base l g t) (ChainG18.incr l k.val)) z) from rfl]
+  simp only [pivotQ]
   ring
 
 include hbase hOk in

@@ -310,3 +310,13 @@ Removed the now-unneeded local .lake/build objects (702.3MiB), after confirming
 no local Lean/lake process was running. Only task-local generated objects were
 removed; source, Git, pinned dependency sources and remote CI caches remain.
 Free space was12.01GiB. All verification continues on CI.
+
+### CI 42527885625 — 9 November (Moscow)
+
+Actual schedule cost theorem accepted, with only the three permitted axioms.
+Word assembly has one remaining elaboration goal: the partially applied
+`stageD` under List.map is definitionally the explicit geometric phase function,
+but simp did not unfold that partial application. Added an explicit function
+equality by rfl before the commutative-ring rearrangement. The helper adapters
+and other live-word obligations produced no errors in this run. Full live
+certificate still pending the next CI check. No local Lean builds.
