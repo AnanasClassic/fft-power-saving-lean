@@ -250,3 +250,16 @@ remaining definitional equality. Query/FullStep were blocked by Windows, so
 are not yet reported as accepted. The full word and final DFT candidate remain
 pending. The next CI run checks the complete root using the clean449-module
 cache plus the development cache, both solely on the remote runner.
+
+
+## Full-root CI42524907039
+
+Accepted the corrected Windows module (free shifts and whole-idle routes),
+updated Controller aggregate including stages_eq_target, Compiler and the
+actual owning Target import. Query exposed two technical finishing issues:
+its exact-price simp already closed the goal, while its main equation needed
+explicit reflexivity to unfold pivotQ after the phase rewrite. Removed the
+redundant ring and supplied the remaining reflexivity. The Fourier adaptation
+preamble used a module documentation command before imports; changed only that
+preamble to an ordinary attribution comment in all five files and the generator.
+The full finite Word/RawCertificate/Race.bound remain dependent checks pending.

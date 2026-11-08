@@ -42,7 +42,6 @@ def query_step (a b : Fin 40) (hab : a≠b) :
       (fun g t => greach_unframe_single _ _ hdim)).cast (fun _ _ => rfl) ?_, ?_, ?_⟩
   · intro φ
     simp only [Finset.sum_const,Finset.card_univ,card_zSet,nsmul_eq_mul,Nat.cast_mul]
-    ring
   · intro f v g t z
     apply State.ext_get
     intro i
@@ -53,6 +52,7 @@ def query_step (a b : Fin 40) (hab : a≠b) :
       rw [P4L.walsh_add,P4L.walsh_unframe]
       simp only [Pi.add_apply,Pi.mul_apply]
       rw [FFTChainDFT.PhysicalPhase.inverse_phase_cube]
+      rfl
     · simp only [if_neg hi,Op.eval,State.get_set_ne _ _ _ _ hi,viewAt_get]
   · exact thin_fresh b a 0 U
 end Geometry

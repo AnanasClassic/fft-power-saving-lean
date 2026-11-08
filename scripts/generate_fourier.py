@@ -47,7 +47,7 @@ for name in ['Goal','Merged1','WorkingTransform','Merged2','Main']:
   start=s.index('namespace SeamChain18',s.index('## 5. Number facts'))
   end=s.index('end SeamChain18',start)+len('end SeamChain18')
   s=s[:start]+number_facts+s[end:]
- pre='''/-!
+ pre='''/-
 Adapted for the paired 18-stage witness from the pinned Kartal FourierTB
 transfer at verifier commit195060b222d63c2a22cf8f5dd390f34e9b446323.
 The all-length Fourier reduction and computational model are inherited from

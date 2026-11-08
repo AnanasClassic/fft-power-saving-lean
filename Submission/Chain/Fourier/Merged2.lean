@@ -1,4 +1,4 @@
-/-!
+/-
 Adapted for the paired 18-stage witness from the pinned Kartal FourierTB
 transfer at verifier commit195060b222d63c2a22cf8f5dd390f34e9b446323.
 The all-length Fourier reduction and computational model are inherited from
