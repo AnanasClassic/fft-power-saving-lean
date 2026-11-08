@@ -37,7 +37,11 @@ as new work. A local reproduction is not independent human review.
   controller, tensor-engine interface, rate certificate and Fourier seam.
   The generic `Work/BlockAccounting/Moment.lean`, `Sharp.lean` and
   `Work/TensorProto/Strictify.lean` are copied byte for byte from this pinned
-  tree, with their attribution comments intact.
+  tree, with their attribution comments intact. The subsequent native supplier
+  integration imports the exact 326-module dependency closure listed in
+  `native_dependency_closure.json`, including the inherited OpenAI Fourier
+  reduction and the KLW sound checker. Each copied file is separately hashed
+  in `certificates/source_pins.json`; all original headers are retained.
 - [Jacob Sussman's lever submission](https://github.com/bigospeedrun/verifier/tree/195060b222d63c2a22cf8f5dd390f34e9b446323/submissions/dft/jacobalansussman-lever-2979-full-cut).
   Sussman supplies the formal engines, mixed live-kernel recursion, tensor
   product/strictification infrastructure and inherited reduction integration.

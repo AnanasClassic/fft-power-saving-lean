@@ -9,7 +9,9 @@ jobs:
   local-lemmas:
     name: Python certificates and local Lean lemmas
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
+    env:
+      LEAN_NUM_THREADS: 2
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
@@ -30,6 +32,16 @@ jobs:
         run: lake exe cache get
       - name: Build local proofs and audit their axioms
         run: bash scripts/check_lean.sh
+      - name: Build concrete native supplier and paired controller
+        run: lake build Submission.Native.Supplier:olean Submission.Chain.Controller:olean
+      - name: Audit concrete supplier and controller axioms
+        run: |
+          python3 scripts/audit_axioms.py --file Submission/NativeAudit.lean --receipt certificates/native_axioms.json --scope "modified native supplier; not GLiveKernelM"
+          python3 scripts/audit_axioms.py --file Submission/ChainAudit.lean --receipt certificates/chain_axioms.json --scope "scalar paired controller; not physical GWord realization"
+      - name: Reproduce native and controller Lean certificates
+        run: |
+          python3 scripts/generate_native_lean.py .
+          python3 scripts/generate_controller_lean.py .
       - name: Check deterministic generated sources
         run: git diff --exit-code -- Submission/ inventory_receipt.json moment_receipt.json certificates/
       - name: Require the exact final theorem

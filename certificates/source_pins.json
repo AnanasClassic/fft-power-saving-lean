@@ -1,5 +1,491 @@
 {
   "files": {
+    "Submission/OAI/Computability/FourierCircuit/Core.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "45fd659a66b3bb93ea9e55ebf0c06fde26a3038e2c7fb369cbd8dada371603a6",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierCircuit/Core.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/AddressTables.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "9c9da585854636dec2e136fd2086927b572be02d1f27c8b576fa280c774fa384",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/AddressTables.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/BinaryBasis.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6553614249c4bc80d453db04a584046f024ccb3a171ecd2c4734b8fad0ec9170",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/BinaryBasis.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/BinaryFFT.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fbad2c9d88d2f637b7be8fa439dce9dc61173f5e3dddbba44f3b31b31fae9da9",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/BinaryFFT.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/BinaryFrames.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6bae0c9538add4385b3fb114d1d367f025916a67138b5475c312a9d6a19483f8",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/BinaryFrames.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/BitLayout.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1149ae561d8fc6f3045371f02fadf8cde45a9f42b59bac528b034015aeb9399b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/BitLayout.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ChineseRemainder.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "3ef57d04c4a59ac15a386cab26469802a2a12e2a80e3e0e18e092d1048485077",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ChineseRemainder.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ChirpConvolution.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "f040bd2ea256bda881a4ab1d5059a3bbbff4c89f0b5ecb0f205d5d209efb739b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ChirpConvolution.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ChunkCompiler.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d7b62642b30eef9ca1b409aa19ed5a04ec55f4e73199f09087438a4613e53398",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ChunkCompiler.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ChunkPrograms.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1368431ebf14278d2e6175d931c306e9690f1767aec0752ca4da3f3c46e86cc1",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ChunkPrograms.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/CirculantUpdates.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1845c199041511fc2b9c2405cfdbbc435ce9f74d8c1c9ab8280daa5a93a242e1",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/CirculantUpdates.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/CompilerEnvironment.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7b5c3a0500d5405fc75804ca79adeb021b8823d7a1f6e7588ca2d56f6ce9f240",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/CompilerEnvironment.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/Cost.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "2f4a65c6c7de4e31d0ad8ef0f02d4fed0d1713956cb55c7211ffedf07d210c31",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/Cost.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/DirectionalWords.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e52f045bd1bf0a20753d06f67ca5c97e841591abdb2ced02d18d4af0ba6a62f8",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/DirectionalWords.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/DisjointIntervals.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "9b5f954b6f6bef079e8ddca634e95bb911a3d4a23f4844fedd72eb1827504442",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/DisjointIntervals.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/FourierCompilation.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b928b50e431d7a625543587211697f18cb1e227151de17fca2df0cbe43b003d9",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/FourierCompilation.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/FourierIdentities.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "80fca0677935620c74c25ad5c95f0158b117ea00e4b98ba218605294507f106a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/FourierIdentities.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/FourierWords.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "bee1dfaf2e696e820e272b48bcb8811fb7256ec2b7940a312cb6f7b45183b042",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/FourierWords.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/FrameLifting.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5627a2025ea55d2ec67c73ac572820f6b91cacf664f64b2b60da7e7f80e5ebcc",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/FrameLifting.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/Goal.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "0bdcb9a96d336cfff6076207d1ec9d56051958af40732d9cd41795346464fa25",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/Goal.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/IntegerPrograms.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "0641f19f37f7a3fd64f5b17eaabc2fd9f443e9b197b69dfdc0a623d372bd0c7b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/IntegerPrograms.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/IntervalEffects.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "8a4065fa5dd66f56bd905ee4f820f1f1de5cd5e076851323680be369fd196de7",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/IntervalEffects.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/IntervalPrograms.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "74f75d5ce49fab456a61de011ba33f9d00e55c705fee64d5319e9410dd60781c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/IntervalPrograms.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/LayerCompilation.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "aaf161a391dbafbca54deab113d1dea5f49d953256ff205396a44e7823cc5d2c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/LayerCompilation.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/LayerPrograms.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "51831abed937f870d5382476786dce40dc9cef3b704c9b81d805489ccec4a363",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/LayerPrograms.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/LayerWords.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "65b8646ae49223b5beb8b94a5d59d489add83483e63d62e13e1f91f24f2091a7",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/LayerWords.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/Layout.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "631d5e674c8cef589873338e5128d5ba306edc5b4ed87ba811f3b4e6323aac37",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/Layout.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/LayoutPrograms.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6c4184c615ff25d4a60a04a0e712f7e69ee2fed41b3468e8be4658568192ebb1",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/LayoutPrograms.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/LengthSelection.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "90b135e77a4449bac4841d55bca14bb527e4d7345d17e35b134dcd09e4d779e7",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/LengthSelection.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/LocalCompiler.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7049d62a6fe96c465f16dd4afaa6d246e3c4c0324ce22734575a8c7ef52bd2b9",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/LocalCompiler.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/LocalPreparation.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "186aac98c6dcd1158d3ad1372b575a698d4d4f01c506fa786679aeb640ad0496",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/LocalPreparation.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/LoopBounds.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6a30ae05b2f1f25c59a52706d26d143dea7e98e8c20faa9527e390a9850dfb70",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/LoopBounds.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/Main.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "16dac20377145c9f1f587283a4bee9b15ac3682e8138b67e32fb5e3551e2610a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/Main.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/MeasuredFit.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "0aae646a9aadfdb503a3f96a484b915ac29f294cfbb8339112221fcc492ec580",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/MeasuredFit.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/MeasuredPrograms.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "9812a5feded3e73d75db9acc59ebeedf8fa4df333eafc87d48236cd31c234bc1",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/MeasuredPrograms.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/Merged1.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "58dc082d8c091700a936523adc35653389118c49528578a2922c8ca5731faafc",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/Merged1.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/Merged2.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fb4c8545440ebf6d7b28950859fc3d354a55fa1107ce811018d27a2532a42962",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/Merged2.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/NetworkInvocation.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "acf7e4a1efb061f33346732782669662f73b17051e73c629c76b341bcd7537c2",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/NetworkInvocation.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/NetworkLabels.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "f6e6ac42e5497e7465470dc2f6616fedb32d3ef02cb28ab537b12c4cdd352e68",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/NetworkLabels.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/NetworkRoles.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6affc33247a98ae104620ff7e47774b97aa36396dab4895a08dca5c824a5211b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/NetworkRoles.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/NetworkStages.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "9a20cde5d040d27b29e956572c770fadf56f3956c6c364de00845514a945850c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/NetworkStages.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/NewtonFactorization.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "19acb204079ba55a978edebdea1ff9da6ec206547115d40f36f2ce297e9fbc10",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/NewtonFactorization.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/PackingPrograms.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "de3cb55483c5572eb27df1b2001bbd2b360e38d57c710968350dc4fde989d08d",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/PackingPrograms.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ParameterPrograms.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7949042fb7174719824de07ef4dea2608e9b4b40f18a7d25b521108951947fa8",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ParameterPrograms.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/PolynomialBounds.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "267189286e819abaaf6fa12df1e168cade86fcdfed3334862dc98575742da298",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/PolynomialBounds.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/PolynomialPrograms.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "06190490490ceacedb3e9a494e8b6bdc533a2cddd0a8b25f0d323ac1c6e15777",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/PolynomialPrograms.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/PowerTables.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "855dcad58bca197b0e7a9415f70b3fc56c73a4f39476191e14e629eb66d0e41c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/PowerTables.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/PrefixTraversal.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d8c3e9a7ba1f356b4671fe646c53872e08cf9452c877ff33b809a998fa3ff256",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/PrefixTraversal.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/PrimeSelection.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "184501d47199a889d5734754993bf7732739b595a652f3ee37b0186e70a3f66e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/PrimeSelection.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ProductMatrix.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7508fa85fc588567237dc8133e17a26d1883253df72f5e2f1459a16f33434a2e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ProductMatrix.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ProgramBounds.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "11e62914cdabf017e78ae16bfb0cd0540499bcae076deaf6d6da65fbf340ee50",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ProgramBounds.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ProgramConstruction.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "baa0080bd2969ab3e60745d5896b87cec47d616d6de07c65b57b69a333a2cf9a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ProgramConstruction.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/RAM.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "4eb8a7cbd1566b9a0537c3423e32528c3d6be691a4780bd549768a96e568fa8d",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/RAM.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/RecursionBounds.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "771a6cc5929af054f05ce46ed4cff453e427ca1aacdba93b14c15e28e99791b0",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/RecursionBounds.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/RegisterBounds.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "644cb7a927049cb66f5a1b5a75b247ddbf197eeff675f8735ca6ea68d019e6bb",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/RegisterBounds.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/RootPreparation.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5946d32844438ccad8bbfe3d35d566a875d8ececc6b2b9796f3a9d704449baf0",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/RootPreparation.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ScalarNetwork.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "78ce759ac0d97b25a3bfd438e37feccc88f710cc4895a5d4bb4fdcd638516f22",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ScalarNetwork.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ScalarPreparation.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1ccd21b0e297137ac1d461dbece8ad2c5071a70c217477f89cb0b305f84bc267",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ScalarPreparation.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/SectorAlgorithm.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b4b3cbdb01a231075aea3280ac106a9e167679fd66ddb1eff8099de36abd18bc",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/SectorAlgorithm.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/SectorIdentities.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5b6ff499f732bbab08c3a6e4df359a3c420c10104bce5343dcdd6fc74acff4c7",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/SectorIdentities.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/SectorPacking.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "63d906d8e7acb9c4906c476adf258098748a88f6b8d38321e7281ea82f11f123",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/SectorPacking.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/SectorPrograms.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "bc300e678cc509a312aa97b9ee8a28d90fdf7d348f7c1143a195c43dfafd02b5",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/SectorPrograms.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/SynchronizedAlgorithm.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "9ba8e0690e81b112eb678b9f1085e03d3150d0fb04fbe9fd9cd4daa62f712b3d",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/SynchronizedAlgorithm.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/TensorAlgorithm.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fb4adc41b061db2e4a6ea75c950726a71e3a038372f96a5c6796e6587fa71497",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/TensorAlgorithm.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/TensorCertificate.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e341459779d99f2b1757133be4fbcc7f50063699d5458450072c4fe497e17e07",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/TensorCertificate.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/TensorFibers.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d80a55f56422c26b470e2883e710755e907e0087810c9d35af1e51863c901858",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/TensorFibers.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/TensorIndexing.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "071d3fc97a0e2557934083d101cd7b87460f9a382e1869bac89b23fa9d74d90c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/TensorIndexing.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/TensorProgram.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "da4dfb1aec152f5b13dc08ee068f2249cd5afec8879a5a6926179c9e2663a613",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/TensorProgram.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/TensorSaving.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "2a7f54ddf2422e592f6ceb0ac270921190fb53018d4dc714befd359b06d32168",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/TensorSaving.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ToeplitzCompiler.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b86def89cfc657ba5b821e555eac3f0a8bd0dd3f8d1f3cddf9c76597faad06f3",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ToeplitzCompiler.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ToeplitzIdentities.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "f4cecf6568fc7665c855f09c408a66484766b7d2971b255e54c271cc324b60ef",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ToeplitzIdentities.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ToeplitzLayers.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "4888a25c1b6ce906fd8933cbeb62c193bee951979bf549b8d88a092fe8238196",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ToeplitzLayers.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ToeplitzPreparation.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "de3d135a65a103727b2dd8e487282dfd144ebb815e9adf282c7919e0406f87c8",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ToeplitzPreparation.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/ToeplitzUpdates.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "86655fd2b191b209a39bc2918861c507755aec8f3705eb7dfe44c9c4f5f6ce5c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/ToeplitzUpdates.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/TraversalPrograms.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7487ea74f4138de924f37807f4f78dfb9ca610046f07af3702b3bb1b520c5904",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/TraversalPrograms.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/WordCompilation.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "f1400c4cdb1299cc7b96f546d5b0605db422a802b1abe6310de2dd30d911e393",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/WordCompilation.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/WordPrograms.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7221727b2b2b0af9893c804d1ddd1d0309e989e2c6534fb3ba4224875d0efc52",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/WordPrograms.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/WorkBounds.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "9a40c8742e1b391af21e5adad77066ae1cf139021edc51c5e2d38d80d6c2850b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/WorkBounds.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/WorkingCompiler.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "2e72220031e7db36220ed5630154aed5b0f3dbc39c0acc74e300c0765bd5bac7",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/WorkingCompiler.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/WorkingPreparation.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "3a98ece7b943d58a2fc2a41afa0892185b29931d8c3a065df1e0a1eb6e55d875",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/WorkingPreparation.lean",
+      "transform": "none"
+    },
+    "Submission/OAI/Computability/FourierTransform/WorkingTransform.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "2662877aee02f29025343ec4a85aeca76b3ce4151595c31e9d179a83a46e9dfc",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/OAI/Computability/FourierTransform/WorkingTransform.lean",
+      "transform": "none"
+    },
     "Submission/Trusted/UniformFourier233.lean": {
       "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
       "prefix_bytes": 13034,
@@ -7,6 +493,108 @@
       "sha256": "53da3ac9efcafdd4773671b0dc151319f3a20f0018453261771dddf036f8fc01",
       "source": "challenges/dft/UniformFourier233.lean",
       "transform": "Remove only the two challenge placeholder theorems and retain closing scopes; definitions prefix byte-identical"
+    },
+    "Submission/WHTCheck/Solution.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "89fb8201f63ee69413d6772eb3ddef2922a02e1c762a90842b8c49617055df47",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/WHTCheck/Solution.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bank401/Adapt.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fbfe5e7a6974923b15486fb461a905fecc72ebd9be0ea3ad11d38571e3dd178c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bank401/Adapt.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bank401/Frames.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7587a9863f5d9f2b64bd554b40434106ffefd62a7e056f6e08a239c2ac9d88bb",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bank401/Frames.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Address.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c3536965f1de68f58fa35c372715abbc7585e6ab47e478d089785e27834a3dcd",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Address.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Batches.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "cf1f07ae034342c32b2976f4b92c2ceefa0e5b05c83e35e154ac12c47b1a5b40",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Batches.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Bridge.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6ea0db681c970891eb7e2d73a6401377cf874ea832dda13bc2d1097f9ab57376",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Bridge.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Engine.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "47e6ea19dcb5c25c19eff37c287009e6ac5194b6310f575100a5b8c3fcf4d3b8",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Engine.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Extras.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5ac897eeef7af8b473b380b43e0987be4d3e54f9b99db307a691ce63ffcee1b5",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Extras.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Frames.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c6fdf8d2dfbe2cae16d65776544170481286509ac95c66bed01e565db47ba07d",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Frames.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Majorant.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b9c32bff873c1bc334fd6181edf521d6e3e9b869c02ab557bf60f42ede2eccb1",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Majorant.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Paths.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5a1e769bf58d8611528b7786145df6ba3f56cd07dbde707bd5a5c216f7e6ffc2",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Paths.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Peel.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "44e7fe34b22b556306f4a74f5f76d6f770058b0f4e9a17780143667f4569cfc9",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Peel.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Port.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "933ee340224e1365c6088f52b92f8a6067bc61316deb73acf779700997f43537",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Port.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Recursion.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e440bd42abf6a46cca496cd66ca113ae0e7213b4b0d15f03f02b72d385f94da3",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Recursion.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Split.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "0ed08884c2a8bcecc17f81287b1f386fb6084f0bf16dd4d43897196c75187713",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Split.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/WHT.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e5c875ddb0d434a03955f9f8b15fe0649131e10b6ab56faeb96ed5321ad6ef28",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/WHT.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Block/Word.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "cb59fc59732ab06aec6d9bba12a462d529d73368a7151813817cbc32a91b3658",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Block/Word.lean",
+      "transform": "none"
     },
     "Submission/Work/BlockAccounting/Moment.lean": {
       "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
@@ -20,10 +608,1372 @@
       "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BlockAccounting/Sharp.lean",
       "transform": "none"
     },
+    "Submission/Work/BlockAccounting/Steps.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5778c91fe4ba5898975e02ae1eaa5bcea6619c941c4babdd444ba4ebdcb39fd0",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BlockAccounting/Steps.lean",
+      "transform": "none"
+    },
+    "Submission/Work/BlockApply/Copies.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "413daa3f2953324ef4ffd5c22f20cb9ae1ee874a8fb45fee9f6463127f15e2b1",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BlockApply/Copies.lean",
+      "transform": "none"
+    },
+    "Submission/Work/BlockApply/Exact.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fa51e1d848d10785fb4bc93595eaff495563ba377812fe84c0689d6f961b0a5c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BlockApply/Exact.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge/Cert.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e8f1248d7336f05ae9bb607f76ac315bd8fe1648634df145ca7b49bbf71a0e0b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge/Cert.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge/Inv.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b0df1588d91f105dcd56c6597b628764e44607414c06bf52ef9a99f97708a786",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge/Inv.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge/Net.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "2089e1d313a1564cfd5bdd47f04631146f7d0021f49a483bf5b95c74eb79039d",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge/Net.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge/Roles.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "8983d7787e27ae2af1302992734546e1fe85191a3c42e50262daf31d89d06b0c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge/Roles.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge377/Bank.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "4ac039667f93c74be253bb9bed2422615a3f41c8f84911fa43cf21a18c72a226",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge377/Bank.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge377/Sweep.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "03c8e943fa0330e83f4c7255627dbe353861702dfed500b26c857b12237ff254",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge377/Sweep.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge377/WinC.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "951ddbdc18e9322960e16f7131f005604cdb04af01b778432833f1961dc25074",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge377/WinC.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge401/End.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "61421ea4addf6d671bd4c21d391363637b5199370e0b7ccf21882b859ed0356c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge401/End.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge401/GGeom.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "2a3bf01c8d8ec1971ce5cfc1efa79d169cebd8eade909769e933922148abb709",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge401/GGeom.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge401/GStage.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "69f34510aca9a953876851342d052ae3971d93d76ddfc8e0bcef75cd1dfc06f2",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge401/GStage.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge401/Gates.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ef3c17d3e4a396fff2718f6e9e46e949bfd994adcc75cce502d20bcca603dce8",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge401/Gates.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge401/Merged1.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1874b517e9d0989c06bcd6f8bacf3b9aaea281cf986c21271df70ceb44de8160",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge401/Merged1.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge401/Roles.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ef6345788c39545e0d9d977eabb5a96ecac477467f35430dbefd7c2367a09f8a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge401/Roles.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge401/Sched.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e69bc4db968395b1db69dbdfed3036faf2bef1b8445ba0c9e96f4ca4671450d2",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge401/Sched.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Bridge401/StageE.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "23d15912b2796d30fd095afbed79e3f99bca67a4c0e4e0c4f4eda18cdc146689",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Bridge401/StageE.lean",
+      "transform": "none"
+    },
+    "Submission/Work/BridgeC/Bank.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fc0d910e1e6b9ca04999fd73bec4f5eb9329d6909bb680876d30ea6fae11fdcc",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BridgeC/Bank.lean",
+      "transform": "none"
+    },
+    "Submission/Work/BridgeC/Blocks.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "90e7a869a5cca88bea443b656ab1c456b78be1b8e207baae3a2f0754a43450ad",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BridgeC/Blocks.lean",
+      "transform": "none"
+    },
+    "Submission/Work/BridgeC/Stage.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5b2f3ed05f5d349ebc51bd60503b9d3019832853ffae07704b018e6a83f57017",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BridgeC/Stage.lean",
+      "transform": "none"
+    },
+    "Submission/Work/BridgeGeom/B2.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c3a4129df1a342849e49ccd326b702dfd2f5fdc7a05560c79c7bdaf1b1f5a873",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BridgeGeom/B2.lean",
+      "transform": "none"
+    },
+    "Submission/Work/BridgeGeom/Blocks.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d892faa57d7cb46ee6a9bd3ed07fdaaba8c68789d6e521afc8a095bc54c17693",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BridgeGeom/Blocks.lean",
+      "transform": "none"
+    },
+    "Submission/Work/BridgeGeom/Net.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6adbc8be9b702bf311e8fe3dd2dc51bdc44c93ff20ee0585b84fe8ec478f8754",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BridgeGeom/Net.lean",
+      "transform": "none"
+    },
+    "Submission/Work/BridgeGeom/Stage.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7f4fa6caa0ccfee8a636597d4458d93903cc0f9403d84a14d0e983e8a0ccb1fd",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/BridgeGeom/Stage.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Carrier/Glue.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "a652708d7c108c5279a006609088ea7224e572e4d20f7c458da912afd74dc863",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Carrier/Glue.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Carrier/Live.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7e830da401db6cd475ea26ce62c4f0e7fe6d2cc41a07aa197ae15937223b24eb",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Carrier/Live.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Carrier/Pack.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c85ef60da67b807ffbddbb808fb5d45aced2d7f5ac63c15d69ab63259229f7fd",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Carrier/Pack.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Carrier/PhasedInv.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "3ffa87fc4c38e34b642e90a8d031daef091d298d188696f9daec2db16750e063",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Carrier/PhasedInv.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Carrier/Phases.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "19697c70a4f2a58e6f5d4c395f1001ed823bb3c7ad950748f1bd5bcc26056cb2",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Carrier/Phases.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Carrier/Ring.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e7e48e9d946a289f0c59dc9a6c8c8e70804951438d111bffdf3297f715af2b15",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Carrier/Ring.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Carrier/Scat.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "8e80edbcff0c7e9c96f9ab28cf66db9b777ac84c99d17817af21db7db8403c05",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Carrier/Scat.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Carrier/Sched.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7b3484c038a1559091f486e1667e4c1457ab9c0abd75202c9a3ad4d18fcdaacd",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Carrier/Sched.lean",
+      "transform": "none"
+    },
+    "Submission/Work/CarrierCheck/CCert.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "58929cfac7e3a98304cc88cc4afd7bf64065f7eeeb9a090cda98233b358094cb",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/CarrierCheck/CCert.lean",
+      "transform": "none"
+    },
+    "Submission/Work/CarrierCheck/Mat.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7da5025dec4f38c0ac18c217afe23147bc01d3b4e6b009857db453ca27ab8ace",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/CarrierCheck/Mat.lean",
+      "transform": "none"
+    },
+    "Submission/Work/CarrierCheck/Roles.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6e537eede51affd50ed1867a044697d8c4d0ec877a13a356f514cd599b4a4ce7",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/CarrierCheck/Roles.lean",
+      "transform": "none"
+    },
+    "Submission/Work/CarrierCheck/Routes.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1640d33c3d3b05cb97175b43ead46c7f64d87d34f6e6505db2764b28d6abeb10",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/CarrierCheck/Routes.lean",
+      "transform": "none"
+    },
+    "Submission/Work/CarrierCheck/ScalDef.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e492e917ef9a88216ec37594b86b6c20e16976ba5f5109c50ad5fca9d123b2a9",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/CarrierCheck/ScalDef.lean",
+      "transform": "none"
+    },
+    "Submission/Work/CarrierCheck/ScalFin.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ac63aa00c395509a5f82f2932d2bc3bff1c0d7ceec515b8be71ab9c79ae38325",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/CarrierCheck/ScalFin.lean",
+      "transform": "none"
+    },
+    "Submission/Work/CarrierCheck/ScalId.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7b76830418fab4a68b990cb2ec66594e56ca823c1230e6c019840bc994e44337",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/CarrierCheck/ScalId.lean",
+      "transform": "none"
+    },
+    "Submission/Work/CarrierCheck/ScalOps.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7d2357d240fb025d957178a727ed0f6f994e935e309b3394b27925c9798aa49e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/CarrierCheck/ScalOps.lean",
+      "transform": "none"
+    },
+    "Submission/Work/CarrierCheck/ScalRun.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5c0fe7270f4c554fdb22593b9f170d6807039326966cb64b0bb440957e960e7b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/CarrierCheck/ScalRun.lean",
+      "transform": "none"
+    },
+    "Submission/Work/CarrierCheck/ScalSound.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "f5da2d57d36cce0556257cc880136344bb7e28a04d46dbe3dc2714f6bda03f3e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/CarrierCheck/ScalSound.lean",
+      "transform": "none"
+    },
+    "Submission/Work/CarrierCheck/Scat.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "59b273bd5c07badced9f3405466ceeb1b1ab599cc7dd6b0db20d7f846e517064",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/CarrierCheck/Scat.lean",
+      "transform": "none"
+    },
+    "Submission/Work/CarrierCheck/Valid.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "73929afeb6f4db829fd74e2a130e89c5f6dd114296a60a5cad405b32611fbcac",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/CarrierCheck/Valid.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Combine/Chunks.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ac1c684686f7c8ec832932e209e54da3d5eaef90686e80151545aad7b565dfba",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Combine/Chunks.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Combine/Hist.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "3e086ed030b80d76aa69c23e32e082fbc3134e68dc50b06126d070a905867566",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Combine/Hist.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Combine/Ranks.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "a8f4f2d392ca6a67533b682976367060e38d56157ec1b1839d84b9b4ca923033",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Combine/Ranks.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Combine/Split.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "4969e9fb6f71ad2c7f1f741fd53f2cb4590711165816f69a89c340c3150b74c8",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Combine/Split.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Combine/SplitDef.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ad2be95de73c1b108f2ff6ddd89b6c0025f5008880586e2f6331641f826db3f0",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Combine/SplitDef.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Combine/XCirc.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ddf6388748350045859096975367c76054e52902abb8b47650bab218d8655a99",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Combine/XCirc.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Combine/XG.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "0df71a496b6a1b7b0a2621210167874fbd2cac79273f838c36e93f41e1e2cbbe",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Combine/XG.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Combine/XInvocation.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c2bf96f3a0034f6f5efef685e06ce794029301d8b67285117a4fbd137fcd7932",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Combine/XInvocation.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Combine/XNetwork.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "cc0598e727537a504349a2e6dc809f2f89f8254f8f42de2e23a50f2c52b4363b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Combine/XNetwork.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FoldRate/Arith.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7bf3082c81b204ab3cbaa9335c1e3d4d4346e38209e88e86daa22a8218bbc57d",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FoldRate/Arith.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FoldRate/Group.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "344f1b35d5867af88510e64e3a9d14957f175c3efb99f991de9abc384e3c055f",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FoldRate/Group.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/BwdWrap.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e47a90b59f0448d20ece7c9786d65444e6ff5ef9a76580bab810794dbf53d460",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/BwdWrap.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104W.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "4531a34c8fd2faed81a732c963757379c6dea7e34898b31292126b82ee1a2ee5",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104W.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104W/D0.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e830a7ca3e3642d2bc00fb56206cd50ad252829575054b7f4693f899d72c4dcc",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104W/D0.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104W/D1.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "bda6f4586bb5b6f63b1d3c477127476c41eaf20bb9c501b93435bb5028376bab",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104W/D1.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104W/D2.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fb64a5123cf43c03f0e6178e8ea57f352b7e017baf634e25cf9eb7ad2812371d",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104W/D2.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104W/D3.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ebe35e9440d38efc37ac771be532e99d3ca6c57a8b9a9459b1a9681e9790c8db",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104W/D3.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WEnds.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "8583d3f51f72c3eb14db102e950394457cc0cd8a6348e94f023f522b426f13cb",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WEnds.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WHist.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ce87b0f0ed64b1c36c535329f15b4930822c0909e641c136d349ec41f978181f",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WHist.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WLab.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "27d9ff99d6b1d098de7fcb9263e7fb4529f526de91a9107b325a591970b8d4f6",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WLab.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WRes.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "50388ac55679d28496b55b69a6adc71771801ad7b5ed5569a93a7b48f35f9a8d",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WRes.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WRows.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5ae8397f1acd591525cc2358da3471e26a89f87c9ef91f11e2b1dcc4ab0c4d84",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WRows.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WScF0.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "66071bff373dbebe4b0ed5f38f0198dda628ca058c340c5acb87bd89a7d830ac",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WScF0.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WScF1.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "f49a0937d1e0485a8b6fb0755af26faa5bc89ffc93a6f59390906dedd52c2df4",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WScF1.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WScF2.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c61104ef4cb1b74055583a6a91003bb4c24fba542c2fa62742d9504a74a18b2c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WScF2.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WScF3.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "4b4a066213d942278e9314db00f9fa371fab680bb50e1f2349c53ce00b89ac6b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WScF3.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WScF4.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c882c32c37ba354fed4bef09ffaee32f850a971ebc3d06f9abcd581de4a1738c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WScF4.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WScF5.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1c4933dac5c6fce1dd81d71b608559bb7e64baf45b0ad2ec84b3a8d1babb6dd6",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WScF5.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WScF6.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ed5bd4f98fc68ad24714b9e505d9bb820b442b5842215bce6c6faf3ded00c19a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WScF6.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WSchedR.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7dd72d6fd6b4bbd689f36baf594eecab4d8ec7c35eb58ecaf63277ee500d3611",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WSchedR.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WTab0.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fa7d347be0e64e7eb2c4bd7f26195fa032503d64762d6fc057c6664f2d69709c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WTab0.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WTab1.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "53a605b7a7c1070fa0d674a6a4d8c8da338d22f51731c2a85b57577b3250e017",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WTab1.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WTab2.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "f494bfcc2c501f027e602cc6c16090872e8076275451b42001132b1b8a145917",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WTab2.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WTab3.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "febfa966fa0308643a83bc9ae898979937c5aa1d0a38e5adc43fd0ae705ecab8",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WTab3.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WWC.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "440ff5430a645d0079a52e3fa9584615dac9e6b20113a1793bd13d623436971c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WWC.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/Gen/P104WWT.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fe8ddd63317e9cd85611df14e4cb2e195ed6308f8b99d7d328a844fea1b31c54",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/Gen/P104WWT.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/KFwd.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7828e9c73f4da7f7018e2ab326a736122feac059ea35e6843c37d315f2f92aa9",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/KFwd.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/P104WGlue.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d5cd712e48487cb740c5874c7ec67beba398b498e3fb09930312b47ec3bc1f69",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/P104WGlue.lean",
+      "transform": "none"
+    },
+    "Submission/Work/FwdOnly/P104WPrice.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "19ba0994e3e6abecf4d0b8c5c032a08cf97218be0e2fb4ea10abf1d30b7cf93a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FwdOnly/P104WPrice.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Chain/End.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b0a6daf192db660ae6003977c912629292f009e22d968a212bdf5f38183797db",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Chain/End.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Chain/Geom.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1b3dfdd53c9e0fc757fbeb912cdebb9ce7ff18f35acb8afa2cb5bb0c0f06fd2f",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Chain/Geom.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Chain/Inv.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "9756d6ea2d9a9dfe6429b7a483d7dcfd8147bddb51770c6a95b7c1872797f3b5",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Chain/Inv.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Chain/InvThm.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b876f7f07e70abce5a15aa9660d7febae4563e78fab98cddec6cea7cc14c5d15",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Chain/InvThm.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Chain/Merged1.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6b73a7e43e8ae7287b09966461adac4ea85e9e20420e024805b595cee1a96159",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Chain/Merged1.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Chain/Phased.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6cc82fe0b6923236eb2e87b6959e0772cd49a88da724ec25d83eb3597dae760f",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Chain/Phased.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Chain/Stage.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "11646772b6a24b4f07412f01825fa0eb4099829f17a92cd3c711469b5e394a05",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Chain/Stage.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Chain/Win.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d3009482c691de7ea84038b452fafee1988b132015ff6dd807635ab2e0f1e9e6",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Chain/Win.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Chain/WinB.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "a90c7ba9231e9cc7b6f47a5c90219706bcedc6c85366cf78c0735253a212e59a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Chain/WinB.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Data/Count.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "61f6ed6e63186f93bab6242a96c91854a125da9cd0d8f0addc782d0bf4120713",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Data/Count.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Data/Glue.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e9730d07787dd88cfb10eae0c3c588b66f8ffd9aa65837ea9f776aa47a4b9e8a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Data/Glue.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Data/Price.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "031200bb59c9250eca58e4dbb23a31e5757f02c0161f57ed9ab75d029adddef8",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Data/Price.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Data/Raw.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "aba94a004c94dcae7cf3047c88a6da9561555f4ebe8ab92e299e6ce09ee7aa66",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Data/Raw.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Labels/Bits.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "9c62b041e30b979c532f9ba4c5b6b08d1f112cce76e51b445df0430d0d62d61e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Labels/Bits.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Labels/Canon.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ff08d91340a59de62cfc4f64e9e3a90ca52a0659ec4671b1ff3f9b9ed25dafa6",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Labels/Canon.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Labels/Def.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "9b55f55ead7af9b93b60a2368d893349b5885029dc929f84f336ab65f40b9b20",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Labels/Def.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Labels/Elim.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c06680ca475a8f1a8a8f4ab55f16c2fc8722c88944ace1da97ae81c982afb757",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Labels/Elim.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Labels/EndDef.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ffd0db99d0ef81262ee26f1da0a6e10e6e6bd20c5652151e8144819bdd5286b9",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Labels/EndDef.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Labels/EndSound.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "2c601e00c6d7829432bc30a13233954f569f53e3b1cee59eacac3b14b2da2bed",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Labels/EndSound.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Labels/Ends.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "0c1ce66c0757d9582f173961e384b11f497a1c4d55a608f0cdf818618ba04fd0",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Labels/Ends.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Labels/Main.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "8a23b9856196d8678b3495ec5d4d15778944cb3627312cded79d2966a3d229a9",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Labels/Main.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Labels/Route.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b7235815a22cc8bbd2034416a8d75d11afc6a19b8b6fcebab40ed8282342c166",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Labels/Route.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Labels/RouteRun.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "818eafca4bb24c0352379433a9583247e9904b38260e27b5d6e3bb592639d7c2",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Labels/RouteRun.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Labels/Sound.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "cd48af96f0707ba5170db1a5537f2c71f8a1b8453551bcabc6a95a7cb7466ff1",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Labels/Sound.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Labels/Spec.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "06b5266162ea13b6580717bbcbd65018c80aa9023eb23d4bb36d8c48974f762a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Labels/Spec.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Scalar/Bits.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5f00d45dd41052e24f4a8a81be92677d8ee16a43a759c175c957bccfc5ff5d3b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Scalar/Bits.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Scalar/Cols.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d1d3423582be52c915b581a2ae282d81e6efd3f0796aef4c4752b175aac4c7cd",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Scalar/Cols.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Scalar/Def.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "0e93d09ba521aec25625a0591fe1cd9f3bc4460128b672b18c46e7463a1708b2",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Scalar/Def.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Scalar/Id.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "25f7740c3368921b88ea859449f8675e2b8c3e675226e707ad907ebdf60a9de4",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Scalar/Id.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Scalar/Main.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fddee08d00aed9cfad4934b484a97e4d9fc457273ecc91d1c151170ec8afece9",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Scalar/Main.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Scalar/Mat3.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "8380589e10db08d53f9388029b4a51d5c9bfacb46edc6b05e1d3f997bccc8be5",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Scalar/Mat3.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Scalar/Merged1.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fc189e94da4b4db0111b21ca330f892b122236b55f1736ec227c4b41b21e05da",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Scalar/Merged1.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Scalar/Roles.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e47fd37ccfea345e51029d21f589cddef4368d9d129a7194b459f51139f74361",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Scalar/Roles.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GCert/Scalar/Seg.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "0e9ea9d7009e8da05d9ea162614f638ea7efacf6e2e5ede123b82f184dda5e3c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GCert/Scalar/Seg.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/AltBlock.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1511a915ea619f5f98becfc7bce82c8309e87cba18329c228f625582070ecfd6",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/AltBlock.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/Base.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "88e615db6484bb7b4babd15572e8967147fcbfe8e30e58f75bbd1151bfcbed4e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/Base.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/Basic.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1d321c3ea994a4d7390b01e8dea28a0871f4990a81bb46e325f42cebef761d91",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/Basic.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/Climb.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "a77dc7738b6a0565b67ab55a25aaaecda8494644d1b5f3c9872c5d1b4c662393",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/Climb.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/Core.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "485f8576b7a02f6740309af4c24c3c25cfc22e07c1e8074be2e5a0b73b0ab84f",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/Core.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/Cross.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c71968e4bb172bae75d2704ff79ddafe6430f2b91225518539c30524fa32a367",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/Cross.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/Entry.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "f8410ddd9296d555a2e59012202a9e826a35c1ad2195480cbc2e70df62f6f648",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/Entry.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/Fibre.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5a28e4a399f776e8c7b516076f86c05fd20a85cd5ce92e3cccb4bab29638beec",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/Fibre.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/FreeLift.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6b660d601cd7272df1a098dd1b95936046ff3c0a80bba83247436348d3072c8b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/FreeLift.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/Old.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b39a8c4360ba2cd3f3821782ec0f764d595d943590860d068af73069aa6fae97",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/Old.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/Pair.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "911df2bcb45849186c3e185f42a90cc7b81fb00111b57409b04ec4642aa5c536",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/Pair.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/Rep.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b1b7822969958bbc0d3149f655dcad97259700ed6b6cd416e2bafff1e20accaa",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/Rep.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/RepFree.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d2eb721dcefc2fe9b144486b4c17de7e6052c196672629ae005742be040ffa70",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/RepFree.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Clifford/Step.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "26ac58af30974eae207df0bf2aaf002fd8a8c6e96a04a0ef83c4ed7abfdd3d74",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Clifford/Step.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Engine/Adapt.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "eecb50aa087a8662c033d56563230b01b543063a3205c692042d9805cee320ab",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Engine/Adapt.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Engine/Cert.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1232b41f4f3df8d5290bc98eb01086998f44e255612291a35c93c69a67278dce",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Engine/Cert.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Engine/Free.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "13503228786e9250d6df72e5bd580b824dd740a87bb95aeba80e582af141edcb",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Engine/Free.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Engine/Group.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "f54afeb8043e73f882694c57f49f400479cc8f37c3abdf679576e2daa2eb748f",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Engine/Group.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Engine/Letters.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c556529f3b7a2107b723c050f15a9de2d1d4bff06cee47b667c4df13e0b21fde",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Engine/Letters.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Engine/Level.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5ce2c701cbcab946e152d549fa2b0f327658cb6f75c2616d8dee1a9bc71c881e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Engine/Level.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Engine/Main.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "f0e07f5fc2a677672acb6469de6d0eb467a8ae970f4791e9f0b54b7323388b02",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Engine/Main.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Engine/Over.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b2747c1237ca74a12a1d91d337ec785d33d90ad480601eced1a16ad9ca7c8000",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Engine/Over.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Engine/Recursion.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "171d992c02153bc90102a3cc927a690e9a690e4149c4c861799b5edc32590a0a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Engine/Recursion.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Engine/Route.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "2178d44f78de6da1a8a5d203b3c7dad2baef6eaee75fb9c96bfcd6ad5d457666",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Engine/Route.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Engine/Sweep.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "85b7fe9adff5570740c8c059f1cae8b457407cc325f64be557a26be1282ea79a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Engine/Sweep.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/All.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1ea7531101d6c60903cfc4317f9a411292fd9afa082b4a02896abc659547d22f",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/All.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/BXMap.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "9a1e628e4d78b0c75b17e19369c32b5a46ad73b17409c291e16a01bf85ecbfd4",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/BXMap.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/Calc.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "584c439710e2a0b9c45c2bcdb1df48c571d9fc71ccedda9326fd18ad6d7d524f",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/Calc.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/Conj.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "313d2bba299893c38257dd1b51c7743909daf9a6bc3415569f062bbc43fe1255",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/Conj.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/ConjB.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ec14bfaf44b24dc924889ef5cd8fbc202b4a7fdc8fd49a346697b0fa48ccabae",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/ConjB.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/Embed.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "9155ffcb0e04a4695cd8ae6e4afcadb8174523320ee06e3dc854ff080ec6c84d",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/Embed.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/GCalc.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "0a0603fdc32ef75c0750a73b067cb77137bf7c9686d38c72d66c35da4bdc28e2",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/GCalc.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/GCarrier.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "2b0fafa9f71187f4bfdad8306c7dad1397877d5340f68d50f9da02c195357dc4",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/GCarrier.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/GXMap.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "4a9e6909f034987660ae001046edf8898a15dd0f90616a1fc5842fe413464b47",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/GXMap.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/GeomOld.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "60cd0fd08ea3cc1f1a2e73774d02a2e81519083a27ec8da93717f5b8a909a85e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/GeomOld.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/Maps.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5797f7e4a701ea0d9d3dc7165e9a1cf5bbb5e50797cc6386fbd148e4521e493b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/Maps.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/Proj.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "aa9168b3fe27a987a01c552d592d02b193b8bb00bf586a0f42c2698ea4991f46",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/Proj.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/Quad.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "694bff6cc4c7ade3713d1b0e96d4a9d10441cdc9a83c90cb273249d14dbb862e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/Quad.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/Sched.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "941e832ab42dc9ba9e780b05f495e37b999b582e965056a6b601e4092e045b77",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/Sched.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/SchedR.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "23413ff8859c7268bc8e018cb6b7702452c3bf87e67cf1284b767c49dad1432d",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/SchedR.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/StageA.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "474fc081738f3734d9258b8e8ceb86dfb594b401cb236c70b1b63cca56585ac0",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/StageA.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/StageB.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b0bc4e68e7d83802a36bec40ab236666035c84874d65e4576894b36f4b506875",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/StageB.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/StageBFull.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "0fe780e8263e2e2877a1da1cb587a072f9cf85ca33a02bf5c8382f3c0352de64",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/StageBFull.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Labels/StageBSem.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "36c0ddf5c940b61a97d2ad43cb9f84caa063a6126b3eff0ea4e6d9d4aa408dfe",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Labels/StageBSem.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Top/Api.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "3a5232e74185b28192d7a016bce4f0d939a6518c4bcd0ce20ee8d90db9668a1a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Top/Api.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Top/Assemble.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b1d4a10c464a98030f0025e522410d5ef921ac152938859b35e21a87f4d40a35",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Top/Assemble.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Top/Menu.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "79c5583b48260828a565e48d136319a3023ac78f2eb1bbe91dffe4c4d8cb831b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Top/Menu.lean",
+      "transform": "none"
+    },
+    "Submission/Work/GFrame/Top/Stage.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d67a5048fb5f88e8ab2a2bacd88513317b868e32b1c7baa482b7e772a8cf848c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/GFrame/Top/Stage.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Gauge/Defs.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6a311b389167616f15e22cd4c5a0cdab7816a5ecc931b7184364664d47f243a1",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Gauge/Defs.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Gauge/ECheck.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7c47db52a97a949d7bab1aba049d976ea3bad4434c678e93867e4d02e453f3ae",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Gauge/ECheck.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Gauge/Glue.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6c2d506935b76019a04253ab3dab4622564659657c8c30a8ddb344f7d208ef32",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Gauge/Glue.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Gauge/Iface.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "caa6e070a3e0fcc3b4e4b2e92905a4dab899ed10245bac7af0765f229ad44a93",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Gauge/Iface.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Gauge/Inv.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ba16c21103f99a1bbd4f68b6e0ec2c798a46c6a59dcbae3ca902dcfecdcabc1e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Gauge/Inv.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Gauge/Labels.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "4c86f86790de3d7081ace9fe7ee0a451b2eb6375a83b576ef9b7d77e118e8ce2",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Gauge/Labels.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Gauge/Step.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "069ed4375a2f904918c34f306ce3d4a51ff446daef7fc2978545480cf3c0af22",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Gauge/Step.lean",
+      "transform": "none"
+    },
+    "Submission/Work/KLow/ExitEnd.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b261c1dac6723d255c0f4b6fcc756d6e1c751ab5c69ca450a8de7e5df818d55a",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLow/ExitEnd.lean",
+      "transform": "none"
+    },
+    "Submission/Work/KLow/LabelsX.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d350a415a2c0d22d19bfb9fdf1294c74439623f38d6060ae4eb790aae4199514",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLow/LabelsX.lean",
+      "transform": "none"
+    },
+    "Submission/Work/KLowW/Data.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ae2b25b61624973a521c435dba18e4b4ba09c941f9b4cbda493be4eafd7ef88b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLowW/Data.lean",
+      "transform": "none"
+    },
+    "Submission/Work/KLowW/Inv.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fd4dfdba195cf737dd50a74b498e530e8bd2fd63a50a674fe1439f94b87dfad7",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLowW/Inv.lean",
+      "transform": "none"
+    },
+    "Submission/Work/KLowW/InvMain.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "be1ca5e505336321a6778107147fab85edd49958322524eb86902f3da8a64456",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLowW/InvMain.lean",
+      "transform": "none"
+    },
+    "Submission/Work/KLowW/LabK.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fd426346600a69926dc07ab7d03b430669fda566d3587fff4d318be79845a19e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLowW/LabK.lean",
+      "transform": "none"
+    },
+    "Submission/Work/KLowW/LabSound.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "8072a816627f0b1ad2ab0ebb5096c6e3f6aeb939f8d9c5d8f1368a53849f8288",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLowW/LabSound.lean",
+      "transform": "none"
+    },
+    "Submission/Work/KLowW/Main.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "16bdd3f09f4e63cacd289f8200881769520090259ddad9b7de145a61a23057b9",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLowW/Main.lean",
+      "transform": "none"
+    },
+    "Submission/Work/KLowW/Route.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "24552daf23fcd000e423a8f670acac839d8b00b4689885917168b05a1174fb19",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLowW/Route.lean",
+      "transform": "none"
+    },
+    "Submission/Work/KLowW/ScalK.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d7c6cf1dc1f843e3fa0481b4b35e9ac4c29140109e0ad7fccb1dde4eb5474da5",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLowW/ScalK.lean",
+      "transform": "none"
+    },
+    "Submission/Work/KLowW/ScalSound.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b686233c1ee6c389a9a8359447b8b82835175cfb6033a3cca4d3ee232bf6b811",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLowW/ScalSound.lean",
+      "transform": "none"
+    },
+    "Submission/Work/KLowW/Win.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "8f0f56e9407ebde3d0a5bea266a1aab94ba8c9602dcac9ed78ef643f0237819d",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLowW/Win.lean",
+      "transform": "none"
+    },
+    "Submission/Work/PWGen/Roles.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c55ad26588dc96bdcbf271ccc28fb0d8c5e58450e24901e9ce6f3f193aacd650",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/PWGen/Roles.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Reframe/Basic.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c8c168e5b659ea53f7e9cc934774e6423e95808469fcc2e40a5f53776c45810e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Reframe/Basic.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Reframe/Erase.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "47c504188693c54e37a1c221c617d6c88fc9d06c6111ac800053acb9d1687e9b",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Reframe/Erase.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Reframe/F3.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b2c85ee15db7bedff16c1d5ccabac452851de786de4e310786d59252c76700c1",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Reframe/F3.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Reframe/FrameAlg.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e33e8b795bd5f49c27bed9945a687cbb2e5bd64a7e61c584d0fc14d9f4904515",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Reframe/FrameAlg.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Reframe/Geom3.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "378c4dac3c7ede70f821cedb20ef04df4c7a1c484e8eecda93a5d0b0cd4f25de",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Reframe/Geom3.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Reframe/GeomBase.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6fc79fb0c6c911d6922d347fa67042b1341e2eb4aff28236de7b009fa66a4b16",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Reframe/GeomBase.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Reframe/GeomNet.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "f1f6fb9cc751969c05caefa3175bed4382815d0979f1d299754f530e4be13bbb",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Reframe/GeomNet.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Reframe/SCert.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fff93e38e9f9c1d83a749c1be3716a49cd1400f0c7d2db704e5975439481d9c5",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Reframe/SCert.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Reframe/SNet.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "5846bd6e14d4b8022cc7fff56fb8c005003312c276019158e86c02ef0ec0c757",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Reframe/SNet.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Reframe/Shared.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7e4506a8df7e7e8792b7ac8736da7a8457cbcb4ea125c2ac534038c73ac4f143",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Reframe/Shared.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Scratch/Engine.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e8621d52ff6a0a6b058a1a947eb37a68ef9062f017429ec0e81eedc96737cedb",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Scratch/Engine.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumChecker/Bits.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6fd196492a6a3394a03b8bb0b45ed93905f19bf9391952b51d774e9f1d0077c3",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumChecker/Bits.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumChecker/Check.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "e74782bb97b326ad480ce0140a1eec75745d823a9307535200f1b17ca9d81028",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumChecker/Check.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumChecker/Circ.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "a03b45f3cee3b2b0b76d843890f0ab753498eb22404d15de0428567c3c892691",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumChecker/Circ.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumChecker/Impl.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d6e46c1569632585e58cc73467f7f9ece2943ca7a4ac26cb64d3c6b942a61fc1",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumChecker/Impl.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumChecker/Mats.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "0964faaa038564390bfb57eb0cbf7b157cb82bbcd498663b7f5677bf29c4faf4",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumChecker/Mats.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumChecker/Net.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "59c5875970926aa3ad69665c61e0a1164fbc9d8e18a08921062e679706bc8298",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumChecker/Net.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumChecker/PCert.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c469990119b0d87dd79e93f268b13348da55d8c13a2d3a1312fe50b267077523",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumChecker/PCert.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumChecker/Phase.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "4c2132d8bd37ee2fabb9f01ae7bdf0a93ad16c7a1c0ba771c0c40068655e8ad1",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumChecker/Phase.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumChecker/Proj.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "a6ae0ad436f6693d099fa57eb12504b44a8b2b2517e35502d31ea5a123bb7a79",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumChecker/Proj.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumChecker/Scalar.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c89a73d4c7ce407ac61263b8dd5ab62482303f4c8077c3dee5fbfbabbabf7840",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumChecker/Scalar.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumChecker/ScalarDef.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "d936ac4113390e9e28a3db030ef9e7ed1ebffe7f74c58ae2b5075c79806f0863",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumChecker/ScalarDef.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumChecker/Sound.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "a32f812d6448e837b9398daa7c26df3f6b5b5092643c6390f1a533396424a882",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumChecker/Sound.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumStructured/Certificate.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "497682c51b01ddbb133e835d2ac5d1cf560361d27333cbba6b3ec2be7f8a2611",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumStructured/Certificate.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumStructured/GPath.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6ce463d3b0dd5fcca3f202be2932dfc684f8c8b5bf3e06f061f786828237b121",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumStructured/GPath.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumStructured/Invocation.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6f0682e19a98cc6c84946302f7a05a52e1a91325191fd7e361382a16fdcdb31c",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumStructured/Invocation.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumStructured/Labels.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c2cea8a534954f14a3725311210b2028576cd3dbb16fb2dbfa425dc3cb03f0eb",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumStructured/Labels.lean",
+      "transform": "none"
+    },
+    "Submission/Work/SharedSumStructured/Network.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "6ba64486bc432e91b12b97026f37296106f812855d90b21225fe27d3fef172cf",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/SharedSumStructured/Network.lean",
+      "transform": "none"
+    },
     "Submission/Work/TensorProto/Strictify.lean": {
       "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
       "sha256": "93af61cb95b9e3474a641bf075edf3604511e82f9ad0fad5808205402cb19c2d",
       "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/TensorProto/Strictify.lean",
+      "transform": "none"
+    },
+    "Submission/Work/XHost/Frames.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "c9cf4ebe933703c9aab9c9f04cddc4b43cd5b1da5b4c23154a8f68bc9de0c8f9",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/XHost/Frames.lean",
+      "transform": "none"
+    },
+    "Submission/Work/XHost/HRoles.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "67b3c4ccc3b5692da9105791eb18f95dd22a9722fe4c0fe4270f7b6840f000f6",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/XHost/HRoles.lean",
+      "transform": "none"
+    },
+    "Submission/Work/XHost/HSched.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "716af3e7d4dc2b0c9232a84d2e9c954507a363c244c94c77bace3723f7b670eb",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/XHost/HSched.lean",
+      "transform": "none"
+    },
+    "Submission/Work/XHost/HostK.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "595a84d2ca7c46e8f14c2481d602a0d1c07d6c918547d9fc65f8f041ab5b1eeb",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/XHost/HostK.lean",
+      "transform": "none"
+    },
+    "Submission/Work/XHostD/FramesK.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "29a555e189e3d50a28dde383e05d1eedb4ac2e792d3c36a26101f446a76f0b9f",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/XHostD/FramesK.lean",
+      "transform": "none"
+    },
+    "Submission/Work/XHostD/HGeom.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ec32c9b59ebc4c4e2977c583bb386086931ee3d6a720fd48b7ae8ce1430dffd7",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/XHostD/HGeom.lean",
+      "transform": "none"
+    },
+    "Submission/Work/XHostD/HSchedD.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "8a532e066451aaeab31d175caaaf92f785ea0a9b516fe54e53bcde465ff83900",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/XHostD/HSchedD.lean",
+      "transform": "none"
+    },
+    "Submission/Work/XHostD/Merged1.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "b44bbd3299218ebf0c8fcdfd5721939b18a3277532956277bb9ae8adb15217fb",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/XHostD/Merged1.lean",
+      "transform": "none"
+    },
+    "Submission/Work/XHostD/Prov.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "8954a935a2197a22d4f7737823fdfcb9f46d2bc001a584ec131aacbcb55c5db3",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/XHostD/Prov.lean",
+      "transform": "none"
+    },
+    "Submission/Work/XHostR/HSchedR.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "9ee4c25c0790893d98421913f8efa6459dd994aea6ef27b063b6a19756433a54",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/XHostR/HSchedR.lean",
+      "transform": "none"
+    },
+    "Submission/Work/XHostT/TProvW.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "a93f4cb3b2637a72fc02a4d642ec89a1f463428ed429dc2cc64f3cad8d4c1537",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/XHostT/TProvW.lean",
+      "transform": "none"
+    },
+    "Submission/XExit/Halves.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "21f81d7a203186c5aa211a36bd11f2ecc62be75d5a2d04eaaf3c6c271593e5e9",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/XExit/Halves.lean",
+      "transform": "none"
+    },
+    "Submission/XExit/Pack.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "80487226d6396ca4484e0287aef97f26d1ed7eda4eb8f8945754450691764cc6",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/XExit/Pack.lean",
       "transform": "none"
     },
     "research/vendor/chain-ADAPTERS.md": {

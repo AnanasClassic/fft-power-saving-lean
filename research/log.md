@@ -59,3 +59,46 @@ The finite witness must be bound to the trusted operator language before the
 proved analytic certificate can imply a program bound. Reuse the pinned
 forward-only scalar/warp validator and live-kernel machinery. Do not spend
 another pass merely changing an old Fourier theorem's numeric constant.
+
+## Continuation: native contract and literal controller
+
+- Imported the 326-module dependency closure of the pinned supplier interface,
+  preserving upstream source bytes and credits.
+- Lowered the reconstructed word into the existing KLW language. The exact
+  baseline lowering is checked by the generator; only event segments 3 and 4
+  change. Five midpoint rows change (569,575,576,732,794); the row states rejoin
+  after segment 4. Literal Lean data contains 22,836 events and 3,449 native
+  paid blocks.
+- Lean kernel accepted Native.Labels.labels_ok (all frame transitions),
+  Native.Scalar3.scalar3_ok, Native.Scalar4.scalar4_ok, and the native rank
+  histogram. Their axiom reports contain only allowed axioms.
+- Building Native.Supplier: the universal forward warp certificate and its
+  GInvEW invocation interface with the new exact cost profile.
+- Implementing the literal rational paired controller as an explicit scalar
+  program and stepwise polynomial certificates. This layer will be connected
+  to the physical GWord semantics; no scalar certificate alone is called
+  GLiveKernelM.
+
+## Storage incident and controller checker repair
+
+- The local Mathlib/dependency cache, toolchain and temporary clones occupied
+  approximately 15 GiB. Monitoring was inadequate; the user reported concern
+  with only 2.9 GiB free. All project compiler processes were stopped.
+- Removed the disposable 2.1 GiB Git object store of the clean, pinned
+  integer-mult-bounds clone, preserving source files and a provenance receipt
+  in the workspace. Removed 1.7 GiB of regenerable Lake setup JSON and C
+  scratch, retaining all Lean objects and every source. Free space settled
+  around 7.5 GiB after compiler/swap reclamation. No other projects were touched.
+- Heavy native supplier builds move to private GitHub CI. The cleanup script
+  removes only derived build scratch, and its --check mode requires 4 GiB
+  free before optional local builds.
+- Direct per-event polynomial tactics expanded the controller to 230 MB.
+  Replaced that abandoned representation with a 3.9 MB literal sparse
+  certificate. Proved exact sparse addition, scaling, phase reduction,
+  stage-monomial normalization and evaluator soundness in Lean.
+- Kernel replay initially failed at mergeSort's well-founded computation,
+  although compiled evaluation returned true. Replaced it with structural
+  insertion sort and proved the same monomial evaluation by permutation.
+  Cert00 (first 40 events) now passes decide +kernel with only allowed axioms.
+- Full scalar controller replay and the universal native supplier are still
+  being verified. Their completion does not by itself close GLiveKernelM.
