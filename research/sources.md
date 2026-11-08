@@ -93,12 +93,28 @@ instantiation, project packaging and audit are prepared for this research
 request with OpenAI Codex assistance. The initial local package's author is
 not inferred from its presence in Downloads. No inherited work is rebranded.
 
-The board was inspected for overlapping results. The inspected page listed
-Kartal's π-related result as Lean Verified and a higher `0.0031484962` refile
-as Claimed. This is a dated observation, not a current-record guarantee; the
-record must be checked again before any submission. The new target being
+The [exact-DFT board](https://bigospeedrun.com/exact-dft) was rechecked on
+9 November 2026 (Moscow). It listed the `0.0031484962` refile as Lean Verified,
+crediting Halit Ziya KARTAL's proof and MultiAgency swarm's extraction of its
+existing rate, along with the inherited circuit/engine contributors. It listed
+Kartal's `0.0031415926` entry separately. This is a dated observation; the
+record must be checked again before submission. The new target being
 numerically larger does not establish novelty, priority, authorship, practical
 speed or verified-record status.
 
 Root LICENSE is the inherited Apache-2.0 license; relevant upstream notices
 are retained in source headers, `research/NOTICE.verifier` and vendor notices.
+
+## Private verification profile recheck
+
+Official verifier main was resolved to
+`e4195cbf8c813772227a5fe4fd21c03c0a1a4fa4` on 9 November (Moscow). Its changes
+since the proof-source pin `195060b...` are research/audit files; the target,
+Lean/Mathlib/tool pins and execution/controller files are unchanged. The private
+preflight workflow checks out that complete immutable official commit and runs
+its unchanged controller. Authentication is available only while fetching this
+private source repository during prepare. It is absent from source compilation
+and the controller additionally clears the proof sandbox environment.
+
+A private `test_only` preflight, even if accepted, does not grant the public
+competition's Lean Verified status or authorize publication.

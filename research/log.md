@@ -320,3 +320,17 @@ but simp did not unfold that partial application. Added an explicit function
 equality by rfl before the commutative-ring rearrangement. The helper adapters
 and other live-word obligations produced no errors in this run. Full live
 certificate still pending the next CI check. No local Lean builds.
+
+### CI 42528569545 — concrete GLiveKernelM accepted
+
+At cff79216fb4f5632d8c30a7bdd6f0d3cb4b725a5, Lean accepted
+`OAI.PowerSaving.ChainNet.wordCert`, including the proper physical word,
+exact opcode-price sum and actual `MX.GLiveKernelM`. Its printed axioms were
+exactly propext, Classical.choice, Quot.sound. The contract holds on arbitrary
+arrays, so it supplies the engine's clean-scratch-input contract as well.
+
+The next module Count had one definitionally reflexive residual goal: a
+composition under a finite sum. Added rfl after sum_ofFn. Remaining finite
+certificate/engine/Fourier/root modules were blocked, not accepted. No local
+Lean builds. Added a manual private test-only workflow using the unchanged
+pinned official verifier; it is not an official public submission.

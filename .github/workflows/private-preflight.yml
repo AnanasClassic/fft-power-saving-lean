@@ -1,0 +1,112 @@
+name: Private exact DFT verifier preflight
+run-name: Private verifier at ${{ inputs.commit }}
+on:
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: Full source commit to check privately (no publication)
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: github.repository == 'AnanasClassic/fft-power-saving-lean' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      BOS_VERIFIER_COMMIT: e4195cbf8c813772227a5fe4fd21c03c0a1a4fa4
+      BOS_REQUEST_PATH: ${{ runner.temp }}/fft-private-request.json
+      BOS_SUBMISSION_COMMIT: ${{ inputs.commit }}
+    defaults:
+      run:
+        working-directory: official
+        shell: bash
+    steps:
+      - name: Check out unchanged pinned official verifier
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: bigospeedrun/verifier
+          ref: e4195cbf8c813772227a5fe4fd21c03c0a1a4fa4
+          path: official
+          persist-credentials: false
+      - name: Test trusted controller
+        run: python3 -m unittest discover -s tests -v
+      - name: Generate exact private test request
+        run: |
+          python3 - <<'PY'
+          import json, os, sys
+          from pathlib import Path
+          sys.path.insert(0, 'scripts')
+          from submissions import make_request
+          submission = dict(schema_version=1, problem='dft',
+            bound='3363623/1000000000',
+            repo_url='https://github.com/AnanasClassic/fft-power-saving-lean',
+            commit=os.environ['BOS_SUBMISSION_COMMIT'], authors=[])
+          Path(os.environ['BOS_REQUEST_PATH']).write_text(json.dumps(
+            {'test_only': True, 'inputs': make_request(submission)}, indent=2)+'\n')
+          PY
+      - name: Prepare exact sources with setup-only private authentication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import base64, os, subprocess, sys
+          env = dict(os.environ)
+          token = env.pop('GH_TOKEN')
+          auth = base64.b64encode(('x-access-token:'+token).encode()).decode()
+          print('::add-mask::'+auth, flush=True)
+          env.update(GIT_CONFIG_COUNT='1',
+            GIT_CONFIG_KEY_0='http.https://github.com/AnanasClassic/fft-power-saving-lean.extraheader',
+            GIT_CONFIG_VALUE_0='AUTHORIZATION: basic '+auth)
+          subprocess.run([sys.executable, 'scripts/verifier.py', 'prepare'], env=env, check=True)
+          PY
+      - name: Build pinned tools and trusted dependencies on disposable CI VM
+        timeout-minutes: 45
+        run: python3 scripts/verifier.py setup
+      - name: Official Comparator and Lean axiom audit
+        run: python3 scripts/verifier.py verify_lean
+      - name: Preserve early Lean receipt
+        if: always()
+        env:
+          BOS_RECEIPT_STAGE: lean
+        run: python3 scripts/verifier.py finalize
+      - name: Upload early private evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: private-verifier-lean-${{ github.run_id }}
+          path: official/artifacts/
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Independent nanoda replay
+        run: python3 scripts/verifier.py verify_nanoda
+      - name: Finalize private receipt
+        if: always()
+        env:
+          BOS_RECEIPT_STAGE: final
+        run: python3 scripts/verifier.py finalize
+      - name: Upload private receipts and logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: private-verifier-final-${{ github.run_id }}
+          path: official/artifacts/
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Require explicit accepted Lean evidence
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          from pathlib import Path
+          sys.path.insert(0, 'scripts')
+          from verdicts import admission
+          r=json.loads(Path('artifacts/receipt.json').read_text())
+          assert r.get('test_only') is True, 'Private preflight must stay test-only'
+          assert r['kernels']['lean']['status']=='passed', r['kernels']['lean']
+          assert r['axiom_audit']['status']=='passed', r['axiom_audit']
+          status, reason = admission(r, ['Race.bound'])
+          assert status=='passed', (status, reason)
+          print('TRUSTED_ADMISSION_POLICY', status, reason)
+          print('PRIVATE_PREFLIGHT_LEAN_ACCEPTED; official board status requires authorized submission')
+          PY

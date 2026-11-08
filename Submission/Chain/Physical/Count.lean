@@ -55,6 +55,7 @@ theorem count_eq_sum {A : Type} [DecidableEq A] (r : A) (xs : List A) :
 theorem mainMultiplicity_sum (r : ℕ) :
     Schedule.mainMultiplicity r = ∑ i : Fin 40, if 1+8*(Schedule.targetStages i).length=r then 1 else 0 := by
   rw [Schedule.mainMultiplicity,count_eq_sum,List.map_ofFn,Fin.sum_ofFn]
+  rfl
 
 theorem main_rank_bounds : ∀ i : Fin 40,
     1≤1+8*(Schedule.targetStages i).length ∧ 1+8*(Schedule.targetStages i).length≤145 := by decide +kernel
