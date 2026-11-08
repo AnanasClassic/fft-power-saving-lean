@@ -10,7 +10,7 @@ A thin query `Y += Q⁻¹ X` (no stage transform) on every port: the scratch rol
 free gate, `copyM`), then ONE generalised step `unframe A {p} = shift (A.corr {p}) * blockMat (A.fam {p}) *
 shift (A.v p)` (a rank-1 block between two free shifts: `GF.gstep_of_factor`), then `Y += Z` (a free gate, `addM`).
 The copy OVERWRITES the scratch, so the operator (`thinOp`) holds on every input; the scratch output is free
-(scratch roles are not live).  `thin_route`: price `∑ (g, t) bcost 1`; `view_thin`: the view moves by `shear`;
+(scratch roles are not live).  `thin_route`: price `∑ (g, t) bcost 1`;
 `thin_fresh`: the helpers are untouched.
 No `sorry`.
 -/
@@ -136,6 +136,11 @@ lemma thin_fresh (x y : (Fin 40)) (j : Fin 6) (U : Γ → T → CMat α) (f : �
   unfold thinOp
   rw [addM_fresh]
   simp only [if_neg (fresh_not_zSet (Γ := Γ) (T := T) (Sl := Sl) (C := C) j g k q), copyM_fresh]
+
+end Thin
+
+section ThinStep
+variable {α : Type} [Fintype α] [DecidableEq α]
 
 lemma unframe_single (A : OBase α) (p : α) :
     unframe A {p} = Binary.shift (A.corr {p}) * blockMat (A.fam {p}) * Binary.shift (A.v p) := by

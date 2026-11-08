@@ -1,0 +1,21 @@
+{
+  "scope": "complete literal scalar controller; physical GLiveKernelM remains open",
+  "status": "passed",
+  "theorems": {
+    "FFTChainDFT.Chain.Sparse.certificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Chain.checked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Chain.endpoint": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

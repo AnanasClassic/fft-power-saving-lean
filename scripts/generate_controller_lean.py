@@ -72,13 +72,14 @@ end FFTChainDFT.Chain.'''+ns+'\n#print axioms FFTChainDFT.Chain.'+ns+'.checked\n
 for r,a in enumerate(rows):
  d=raw['diagonal'][r%20];ks=tuple(i for i,n in enumerate(d[2:]) for _ in range(n))
  assert a==[((d[0]%4,ks,r),F(1))],(r,a)
-s='\n'.join('import Submission.Chain.'+n for n in names)+'''
+s='import Submission.Chain.Schedule\n'+'\n'.join('import Submission.Chain.'+n for n in names)+'''
 namespace FFTChainDFT.Chain
 set_option maxRecDepth 1000000
 set_option maxHeartbeats 4000000
  theorem Sparse.word_append (a b : List Op) (s : State Sparse.Row) :
     Sparse.word (a++b) s = Sparse.word b (Sparse.word a s) := List.foldl_append
  def code : List Op := '''+' ++ '.join(n+'.code' for n in names)+'''
+ theorem code_eq_schedule : code = Schedule.code := rfl
  theorem checked : Sparse.word code Cert00.input = Cert64.output := by
    simp only [code, Sparse.word_append]
    rw ['''+', '.join(n+'.checked' for n in names)+''']
@@ -89,14 +90,15 @@ variable {R : Type*} [Field R] [CharZero R]
    simp [Sparse.stateVal, State.map, Cert00.input, Sparse.rowVal, Sparse.monVal, State.get]
  theorem endpoint_state (d : Fin 18 → R) (q : R) (hq : q^4=1) (u : State R) :
    evalWord d q code u = Sparse.stateVal d q u Cert64.output := by
-   rw [←input_val d q u]
+   conv_lhs => rw [←input_val d q u]
    exact Sparse.certificate d q hq u code Cert00.input Cert64.output checked
  def stages (r : Fin 40) : List (Fin 18) :=
    match r.val with
 '''
 for r in range(39):s+='   | '+str(r)+' => ['+', '.join(map(str,rows[r][0][0][1]))+']\n'
 s+='   | _ => ['+', '.join(map(str,rows[39][0][0][1]))+']\n'
-s+=''' theorem endpoint (d : Fin 18 → R) (q : R) (hq : q^4=1) (u : State R) (r : Fin 40) :
+s+=''' theorem stages_eq_target : stages = Schedule.targetStages := rfl
+ theorem endpoint (d : Fin 18 → R) (q : R) (hq : q^4=1) (u : State R) (r : Fin 40) :
    (evalWord d q code u).get r = q^3 * (stages r |>.map d).prod * u.get r := by
    rw [endpoint_state d q hq u]
    fin_cases r <;>
@@ -105,5 +107,19 @@ end
 end FFTChainDFT.Chain
 #print axioms FFTChainDFT.Chain.endpoint
 '''
+links='\n'.join(f'theorem link{i:02d} : Cert{i:02d}.output = Cert{i+1:02d}.input := rfl' for i in range(64))
+s=s.replace(' theorem checked : Sparse.word code Cert00.input',links+'\n theorem checked : Sparse.word code Cert00.input')
+s=s.replace(', '.join(n+'.checked' for n in names),', '.join(x for i,n in enumerate(names) for x in ([n+'.checked',f'link{i:02d}'] if i<64 else [n+'.checked'])))
 (out/'Controller.lean').write_text(s)
 print('TOTAL',total+len(s))
+
+schedule='import Submission.Chain.Common\nnamespace FFTChainDFT.Chain.Schedule\n'
+for i in range(65):
+ schedule+=f'def part{i:02d} : List Op := ['+',\n'.join(op(e) for e in events[40*i:40*(i+1)])+']\n'
+schedule+='def code : List Op := '+' ++ '.join(f'part{i:02d}' for i in range(65))+'\nend FFTChainDFT.Chain.Schedule\n'
+target='def targetStages (r : Fin 40) : List (Fin 18) :=\n  match r.val with\n'
+for r in range(40):
+ ks=[j for j,n in enumerate(raw['diagonal'][r%20][2:]) for _ in range(n)]
+ target+=('  | '+str(r) if r<39 else '  | _')+' => ['+', '.join(map(str,ks))+']\n'
+schedule=schedule.replace('end FFTChainDFT.Chain.Schedule',target+'end FFTChainDFT.Chain.Schedule')
+(out/'Schedule.lean').write_text(schedule)

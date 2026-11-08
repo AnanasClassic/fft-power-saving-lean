@@ -113,3 +113,34 @@ queries. These are under compilation; their all-data contracts must be
 accepted before composing the finite program. A dedicated manually triggered
 private CI job performs these builds and keeps small project proof objects
 for one day; it does not cache another complete Mathlib tree on this Mac.
+
+
+## Physical normalizer and continued storage remediation
+
+- The universal modified supplier and its exact histogram passed the Lean
+  kernel in fresh private Linux CI (run 42507163878). That workflow as a whole
+  failed on three separate integration errors; those errors were corrected
+  locally. No successful final DFT verification is inferred from this run.
+- The full literal paired scalar controller, all 65 sparse segments, its
+  endpoint theorem and schedule histograms passed local Lean checks. The
+  aggregation needed explicit equality links between successive literal
+  certificates; the original rewrite attempt did not expose these definitions.
+- The physical normalizer now has an actual proper GWord, independent of
+  tensor width and array data, a zero paid cost normalizing word, and a
+  transported involution with exactly two rank-1 calls. The array statements,
+  rational elementary gates, dirty-scratch query, geometric selected sets and
+  actual helper histogram have passed local Lean kernel checks.
+- NativeStages and Windows are integration work in progress. Their local
+  checks were deliberately stopped for storage/memory reasons, before any
+  result; these modules must not be reported as accepted yet.
+- After the user's storage question, stopped both remaining local Lean
+  processes and deleted the disposable imported CI download (220.6 MiB) and
+  only this project's reproducible Mathlib build cache (6.21 GiB of regular
+  file contents; du allocated 6.6 GiB). Sources, Mathlib Git checkout, toolchain,
+  and project proof objects were retained. Free space measured 13.11 GiB
+  immediately after removal. No unrelated user project was touched.
+- Full checks now run in private Linux CI, with a project-only build cache
+  to avoid repeating expensive supplier/controller checks. No Mathlib cache
+  should be downloaded again on this Mac during the current research task.
+- The complete physical controller, GLiveKernelM, exact Race.bound,
+  official Comparator, nanoda and official Lean Verified status remain open.

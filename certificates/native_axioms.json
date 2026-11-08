@@ -1,0 +1,26 @@
+{
+  "scope": "modified all-width native GInvEW supplier; complete GLiveKernelM remains open",
+  "status": "passed",
+  "theorems": {
+    "FFTChainDFT.Native.ginvW": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Native.ginv_cost": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Native.helper_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.Native.valid": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

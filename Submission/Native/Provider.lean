@@ -2,7 +2,7 @@ import Submission.Native.Supplier
 import Submission.Work.XHostT.TProvW
 import Submission.Work.P4L.Geom401
 namespace FFTChainDFT.Native
-open OAI.PowerSaving OAI.PowerSaving.CB OAI.PowerSaving.GF OAI.PowerSaving.GX
+open OAI.PowerSaving OAI.PowerSaving.Binary OAI.PowerSaving.CB OAI.PowerSaving.GF OAI.PowerSaving.GX
 noncomputable section
 /-- The modified supplier in Sussman's windowed stage interface. -/
 def provider : XHostTW.GInvW (Fin 9) (Fin 104) (Fin 562) (Fin 29) okW :=

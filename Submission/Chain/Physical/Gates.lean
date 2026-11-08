@@ -1,6 +1,7 @@
 import Submission.Chain.Physical.Stage
 import Submission.Chain.StateMap
 import Submission.Work.P4L.Basis
+import Submission.Work.P4L.View
 /-! The universal rational gate layer, adapted from Kartal's BQ19.View.
 Only the finite role type changes; inherited proofs and attribution remain. -/
 namespace OAI.PowerSaving.ChainNet

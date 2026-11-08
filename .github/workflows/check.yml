@@ -9,7 +9,7 @@ jobs:
   local-lemmas:
     name: Python certificates and local Lean lemmas
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 240
     env:
       LEAN_NUM_THREADS: 2
     steps:
@@ -28,6 +28,14 @@ jobs:
         run: bash scripts/check_python.sh
       - name: Check source integrity and proof shortcuts
         run: python3 scripts/source_guard.py
+      - name: Restore project build cache
+        id: project-cache
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: .lake/build
+          key: ${{ runner.os }}-lean4341-physical-v2-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-lean4341-physical-v2-
       - name: Fetch the official pinned Mathlib cache
         run: lake exe cache get
       - name: Build local proofs and audit their axioms
@@ -38,6 +46,10 @@ jobs:
         run: |
           python3 scripts/audit_axioms.py --file Submission/NativeAudit.lean --receipt certificates/native_axioms.json --scope "modified native supplier; not GLiveKernelM"
           python3 scripts/audit_axioms.py --file Submission/ChainAudit.lean --receipt certificates/chain_axioms.json --scope "scalar paired controller; not physical GWord realization"
+      - name: Build physical arrays, windows and schedule accounting
+        run: lake build Submission.Native.HelperHistogram:olean Submission.Chain.Compiler:olean Submission.Chain.ScheduleHistogram:olean Submission.Chain.Physical.NativeStages:olean Submission.Chain.Physical.Windows:olean
+      - name: Audit physical finite operator theorems
+        run: python3 scripts/audit_axioms.py --file Submission/PhysicalAudit.lean --receipt certificates/physical_axioms.json --scope "physical finite primitives and scalar controller; GLiveKernelM still open"
       - name: Reproduce native and controller Lean certificates
         run: |
           python3 scripts/generate_native_lean.py .
@@ -46,3 +58,9 @@ jobs:
         run: git diff --exit-code -- Submission/ inventory_receipt.json moment_receipt.json certificates/
       - name: Require the exact final theorem
         run: bash scripts/check_final.sh
+      - name: Save incremental project build cache
+        if: always()
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: .lake/build
+          key: ${{ runner.os }}-lean4341-physical-v2-${{ github.sha }}
