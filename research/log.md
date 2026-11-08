@@ -391,3 +391,19 @@ byte identical to the accepted d48314b source closure. No official proof
 check had started and no verification status is inferred from the rejected
 workflow dispatch. The official verifier head was rechecked and remains
 e4195cbf8c813772227a5fe4fd21c03c0a1a4fa4.
+
+### Private official preflight42532459789 — Ubuntu26 infrastructure failure
+
+Trusted controller tests and authenticated source prepare succeeded. The exact
+challenge was generated and all regular Lean sources staged. Official setup
+then failed before any proof check: Ubuntu26.04's apparmor-profiles package
+does not provide /usr/share/apparmor/extra-profiles/bwrap-userns-restrict, which
+the unchanged verifier tries to load. Receipt status setup_failed; Lean and
+axiom audit not_started. Logs retained in the private CI artifact.
+
+Pinned the private workflow VM to ubuntu-24.04 for the retry. The official
+verifier, all tool/model/profile pins, AppArmor loading, namespace/read-only
+preflight, offline proof sandbox and resource limits remain unchanged. This
+OS pin is an explicitly recorded reproduction-environment difference from
+the official workflow's moving ubuntu-latest label. No security check was
+disabled and no Lean source byte changed.

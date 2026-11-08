@@ -12,7 +12,7 @@ permissions:
 jobs:
   verify:
     if: github.repository == 'AnanasClassic/fft-power-saving-lean' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 350
     env:
       BOS_VERIFIER_COMMIT: e4195cbf8c813772227a5fe4fd21c03c0a1a4fa4
