@@ -35,8 +35,8 @@ def rawTz (D : Sl → Finset (LC (Fin 17) H l)) : PLive (Orth (LC (Fin 17) H l))
 theorem rawTz_indep (D : Sl → Finset (LC (Fin 17) H l)) (p : PLive (Orth (LC (Fin 17) H l)) T Sl) :
     LinearIndependent F (rawTz base l D p).2 := by
   rcases p with ⟨g,i,t⟩|⟨g,k,q⟩
-  · exact OBase.fam_indep _ _
-  · exact FH.targ_indep _
+  · exact OBase.fam_indep (ChainG18.basisA base l g t) (mainTarget l i)
+  · exact FH.targ_indep (D q)
 
 include hbase hOk in
  theorem final_main (f : ℕ)
@@ -57,6 +57,7 @@ include hbase hOk in
   change _ = _ * P4L.prodF f (P4L.fr (ChainG18.basisA base l g t)
     (StageSets.targetSet l (Schedule.targetStages i))) z * _
   rw [ht,hqi]
+  simp only [stageD,pivotQ]
   ring
 
 include hbase hOk in
@@ -97,7 +98,7 @@ include hbase hOk in
   · change gwalk f w v (mainR g i t) =
       matAct f (blockMat ((ChainG18.basisA base l g t).fam (mainTarget l i))) (v (mainR g i t))
     rw [hwalk f v]
-    dsimp only
+    try dsimp only
     rw [if_pos (main_mem_mainAll (Sl := Sl) (C := C) g i t),
       if_neg (main_not_freshAll (Sl := Sl) (C := C) g i t),Matrix.mul_one]
     change matAct f (Binary.shift (mainCorrection base l g i t)) _ = _
@@ -105,11 +106,11 @@ include hbase hOk in
     rw [if_neg (main_not_freshAll (Sl := Sl) (C := C) g i t)]
   · change gwalk f w v (freshR g k q) = matAct f (blockMat (FH.targ (D q))) (v (freshR g k q))
     rw [hwalk f v]
-    dsimp only
+    try dsimp only
     rw [if_neg (fresh_not_mainAll (T := T) (C := C) g k q),
       if_pos (fresh_mem_freshAll (T := T) (C := C) g k q),
       raw_fresh_endpoint I base l hbase hH hOk]
-    dsimp only
+    try dsimp only
     rw [if_pos (fresh_mem_freshAll (T := T) (C := C) g k q)]
     have eU : U (freshR g k q)=Zp k g q := by
       have h := hU _ (fresh_mem_freshAll (T := T) (C := C) g k q)

@@ -69,7 +69,7 @@ theorem schedule_price (φ : ℕ → ℝ) :
       (Fintype.card T : ℝ)*((List.range 8).map fun j => 4*bcost φ (8*(j+1))).sum := by
     simp_rw [show ∀ j, 4*((Fintype.card T : ℝ)*bcost φ (8*(j+1))) =
       (Fintype.card T : ℝ)*(4*bcost φ (8*(j+1))) by intro j; ring]
-    exact List.sum_map_mul_left
+    exact List.sum_map_mul_left (List.range 8) (fun j => 4*bcost φ (8*(j+1))) (Fintype.card T : ℝ)
   rw [hf]
   unfold portPrice
   ring

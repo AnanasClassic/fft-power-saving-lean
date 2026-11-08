@@ -294,3 +294,19 @@ The official verifier comparison195060b...e4195cb reports nine newer commits,
 all changes under auto-research/audits. No README, target, tool, dependency,
 checker or execution-policy file changed. The pinned verification profile is
 therefore unchanged at the newly observed head.
+
+
+## Full-root CI42526984623
+
+RawCompiler is accepted, including the actual all-array main endpoint and
+once-only helper endpoint. Word's independent-family proof needed explicit
+basis/set arguments; the final main normalization needed stageD/pivotQ
+unfolded before ring; one optional beta simplification made no progress.
+Supplied those arguments/unfoldings and made the beta simplification optional.
+Cost's sum_map_mul_left has three explicit arguments in pinned Mathlib; supplied
+the list, function and scalar. No mathematical statement or invoice changed.
+
+Removed the now-unneeded local .lake/build objects (702.3MiB), after confirming
+no local Lean/lake process was running. Only task-local generated objects were
+removed; source, Git, pinned dependency sources and remote CI caches remain.
+Free space was12.01GiB. All verification continues on CI.
