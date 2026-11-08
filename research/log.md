@@ -144,3 +144,20 @@ for one day; it does not cache another complete Mathlib tree on this Mac.
   should be downloaded again on this Mac during the current research task.
 - The complete physical controller, GLiveKernelM, exact Race.bound,
   official Comparator, nanoda and official Lean Verified status remain open.
+
+
+## Full physical assembly candidate (CI verification pending)
+
+Added Query, FullStep, RawCompiler, RoleSets and Word. The assembly supplies
+all-array opcode contracts, a once-only helper bank count, and global free
+helper pre/post adapters, following Sussman's fresh_frames and Kartal's BQ19
+wordCert. The new wordCert proof is a candidate, not an accepted theorem until
+CI elaborates it. Re-generated the controller to include stages_eq_target;
+its existing sparse segment certificates are unchanged.
+
+Added an incremental development workflow running only on remote CI. It
+reuses a prior CI proof object only if both the source bytes and the complete
+project dependency closure match the previously accepted revision; changed
+modules are checked from current source. These development checks do not
+replace the final clean build, axiom audit or official verification. No
+additional Mathlib or compiled cache was downloaded to the Mac.

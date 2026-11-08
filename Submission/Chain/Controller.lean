@@ -189,6 +189,7 @@ variable {R : Type*} [Field R] [CharZero R]
    | 37 => [9, 10, 11, 12, 13, 14, 15, 16]
    | 38 => [9, 10, 11, 12, 13, 14, 15, 16, 17]
    | _ => []
+ theorem stages_eq_target : stages = Schedule.targetStages := rfl
  theorem endpoint (d : Fin 18 → R) (q : R) (hq : q^4=1) (u : State R) (r : Fin 40) :
    (evalWord d q code u).get r = q^3 * (stages r |>.map d).prod * u.get r := by
    rw [endpoint_state d q hq u]

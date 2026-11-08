@@ -1,0 +1,62 @@
+name: Incremental physical proof development
+on:
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: Lean modules to check from current source
+        required: true
+        default: Submission.Chain.Physical.Word
+permissions:
+  contents: read
+  actions: read
+jobs:
+  physical-development:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      LEAN_NUM_THREADS: 2
+      LEAN_DEV_TARGETS: ${{ inputs.targets }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Install pinned elan
+        shell: bash
+        run: |
+          curl -fsSL --retry 3 -o /tmp/elan.tar.gz https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz
+          echo '42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63  /tmp/elan.tar.gz' | sha256sum -c -
+          tar -xzf /tmp/elan.tar.gz -C /tmp
+          /tmp/elan-init -y --no-modify-path --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Verify source integrity
+        run: python3 scripts/source_guard.py
+      - name: Restore small development proof cache
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            .lake/build/lib/lean
+            .lake/build/ci-incremental.json
+          key: ${{ runner.os }}-lean4341-dev-v1-${{ github.sha }}-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-lean4341-dev-v1-
+      - name: Fetch pinned Mathlib cache on CI runner
+        run: lake exe cache get
+      - name: Check changed modules in Lean kernel
+        run: python3 scripts/ci_incremental.py
+      - name: Save small development proof cache
+        if: always()
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            .lake/build/lib/lean
+            .lake/build/ci-incremental.json
+          key: ${{ runner.os }}-lean4341-dev-v1-${{ github.sha }}-${{ github.run_id }}
+      - name: Preserve development check receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: incremental-proof-receipt
+          path: ci-incremental-result.json
+          retention-days: 3
