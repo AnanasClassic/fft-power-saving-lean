@@ -89,8 +89,7 @@ lemma alpha_thetaChain18 : alphaChain18 < theta := by
   linarith only [hy]
 
 lemma decimal_rangeChain18 : alphaChain18 < decimalExponentChain18 ∧ decimalExponentChain18 < 1 := by
-  refine ⟨?_, ?_⟩ <;> norm_num [decimalExponentChain18,alphaChain18,statedSavingChain18] <;>
-    linarith [SeamChain18.pi_lt_Chain18, Real.pi_gt_three]
+  norm_num [decimalExponentChain18,alphaChain18,statedSavingChain18]
 
 def speedChain18 (v : ℝ) (n : ℕ) := (n:ℝ)*(TmChain18 n)^v
 

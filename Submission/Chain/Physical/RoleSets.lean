@@ -43,7 +43,7 @@ def freshMat (Z : Fin 36 → Γ → Sl → CMat α) : PRole Γ T Sl C → CMat �
   | _ => 1
 
 def freshTgt (D : Sl → Finset α) : PRole Γ T Sl C → CMat α
-  | .inl (.inr (_,(_,q))) => pk (D q)
+  | .inl (.inr (_,(_,q))) => GF.pk (D q)
   | _ => 1
 end
 end OAI.PowerSaving.ChainNet

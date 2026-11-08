@@ -38,6 +38,8 @@ for name in ['Goal','Merged1','WorkingTransform','Merged2','Main']:
  s=re.sub(r'3148496240\s*/\s*\(10\s*:\s*ℝ\)\s*\^\s*12','6727247/(2000000000:ℝ)',s)
  if name=='Goal':
   s=s.replace('def statedSavingChain18 : ℝ := Real.pi / 1000','def statedSavingChain18 : ℝ := 3363623/1000000000')
+ if name=='Main':
+  s=s.replace('  refine ⟨?_, ?_⟩ <;> norm_num [decimalExponentChain18,alphaChain18,statedSavingChain18] <;>\n    linarith [SeamChain18.pi_lt_Chain18, Real.pi_gt_three]', '  norm_num [decimalExponentChain18,alphaChain18,statedSavingChain18]')
  if name=='Merged1':
   s=s.replace('import Submission.Work.BQT.TB.Stmt','import Submission.Chain.EngineBound')
   s=s.replace('import Submission.Work.BQT.TB.Engine\n','')

@@ -207,3 +207,15 @@ RoleSets, before inspecting dependent modules. Restricted that module's open
 list to the namespaces it actually uses. Removed redundant post-rewrite goal
 closing in Query and simplified the role-parity proof in FullStep. Verification
 continues remotely; no accepted status is inferred from these source edits.
+
+
+CI iteration42521625622 reached RoleSets.freshTgt and found that pk needs
+namespace GF. Qualified that constant explicitly. The CI driver now continues
+checking independent modules after a failure and marks dependent modules as
+blocked, retaining metadata only for successful checks. Lean child processes
+no longer inherit token/secret environment variables. The driver refuses local
+execution outside GitHub Actions, enforcing the user's CI-only build rule.
+
+Direct text comparison confirms the DFTProgram definition in the actual owning
+OpenAI Goal module is identical to the pinned standalone trusted artifact.
+This is a source check, not an official Comparator result.

@@ -6,6 +6,8 @@ from pathlib import Path
 import hashlib,json,os,re,subprocess,sys,zipfile
 ROOT=Path(__file__).resolve().parents[1]
 os.chdir(ROOT)
+if os.environ.get('GITHUB_ACTIONS')!='true':
+    raise SystemExit('This development build script runs only on CI; do not restore caches on the Mac')
 BASE='2cbe338ecbcb256c4acec9120d5d0e440f982937'
 ARTIFACT='13628488348'
 LIB=ROOT/'.lake/build/lib/lean'
@@ -48,19 +50,25 @@ if need_base:
                     dst=LIB/'Submission'/name;dst.parent.mkdir(parents=True,exist_ok=True);dst.write_bytes(z.read(name))
     archive.unlink()
 results=[]
+failed=set()
+compile_env={k:v for k,v in os.environ.items() if not any(w in k.upper() for w in ['TOKEN','SECRET'])}
 try:
     for m in order:
         dst=LIB/(m.replace('.','/')+'.olean')
+        if any(d in failed for d in deps[m]):
+            failed.add(m);results.append({'module':m,'status':'blocked_by_failed_dependency'});continue
         if dst.exists() and (baseline[m] or old.get(m)==fingerprints[m]):
             results.append({'module':m,'status':'reused_exact_source_and_dependencies'});continue
         dst.parent.mkdir(parents=True,exist_ok=True)
         print('CHECK_SOURCE',m,flush=True)
-        result=subprocess.run(['lake','env','lean','-DautoImplicit=false',m.replace('.','/')+'.lean','-o',str(dst)])
+        result=subprocess.run(['lake','env','lean','-DautoImplicit=false',m.replace('.','/')+'.lean','-o',str(dst)],env=compile_env)
         if result.returncode:
-            results.append({'module':m,'status':'failed'});raise SystemExit(result.returncode)
+            failed.add(m);old.pop(m,None)
+            results.append({'module':m,'status':'failed','exit_code':result.returncode});continue
         old[m]=fingerprints[m]
         results.append({'module':m,'status':'kernel_accepted_current_source'})
 finally:
     RECEIPT.parent.mkdir(parents=True,exist_ok=True);RECEIPT.write_text(json.dumps(old,indent=2)+'\n')
     Path('ci-incremental-result.json').write_text(json.dumps({'kind':'development-only; not official verification','baseline':BASE,'results':results},indent=2)+'\n')
+if failed:raise SystemExit('FAILED_OR_BLOCKED: '+', '.join(sorted(failed)))
 print('PASS_INCREMENTAL_DEVELOPMENT_CHECKS',len(order),'modules',flush=True)
