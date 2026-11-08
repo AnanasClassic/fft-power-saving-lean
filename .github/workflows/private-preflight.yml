@@ -16,7 +16,7 @@ jobs:
     timeout-minutes: 350
     env:
       BOS_VERIFIER_COMMIT: e4195cbf8c813772227a5fe4fd21c03c0a1a4fa4
-      BOS_REQUEST_PATH: ${{ runner.temp }}/fft-private-request.json
+      BOS_REQUEST_PATH: ${{ github.workspace }}/fft-private-request.json
       BOS_SUBMISSION_COMMIT: ${{ inputs.commit }}
     defaults:
       run:

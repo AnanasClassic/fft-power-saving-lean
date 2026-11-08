@@ -381,3 +381,13 @@ Updated the proof map, current audit and README; kept source provenance and
 all inherited attribution. Moved deterministic generators before the full
 workflow's compilation/audits, and corrected the audit script's generic
 caption so it no longer labels a final audit as not final.
+
+### Private workflow dispatch repair
+
+GitHub rejected the private workflow before starting: runner.temp is not an
+allowed expression context in job-level env. Replaced that path with
+github.workspace. This configuration-only change leaves every Lean source
+byte identical to the accepted d48314b source closure. No official proof
+check had started and no verification status is inferred from the rejected
+workflow dispatch. The official verifier head was rechecked and remains
+e4195cbf8c813772227a5fe4fd21c03c0a1a4fa4.
