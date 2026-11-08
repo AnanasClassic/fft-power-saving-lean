@@ -143,3 +143,47 @@ moment surplus.” The missing input is a concrete physical program whose
 moment theorem cannot instantiate `TensorEng.BU.tensor_engine` and yields no
 DFT complexity bound. The all-length Fourier compiler must then be rebuilt at
 the new symbolic exponent. Reusing its older final theorem is insufficient.
+
+
+## Physical assembly candidate, 9 November 2026
+
+The implementation now contains a complete proof candidate rather than only
+an invoice. Acceptance of the final theorem is still pending CI.
+
+Use label space `LC (Fin 17) (Fin 9) 0`, of dimension145, and its finite
+orthogonal gauge group. Each gauge has40×104 main arrays and36×562 productive
+helper arrays. Supplier-owned and query scratch arrays are separate from
+these live roles. Every raw instruction is given an actual proper `GWord`
+route at every tensor width. Query scratch is overwritten before use.
+
+The scalar controller endpoint is `q^3 * product(d_k)` on each independent
+input. Here q is the pivot frame phase and each d_k is the phase of eight new
+orthogonal directions. The selected stage lists have no duplicates. The
+identity q^3=q*sign(pivot), together with the disjoint frame product identity,
+allows one free shift by pivot+corr(target) to turn this endpoint into the
+block of its own target directions, of rank1+8*length(stages).
+
+Each of36 helper banks occurs once in the literal source schedule. Other
+instructions leave every productive helper unchanged. Thus its raw endpoint
+is exactly its native residual, on arbitrary dirty helper input. Sussman's
+fresh_frames adapters, in the form used by Kartal's wordCert, are applied
+before and after the whole controller. Choosing each canonical end set to
+have exactly the residual rank makes both adapters free in recursive price.
+Their physical routes are retained; they are not replaced by an assumed
+matrix identity. The assembly candidate targets an all-input live contract,
+which is stronger than the engine's zero-initial-scratch premise. The engine
+permits unrestricted scratch output.
+
+The actual source invoice is36 native calls, plus104 copies of six rank-one
+queries and four whole idles at each rank8,16,...,64, per gauge. The cost
+identity is quantified over every real price list, so indicator prices recover
+the complete paid-call histogram. Live target counts are computed from the
+actual main end sets and actual supplier exit residuals.
+
+The tensor integration uses12800 factors, cutoff12^12800 and floor13^12800,
+with the already checked moment at C=0.003363624. The kernel seam exponent is
+1−0.0033636235; the all-positive-length Fourier transfer uses the strict gap
+to the final exponent1−0.003363623. This transfer includes the inherited order,
+root preparation, scalar/index work and polynomial memory bounds. The final
+Race.bound source exists, but only subsequent kernel/audit/Comparator results
+can establish its acceptance.

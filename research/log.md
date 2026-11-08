@@ -263,3 +263,19 @@ redundant ring and supplied the remaining reflexivity. The Fourier adaptation
 preamble used a module documentation command before imports; changed only that
 preamble to an ordinary attribution comment in all five files and the generator.
 The full finite Word/RawCertificate/Race.bound remain dependent checks pending.
+
+
+## Full-root CI42525658572
+
+The physical query and the Fourier Goal module now pass. FullStep exposed
+pointwise-function multiplication/addition simplification and an accidentally
+captured ambient Fintype in the stageOf definition's omega proof. Added the
+explicit Pi application lemmas, moved stageOf outside the geometric section,
+and gave bankResidual its complete matrix-family result type. These are
+interface/elaboration repairs; the native-stage semantic theorem remains the
+same previously accepted one.
+
+Read the current official verifier head via GitHub: e4195cbf8c813772227a5fe4fd21c03c0a1a4fa4,
+committed2026-11-08T17:39:46Z. The previously pinned195060b source remains the
+upstream proof provenance; current profile/target/tool differences must be
+checked before the final independent verification run.

@@ -13,16 +13,18 @@ variable {Z : Type}
 theorem eval_callF (z : Z) (a b : Fin 40) (d qi : Z → ℂ) (u : State (Z → ℂ)) :
     State.map (fun w => w z) (callF a b d qi u) =
       callF a b (d z) (qi z) (State.map (fun w => w z) u) := by
-  simp only [callF,State.map_set,State.map_get]
+  simp only [callF,State.map_set,State.map_get,Pi.mul_apply,Pi.add_apply]
 end Evaluation
+def stageOf (j : Fin 36) : Fin 18 := ⟨j.val/2,by omega⟩
 section Geometry
 variable {H T Sl C : Type} [Fintype H] [DecidableEq H] [Fintype T] [DecidableEq T]
   [Fintype Sl] [DecidableEq Sl] [Fintype C] [DecidableEq C]
   {Ok : ∀ {β : Type} [Fintype β] [DecidableEq β], GWin H β → Prop}
 variable (I : GInvW H T Sl C Ok) (base : T → OBase H) (l : H) (hH : Fintype.card H=9)
 
-def stageOf (j : Fin 36) : Fin 18 := ⟨j.val/2,by omega⟩
-def bankResidual (j : Fin 36) := nativeResidual I l hH (stageOf j)
+def bankResidual (j : Fin 36) :
+    Orth (LC (Fin 17) H l) → Sl → CMat (LC (Fin 17) H l) :=
+  nativeResidual I l hH (stageOf j)
 
 theorem stage_fullID (k : Fin 18) (a b : Fin 40) (h : Schedule.ValidOp (.full k a b)) :
     stageOf (Schedule.fullID k a) = k :=
