@@ -49,7 +49,8 @@ def mainWindow (a : Fin 40) (M : Γ → T → CMat α) (f : ℕ) (y : Data α (P
 theorem mainWindow_at (a i : Fin 40) (M : Γ → T → CMat α) (f : ℕ)
     (y : Data α (PRole Γ T Sl C) f) (g : Γ) (t : T) :
     mainWindow a M f y (mainR g i t) = if i=a then matAct f (M g t) (y (mainR g i t)) else y (mainR g i t) := by
-  simp only [mainWindow,mainSet_mem,mainMat,mainR]
+  unfold mainWindow
+  rw [mainSet_mem]
 
 theorem mainWindow_fresh (a : Fin 40) (M : Γ → T → CMat α) (f : ℕ)
     (y : Data α (PRole Γ T Sl C) f) (g : Γ) (k : Fin 36) (s : Sl) :

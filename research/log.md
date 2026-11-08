@@ -161,3 +161,19 @@ project dependency closure match the previously accepted revision; changed
 modules are checked from current source. These development checks do not
 replace the final clean build, axiom audit or official verification. No
 additional Mathlib or compiled cache was downloaded to the Mac.
+
+
+## CI iteration 42519705730
+
+The incremental run freshly accepted the rational elementary gates, array
+normalizer/query construction and selected-set geometry. It failed only at
+Windows.mainWindow_at: simp unfolded mainR before matching mainSet_mem.
+Replaced this with an explicit unfold of mainWindow followed by rw of the
+membership theorem. Downstream #print output after that error temporarily
+contained Lean's error-recovery axiom; the failed module was not accepted or
+cached as a successful check. Reverification is required before any claim.
+
+Added the complete raw-certificate invoice/count candidate and generic tensor
+integration at the new moment point. Imported 51 unchanged generic upstream
+engine/reduction source files (780729 bytes), each with an exact SHA256 pin;
+these are source files only, no new local compiler cache.
