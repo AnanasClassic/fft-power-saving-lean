@@ -1,102 +1,90 @@
-# Audit and remaining proof obligations
+# Verification audit and remaining obligations
 
-8 November 2026. Principal theorem: **not proved**.
+Date: 9 November 2026 (Moscow). This is an evidence report, not a public
+competition verification receipt or a novelty claim.
 
-## Evidence levels
+## Separate evidence levels
 
-| Evidence | Local result | Limit |
-|---|---|---|
-| Python original certificates | Passed | Asserted finite data, no native physical contract |
-| Reconstructed native replay | Passed, 799 independent rows | Formal-coordinate interpreter, not all-width Clifford proof |
-| Paired controller replay | Passed, 40 independent roles | Rational symbolic model, not RAM implementation |
-| Lean local proofs | `lake build` accepted | Does not export `Race.bound` |
-| Local axiom audit | Only allowed axioms | Applies only to listed local theorems |
-| Official Comparator | Not run | Final theorem absent |
-| Official Lean Verified | Not obtained | No submission opened |
-| Nanoda | Not run | No final theorem to replay |
+| Stage | Evidence and status |
+|---|---|
+| Python certificates | Earlier inventory, sparse native/controller replay and rational certificates passed; full CI reproduction is part of the normal build workflow. |
+| Lean source elaboration | [CI d48314b](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42531587924) accepted the root, exact statement and four-theorem axiom audit |
+| Lean kernel | The concrete live word, complete finite witness, tensor engine, all-length reduction and exact `Race.bound` were accepted in the root CI check. |
+| Axiom audit | `Submission/FinalAudit.lean` checks `wordCert`, `rawCert_exists`, `FFTChainDFT.engine`, and `Race.bound`; only `propext`, `Classical.choice`, `Quot.sound` are permitted. See the associated CI artifact. |
+| Full `lake build` | CI run [42531656698](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42531656698), tracked independently from the incremental source check. Consult that run's conclusion. |
+| Official Comparator profile | Private test-only workflow prepared at the unchanged official verifier pin; its receipt must be inspected separately. A source/type check is not Comparator acceptance. |
+| Nanoda | Separate replay in that private workflow; no pass is inferred from Lean acceptance. |
+| Public `Lean Verified` status | Not obtained. Repository private; no issue or PR submitted. |
 
-The logs and JSON files identify their scopes. None is an official verifier
-receipt. A later GitHub Actions run is separate from the local build. The final
-CI gate deliberately fails while `Race.bound` is missing.
+`certificates/ci_live_kernel.json` binds the first accepted concrete live word to
+its source commit and SHA256. That earlier CI run failed in the downstream
+count module: it is evidence for the live word, not for that entire run.
+Historical receipts keep their stated scopes; they are not retroactively
+relabelled as final-theorem audits.
+
+## Closed mathematical obligations
+
+- **Native supplier:** actual modified owned772 certificate, frame/label/scalar
+  validity, all-width supplier contract, native paid profile, helper residuals
+  and all helper ranks. The modified word rejoins the baseline after two
+  locally changed chunks.
+- **Physical normalizer and queries:** actual proper GWords and arbitrary-data
+  actions, including Λ²=P I₂ and (ΛQ⁻¹)²=I₂, and exact recursive costs.
+- **Controller and live kernel:** all 2,598 literal operations, arbitrary-data
+  main and helper endpoints, thirty-six distinct banks called once, actual
+  adapters, scratch overwrite and final phase corrections. No zero-helper
+  assumption replaces arbitrary live helper inputs.
+- **Complete cost/targets:** the word price holds for every price list; indicator
+  prices yield its histogram for all natural ranks. Actual live-role counts
+  yield the productive histogram, including every bank and both arrays.
+- **Tensor improvement:** dimension 145, target/rank validity, real moment
+  saving at C=0.003363624, degree 12,800, cutoffs 12^v and 13^v, floor
+  attainment and the new mixed tensor engine at η=0.0033636235.
+- **Fourier reduction:** the new engine feeds the full inherited all-length
+  reduction. The exact δ=0.003363623 theorem retains root selection, scalar
+  preparation, integer/address work, memory and operation accounting from the
+  original `DFTProgram` model.
+
+The final export does not use a previously proved weaker final DFT theorem.
+`Submission/Target.lean` uses the actual owning OpenAI Goal module, whose
+trusted definitions are preserved. Text/pin comparison is supporting evidence;
+the official Comparator additionally checks relevant definitions and terms.
 
 ## Source availability and reconstruction
 
-The named files `FFT_Lean_Formalization_2026-11-08.zip`,
-`fft-delta-0.003363623.zip`, and `fft-delta-0.003363623.pdf` were not available
-in the workspace or the inspected Downloads/Desktop locations. The extracted
-`/Users/vlad/Downloads/fft-chain-lean` package contains 21 files; these were
-inventoried and inspected. Its provenance strings were treated as leads,
-not evidence of source correctness.
+The named `FFT_Lean_Formalization_2026-11-08.zip`,
+`fft-delta-0.003363623.zip`, and `fft-delta-0.003363623.pdf` were unavailable.
+The extracted Downloads package's 21 files were inventoried and preserved in
+`research/initial/`. The unavailable PDF is not asserted to have been read.
 
-The note reports native digest
+The quoted digest was
 `7397ed2a343b3229295507741c67dce259f976cefad067eb3e0503bf6230fc94`.
-The reconstructed schedule's digest is instead
+The explicitly reconstructed native word instead has digest
 `29c8938138476b02cfc5977558f5065953c56f7a91926bc0e5de1fcbffecd3e1`.
-It matches the requested event count and local histogram, and passes the
-coordinate replay, but is not asserted byte-identical to the missing archive.
-Reconciliation requires the actual archive or its full canonical event list.
+Its behavior and counts are established by this formalization. It is a proved
+alternative at the target bound, not an assertion of byte identity to the
+missing archive. The paired controller is also an explicitly documented
+lowering of the pinned raw caller.
 
-The reconstructed paired controller is a new deterministic lowering of the
-pinned raw caller. Its payload hash is in `certificates/finite_replay.json`.
-The raw ambient-rank field is not silently reused as a new geometry proof.
+## Remaining verification and publication obligations
 
-## Earliest unproved mathematical contract
+1. Complete the ordinary CI build and inspect every required check, including
+   deterministic source generation and actual final axiom output.
+2. Complete the private unchanged official Comparator run on an immutable source
+   commit. Preserve its exact challenge, tool/source pins, axiom result and
+   per-kernel status. A resource-limited or ambiguous nanoda result must remain
+   distinguished from acceptance or rejection.
+3. Prepare the source-only package and exact full SHA using those receipts.
+   Keep all inherited attribution, original notices and licenses.
+4. Before any public submission, recheck the competition's current profile and
+   record gate and obtain the user's explicit authorization to publish the
+   repository and submit an issue. No private CI receipt grants the public
+   leaderboard label, mathematical novelty, priority or authorship.
+5. Reconcile the original archive digest only if that archive becomes available;
+   this provenance limitation is independent of the proved reconstruction.
 
-No counterexample was found to the supplied local normalizer algebra or the
-replayed coordinate endpoints. The first unresolved implication is the
-uniform native supplier contract: the reconstructed event word must realize
-its stated exact operators, for every valid tensor width and arbitrary
-allowed data/helper state, in the trusted physical language. Python replay
-and a counted table do not establish that implication.
-
-## Explicit obligations
-
-1. **NATIVE.** Encode the actual modified owned772 word in the Lean forward
-   warp certificate machinery (`WValidFS` or equivalent). Prove its signed
-   native maps, scalar replay, frame changes, all owned lifetimes and cleanups.
-   Either reconcile the reported digest or explicitly adopt the reconstructed
-   alternative and prove it. Existing P104W certificates cover the older word.
-2. **NORMALIZER-PHYSICAL.** Instantiate the universal array maps at `Data`,
-   `Sky`, pivot translation and `matAct`; prove query-square and commutation
-   from the actual frames. Lower the four gates to admitted operations with
-   charged scalar/address work, independent arrays and adequate scratch.
-3. **CONTROLLER.** Kernel-check the 2,598-event paired caller's complete endpoint
-   and adapters, with arbitrary helper inputs. Python's formal ring is not a
-   premise of the Lean proof. Reconcile central signs and residual `Q⁻¹`.
-4. **LIVE.** Construct the full `TensorEng.CU` / `GLiveKernelM` witness, including
-   all 104 ports, global gauges, productive banks and dirty auxiliaries.
-   Prove initialization, overwrite and cleanup semantics. No assumed zero
-   helpers or erased multiplicities may replace these requirements.
-5. **COST.** Tie the exact Lean histograms to the concrete word. Include every
-   native call, thin query, whole idle, ordinary operation, adapter, phase
-   correction, auxiliary-memory operation and later splitting/completion.
-6. **TENSOR-ENGINE.** Supply the actual geometry of dimension 145, target/rank
-   validity in the concrete unit and all engine hypotheses, then instantiate the
-   existing tensor engine at `η`. Inventory-level moment, floor attainment for every power, and rank
-   separation have been proved; the engine contract has not.
-7. **FOURIER.** Parameterize and reinstantiate the inherited full Fourier
-   reduction at the new exponent. Prove all-length root selection, preparation,
-   integer/index bounds, memory, convolution/transform reductions and complete
-   asymptotic operation accounting. The old hardcoded `alphaTB19` theorem
-   cannot imply the stronger target.
-8. **FINAL-CHECKS.** Prove the exact `Race.bound`, audit its actual axioms, pass
-   the official statement/definition Comparator, and run nanoda where possible.
-   Then prepare an immutable submission SHA. A research checkpoint SHA is not
-   a submission SHA.
-9. **PUBLICATION.** Inspect the current verified record again and request the
-   user's authorization only after a concrete completed proof is reviewable.
-   Keep upstream authorship and all inherited credits; no novelty is inferred
-   from a constant improvement or a kernel pass.
-
-## Verification guardrails implemented
-
-No new axiom, `sorry`/`admit` proof term, `native_decide`, or weaker exported
-final theorem is used. The official challenge file contains two placeholder
-challenge theorems; the local trusted-model copy removes only those two
-statements/proofs, preserving the complete preceding definitions byte for
-byte and closing the same scopes. The prefix hash and transformation are
-recorded in `certificates/source_pins.json`.
-
-The local build uses the official toolchain, Mathlib manifest and
-`autoImplicit=false`. CI does not make an official submission. Issue metadata
-is prepared in `submission-metadata.txt`, explicitly marked NOT READY.
+All continuation builds run on GitHub Actions. Local task build objects and
+large temporary downloads were removed; they are not prerequisites of the
+source-only submission. The official proof run uses only staged Lean sources
+and its own allowed dependencies, with no repository Lake hooks or proof-data
+network downloads.

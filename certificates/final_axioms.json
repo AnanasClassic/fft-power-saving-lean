@@ -1,0 +1,26 @@
+{
+  "scope": "concrete GLiveKernelM, finite witness, tensor engine and exact Race.bound",
+  "status": "passed",
+  "theorems": {
+    "FFTChainDFT.Finite.rawCert_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FFTChainDFT.engine": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "OAI.PowerSaving.ChainNet.wordCert": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Race.bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

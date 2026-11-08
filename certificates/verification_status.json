@@ -1,35 +1,40 @@
 {
-  "objective": "incomplete",
+  "objective": "Lean proof completed; independent verification pending",
+  "as_of": "2026-11-09 Europe/Moscow",
   "exact_saving": "3363623/1000000000",
-  "date": "2026-11-08",
+  "kernel_source_commit": "d48314bd395a76b7aa4066dc9cb3a2796605fe2e",
+  "root_ci": "https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42531587924",
   "python_certificates": {
-    "status": "passed",
-    "scope": "rational and formal-coordinate replay; not the physical Lean circuit"
+    "status": "passed previously; complete CI reproduction running"
   },
   "lean_source_elaboration": {
     "status": "passed",
-    "scope": "completed local lemmas only"
+    "scope": "complete Race.bound and physical finite witness"
   },
   "lean_kernel": {
     "status": "passed",
-    "scope": "completed local theorems; no Race.bound"
+    "scope": "root CI with source/dependency/object validation"
   },
-  "local_axiom_audit": {
+  "axiom_audit": {
     "status": "passed",
-    "theorem_count": 24,
+    "theorems": [
+      "FFTChainDFT.Finite.rawCert_exists",
+      "FFTChainDFT.engine",
+      "OAI.PowerSaving.ChainNet.wordCert",
+      "Race.bound"
+    ],
     "permitted": [
       "propext",
       "Classical.choice",
       "Quot.sound"
     ]
   },
-  "final_theorem": {
-    "status": "missing",
-    "name": "Race.bound"
+  "full_lake_build": {
+    "status": "running",
+    "run": "https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42531656698"
   },
   "official_comparator": {
-    "status": "not_run",
-    "reason": "final theorem missing"
+    "status": "private preflight prepared; not yet run"
   },
   "nanoda": {
     "status": "not_run"

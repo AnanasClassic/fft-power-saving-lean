@@ -1,84 +1,78 @@
 # Exact DFT power saving in Lean 4
 
-**Research checkpoint. The requested `Race.bound` at saving
-`3363623/1000000000` is not proved. This is not a competition-ready submission
-and has no official Lean Verified status.**
+The project proves the exact saving **δ = 3363623/1000000000** in the original
+`OAI.PowerSaving.DFTProgram` model. The exported theorem is `Race.bound` in
+`Submission/Chain/Bound.lean`; the root `Submission.lean` imports it.
 
-Local project: `/Users/vlad/projects/fft-power-saving-lean`.
-Private remote: <https://github.com/AnanasClassic/fft-power-saving-lean>.
+**Acceptance evidence:** [CI d48314b](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42531587924) accepted the root, exact statement and four-theorem axiom audit. This repository is private and has no
+public Big O Speedrun `Lean Verified` status. A private preflight with the
+unchanged official checker is separate from an authorized public submission.
 
-The work starts from the uncompiled `fft-chain-lean` package found in Downloads.
-The three named research archives/PDF were not available in this session. The
-original extracted package is retained under `research/initial/`; its obsolete
-build/status statements are historical, not current instructions.
+## What the proof contains
 
-## What is implemented and checked locally
+- A concrete modified 22,836-event owned772 supplier, checked through the
+  inherited sound KLW/native-circuit machinery on arbitrary valid inputs.
+- A literal 2,598-instruction paired 9+9 controller on forty independent main
+  roles, with thirty-six native helper banks and explicit query scratch.
+- Actual proper GWords for the rational two-array normalizer, queries, native
+  calls, adapters and final phase corrections; the concrete `GLiveKernelM`.
+- Both complete physical histograms, with 24,392 productive targets and 128,116
+  paid calls per gauge, and rank masses 336,224 and 334,704 respectively.
+- Real moment bounds at C=0.003363624, tensor degree 12,800, cutoff 12^12800 and
+  completion floor 13^12800, then the new tensor engine at η=0.0033636235.
+- The inherited all-length Fourier reduction re-instantiated with that engine:
+  root selection, scalar preparation, integer/address work, storage and the
+  exact δ bound. No previous weaker final theorem supplies `Race.bound`.
 
-- Universal two-array normalizer identities on arbitrary complex arrays,
-  including the actual inverse query obtained as the cube of the query.
-- Integer histogram formulas, counts 24,392 / 128,116, rank masses
-  336,224 / 334,704, and rank support bounds.
-- A real analytic proof of the finite moment saving at
-  `C = 420453/125000000 = 0.003363624`, not just a rational receipt.
-- Three real moment ratio bounds and Sussman's inventory-level strictification
-  at tensor power 12,800, paid cutoff `12^12800`, and floor `13^12800`.
-- A reconstructed 22,836-event native word, exact sparse Python replay on
-  799 independent formal-coordinate inputs, and a 2,598-event rational paired
-  controller replay on 40 independent roles. These replays are **not Lean
-  proofs of native/physical semantics**.
-- Axiom audits of the local Lean theorems, restricted to `propext`,
-  `Classical.choice`, and `Quot.sound`.
+Only `propext`, `Classical.choice` and `Quot.sound` are permitted. Python replay
+and generated numeric certificates are supporting reproducibility checks, not
+premises substituted for physical correctness or Lean proofs.
 
-The reconstructed native payload has SHA256
-`29c8938138476b02cfc5977558f5065953c56f7a91926bc0e5de1fcbffecd3e1`.
-It does **not** match the research note's reported digest. It is an explicitly
-identified reconstruction, not a purported recovery of the missing archive.
+## Reproduce on CI
 
-## Reproduce
+All ongoing builds run on GitHub Actions; the Mac's local build cache is absent.
+The manual incremental workflow checks changed source/dependency closures. The
+full workflow runs Python reproduction, source guards, **`lake build`**, the
+exact statement check and axiom audits. The private-preflight workflow uses the
+unchanged official verifier at an immutable pin, including Comparator and
+nanoda, and cannot publish an issue or a leaderboard result.
 
-Lean: `leanprover/lean4:v4.34.1`.
-Mathlib: `d13f23b723b8a846827a245b89c10fc7d3f11612`.
-`lake-manifest.json` is copied from the pinned official verifier; local options
-also use its `autoImplicit = false` setting.
+Lean: `leanprover/lean4:v4.34.1`. Mathlib:
+`d13f23b723b8a846827a245b89c10fc7d3f11612`. The manifest and `autoImplicit=false`
+match the official DFT profile. There are no custom Lake hooks or additional
+proof dependencies. On a suitably provisioned build machine:
 
 ```bash
-bash scripts/check_python.sh
-lake exe cache get                 # online setup only
-bash scripts/check_lean.sh         # build and local theorem axiom audit
-python3 scripts/source_guard.py
-bash scripts/check_final.sh        # currently FAILS: Race.bound is absent
+lake exe cache get                 # dependency setup, before offline proof checking
+lake build
+bash scripts/check_final.sh
+python3 scripts/audit_axioms.py --file Submission/FinalAudit.lean \
+  --receipt certificates/final_axioms.json --scope "complete exact DFT proof"
 ```
 
-After dependency setup, `lake build` does not need a network fetch. All proof
-modules are under `Submission/`; there are no custom Lake build hooks or new
-proof dependencies beyond the official Mathlib pin. The official checker
-ignores the submitted Lake files and scripts.
+The official verifier stages only regular `Submission.lean` and
+`Submission/**/*.lean` sources. It supplies its own Lake files, pinned
+Mathlib/toolchain and trusted target; it does not run this repository's scripts
+or download proof data during the sandboxed check.
 
-`Submission/Target.lean` specifies the requested proposition using an unchanged
-prefix of the trusted model. It is a definition of the goal, not a theorem.
-`Submission.lean` imports only completed local results. A placeholder proof,
-extra axiom, weaker final theorem, or invented `Race.bound` is not supplied.
+## Attribution and scope
 
-## Verification status
+OpenAI supplies the computational model and all-length Fourier reduction.
+Jacob Sussman supplies the engines, tensor/live-kernel machinery and reduction
+integration. Halit Ziya KARTAL supplies the preceding Lean instantiations.
+DreamingOfClouds supplies the two-chain controller and earlier circuit work;
+Ali Romman supplies circuit/controller optimizations. CubeJerry/Jerry Chen,
+Cinna Davis and the other contributors in retained notices supply inherited
+constructions and certificates. See [the pinned source report](research/sources.md).
+This integration and its verification do not establish novelty or priority.
 
-| Stage | Status |
-|---|---|
-| Python certificates | Passed locally, including finite replay and rejection controls |
-| Lean source elaboration | Passed for the completed local modules |
-| Lean kernel | Accepted the local theorem proofs; final DFT theorem absent |
-| Axiom audit | Passed for local theorems; final DFT theorem not audited |
-| Official Comparator | Not run; final theorem absent |
-| Official Lean Verified | Not obtained |
-| Nanoda | Not run |
+The three named original ZIP/PDF attachments were unavailable. The extracted
+package is preserved in `research/initial/`. The explicitly reconstructed native
+payload has SHA256
+`29c8938138476b02cfc5977558f5065953c56f7a91926bc0e5de1fcbffecd3e1`, different
+from the digest quoted in the unavailable note. The proof establishes this
+reconstruction, not recovery of that archive.
 
-GitHub Actions reproduces the research checks on every push. Its final theorem
-gate intentionally fails until the exact `Race.bound` exists. A successful
-local lemma build is not a passing competition submission.
-
-See [the mathematical note](research/proof.md), [audit and obligations](research/audit.md),
-[pinned sources and attribution](research/sources.md), and [research log](research/log.md).
-The recorded Git commit is a research checkpoint, not a submission SHA.
-
-No issue, pull request, public repository, or record announcement is authorized
-or created by this checkpoint. Public submission requires completion of the
-proof and the user's explicit authorization.
+See [the proof map](research/proof.md), [verification audit](research/audit.md),
+[pinned sources and credits](research/sources.md), and [research log](research/log.md).
+No issue, PR, public repository or record announcement has been authorized.

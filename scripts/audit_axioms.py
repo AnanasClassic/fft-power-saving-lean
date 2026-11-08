@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 args=argparse.ArgumentParser()
 args.add_argument('--file',default='Submission/LocalAudit.lean')
 args.add_argument('--receipt',default='certificates/local_axioms.json')
-args.add_argument('--scope',default='local theorems only; Race.bound absent')
+args.add_argument('--scope',default='listed supporting theorems; final theorem audited separately')
 options=args.parse_args()
 p=subprocess.run(['lake','env','lean',options.file],cwd=ROOT,text=True,capture_output=True)
 sys.stdout.write(p.stdout);sys.stderr.write(p.stderr)
@@ -22,4 +22,4 @@ for name,axs in found.items():
 receipt={'scope':options.scope,'status':'passed',
          'theorems':{n:sorted(a) for n,a in sorted(found.items())}}
 (ROOT/options.receipt).write_text(json.dumps(receipt,indent=2)+'\n')
-print('PASS_LOCAL_AXIOM_AUDIT',len(found),'theorems; this is not the final DFT theorem audit')
+print('PASS_AXIOM_AUDIT',len(found),'theorems; scope:',options.scope)

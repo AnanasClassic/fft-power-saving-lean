@@ -366,3 +366,18 @@ simp did not unfold it. Replaced that with an explicit function equality by
 rfl and rewrite, then project htime.2.1. No mathematical assertion changed.
 The full all-length theorem at the exact target is now accepted upstream
 of this export, but the export and final audit still await CI.
+
+### Exact Race.bound accepted — CI 42531587924
+
+At d48314bd395a76b7aa4066dc9cb3a2796605fe2e, the entire root source closure (518 project modules), exact
+statement example, and four-theorem final axiom audit passed. Race.bound has
+exact saving3363623/1000000000 and only propext, Classical.choice, Quot.sound.
+Source-bound receipt: certificates/ci_root_kernel.json. The audit JSON is
+preserved directly from the CI artifact. Full ordinary lake build is running
+separately in42531656698. Official Comparator/nanoda and public status remain
+separate pending stages. No local build or cache download was used.
+
+Updated the proof map, current audit and README; kept source provenance and
+all inherited attribution. Moved deterministic generators before the full
+workflow's compilation/audits, and corrected the audit script's generic
+caption so it no longer labels a final audit as not final.
