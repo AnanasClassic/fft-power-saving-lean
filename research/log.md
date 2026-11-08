@@ -102,3 +102,14 @@ another pass merely changing an old Fourier theorem's numeric constant.
   Cert00 (first 40 events) now passes decide +kernel with only allowed axioms.
 - Full scalar controller replay and the universal native supplier are still
   being verified. Their completion does not by itself close GLiveKernelM.
+
+## Physical primitives in progress
+
+Adapted the pinned G19 proof to 18 stages on LC (Fin 17), with ambient
+rank 145, deleting the final block/stage rather than wrapping Fin numerals.
+Prepared physical role embeddings for 40 main roles and 36 independent helper
+banks, the forward native call, rational gate layer and six overwriting thin
+queries. These are under compilation; their all-data contracts must be
+accepted before composing the finite program. A dedicated manually triggered
+private CI job performs these builds and keeps small project proof objects
+for one day; it does not cache another complete Mathlib tree on this Mac.

@@ -1,0 +1,39 @@
+name: Physical finite network checks
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  finite-network:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Install pinned elan
+        shell: bash
+        run: |
+          curl -fsSL --retry 3 -o /tmp/elan.tar.gz https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz
+          echo '42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63  /tmp/elan.tar.gz' | sha256sum -c -
+          tar -xzf /tmp/elan.tar.gz -C /tmp
+          /tmp/elan-init -y --no-modify-path --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Verify all pinned source bytes
+        run: python3 scripts/source_guard.py
+      - name: Fetch pinned Mathlib proof cache
+        run: lake exe cache get
+      - name: Build physical supplier and operator routes
+        run: lake build Submission.Native.Provider:olean Submission.Chain.Geometry.Lemmas:olean Submission.Chain.Physical.Thin:olean Submission.Chain.Physical.Gates:olean
+      - name: Audit accepted finite operator theorems
+        run: python3 scripts/audit_axioms.py --file Submission/PhysicalAudit.lean --receipt certificates/physical_axioms.json --scope "physical finite primitives; complete GLiveKernelM still open"
+      - name: Preserve small project proof objects
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: project-proof-objects
+          path: .lake/build/lib/lean/Submission/
+          include-hidden-files: true
+          retention-days: 1

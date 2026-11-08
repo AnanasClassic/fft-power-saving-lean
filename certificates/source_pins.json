@@ -944,6 +944,12 @@
       "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/FoldRate/Group.lean",
       "transform": "none"
     },
+    "Submission/Work/Fresh/Helpers.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "405bcbd031e590fff42de474c5bc5ecef7a54ca38c78369184a1bf2904d63e60",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Fresh/Helpers.lean",
+      "transform": "none"
+    },
     "Submission/Work/FwdOnly/BwdWrap.lean": {
       "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
       "sha256": "e47a90b59f0448d20ece7c9786d65444e6ff5ef9a76580bab810794dbf53d460",
@@ -1716,6 +1722,90 @@
       "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
       "sha256": "8f0f56e9407ebde3d0a5bea266a1aab94ba8c9602dcac9ed78ef643f0237819d",
       "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/KLowW/Win.lean",
+      "transform": "none"
+    },
+    "Submission/Work/Mixed/HeadM1.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "834564521d0fe01d7a77f8f803bafb39d41ea821f07db62835407997a1a72e17",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/Mixed/HeadM1.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P3/Ctrl4.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "8fd0e20e29a4e866bcd50264279d2b7e17cf15f035e674a08c6c6abcb96ae59e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P3/Ctrl4.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P4L/Basis.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "19cf959e0a3867ed8e47ed758995774b032fd8b8f36925edc8edf9eeb7c56e58",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P4L/Basis.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P4L/Fresh.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "a6c01b68da073cd220193ba330f9e45de17aef521a78d9e89cb5049fe92553d8",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P4L/Fresh.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P4L/Geom401.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "7b454f9b8f6a411e8c6a66490c817bbb7b54001408abfd1ef83640ebaf0ef719",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P4L/Geom401.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P4L/ORoute.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "cc6b03c0bddba5ffecda6761b52b62b9612c6579ba776116ca9a6aa1997375ab",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P4L/ORoute.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P4L/OpSem.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "022e45a0c51a50e18ff2a1caf62fa313d5ec4c2403cc235fa83c7b1fd787b278",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P4L/OpSem.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P4L/Roles.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "ba1e3712d915bf2d3335a3f323c2fa4d4520ec052aacd890417400e9acaee225",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P4L/Roles.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P4L/S8.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "bb7be1c89d159e1feb1010417ec71f5efc18099b9ff324cfeaf472cefafafd18",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P4L/S8.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P4L/Seg.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1f5dd7275c204eed4e07f40990321fd5a15e52ab3f956ef82d44b36d8b831512",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P4L/Seg.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P4L/Stage.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "06da00d042630cca3569d901eb02c1582aabde06e1324f0f1a0a637673283acd",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P4L/Stage.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P4L/Stages.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fc55050b95ba8e4d7631099d3dd9f4d739086a808a7f5835dd2fbdb4310779d7",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P4L/Stages.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P4L/View.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "fd0bee6b9c90ab53912ff85f4396189d772be9c49e56cc7d847eb19417e3b72e",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P4L/View.lean",
+      "transform": "none"
+    },
+    "Submission/Work/P4L/Windows.lean": {
+      "commit": "195060b222d63c2a22cf8f5dd390f34e9b446323",
+      "sha256": "1f76979661addbe1f9521806e14431dafe866652018c1112c987dd34d0092bf8",
+      "source": "submissions/dft/halitziyakartal-halitziyav6-pi/Submission/Work/P4L/Windows.lean",
       "transform": "none"
     },
     "Submission/Work/PWGen/Roles.lean": {
