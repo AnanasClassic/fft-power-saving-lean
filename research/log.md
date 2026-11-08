@@ -49,6 +49,7 @@
 | Overlapping incremental builds caused a missing `.olean` | Build orchestration | Finish with a single sequential full build and axiom audit |
 | Git partial-clone archive stalled | Source retrieval | Fetch the same pinned files through raw GitHub and record their hashes |
 | Reconstructed native digest differs from the note | Evidence mismatch | Keep both hashes and identify the new reconstruction; no claim of byte recovery |
+| First GitHub CI omitted `Submission/Work/` | Packaging | Anchor `/work/` ignore rule to the repository root and require all proof/pinned sources to be Git-tracked |
 | Final target check reports unknown `Race.bound` | Missing mathematical proof | Recorded as open; no placeholder, weaker theorem or axiom supplied |
 
 ## Next substantive work

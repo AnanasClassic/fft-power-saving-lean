@@ -1,6 +1,6 @@
 """Local source/pin guard. It does not replace Lean or the official Comparator."""
 from pathlib import Path
-import json,re,hashlib
+import json,re,hashlib,subprocess
 ROOT=Path(__file__).resolve().parents[1]
 
 def code_only(s):
@@ -35,6 +35,11 @@ for name,pin in pins['files'].items():
     if 'prefix_sha256' in pin:
         if hashlib.sha256(p.read_bytes()[:pin['prefix_bytes']]).hexdigest()!=pin['prefix_sha256']:
             raise SystemExit('Trusted model prefix changed')
+if (ROOT/'.git').exists():
+    tracked=set(subprocess.check_output(['git','-C',str(ROOT),'ls-files','-z']).decode().split('\0'))
+    required={str(p.relative_to(ROOT)) for p in files}|set(pins['files'])
+    missing=sorted(required-tracked)
+    if missing:raise SystemExit('Required proof sources are not tracked by Git: '+str(missing))
 manifest=json.loads((ROOT/'lake-manifest.json').read_text())
 mathlib=next(p for p in manifest['packages'] if p['name']=='mathlib')
 if mathlib['rev']!=pins['sources']['mathlib']['commit']:raise SystemExit('Mathlib pin mismatch')
