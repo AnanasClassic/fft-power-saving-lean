@@ -1,4 +1,4 @@
-name: Research checks and final theorem gate
+name: Full exact DFT build and audits
 on:
   push:
   pull_request:
@@ -7,9 +7,9 @@ permissions:
   contents: read
 jobs:
   local-lemmas:
-    name: Python certificates and local Lean lemmas
+    name: Pinned source build and exact theorem audits
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 350
     env:
       LEAN_NUM_THREADS: 2
     steps:
@@ -36,6 +36,12 @@ jobs:
           key: ${{ runner.os }}-lean4341-physical-v2-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-lean4341-physical-v2-
+      - name: Restore pinned dependency cache on CI runner
+        id: mathlib-cache
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: .lake/packages
+          key: Linux-mathlib-d13f23b723b8a846827a245b89c10fc7d3f11612-lean4341-v1
       - name: Fetch the official pinned Mathlib cache
         run: lake exe cache get
       - name: Build local proofs and audit their axioms
@@ -49,7 +55,7 @@ jobs:
       - name: Build physical arrays, windows and schedule accounting
         run: lake build Submission.Native.HelperHistogram:olean Submission.Chain.Compiler:olean Submission.Chain.ScheduleHistogram:olean Submission.Chain.Physical.NativeStages:olean Submission.Chain.Physical.Windows:olean
       - name: Audit physical finite operator theorems
-        run: python3 scripts/audit_axioms.py --file Submission/PhysicalAudit.lean --receipt certificates/physical_axioms.json --scope "physical finite primitives and scalar controller; GLiveKernelM still open"
+        run: python3 scripts/audit_axioms.py --file Submission/PhysicalAudit.lean --receipt certificates/physical_axioms.json --scope "physical finite primitives and scalar controller; complete live/final audit is separate"
       - name: Reproduce native and controller Lean certificates
         run: |
           python3 scripts/generate_native_lean.py .
@@ -58,6 +64,15 @@ jobs:
         run: git diff --exit-code -- Submission/ inventory_receipt.json moment_receipt.json certificates/
       - name: Require the exact final theorem
         run: bash scripts/check_final.sh
+      - name: Audit complete finite and asymptotic theorem axioms
+        run: python3 scripts/audit_axioms.py --file Submission/FinalAudit.lean --receipt certificates/final_axioms.json --scope "concrete live kernel, raw finite witness, new tensor engine and exact Race.bound"
+      - name: Preserve proof audit evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: full-build-axiom-receipts
+          path: certificates/*axioms.json
+          retention-days: 30
       - name: Save incremental project build cache
         if: always()
         uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830

@@ -1,0 +1,16 @@
+{
+  "kind": "author-extracted CI evidence; not an official comparator receipt",
+  "scope": "concrete live finite word and exact opcode price; not Race.bound",
+  "run": "https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42528569545",
+  "source_commit": "cff79216fb4f5632d8c30a7bdd6f0d3cb4b725a5",
+  "module": "Submission/Chain/Physical/Word.lean",
+  "module_sha256": "bf47897b48a3ec8065282ea834ef8da936619514d4ef108da98182839bd74089",
+  "theorem": "OAI.PowerSaving.ChainNet.wordCert",
+  "status": "kernel_accepted",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "overall_run": "failed in downstream Count module; Word not in failed-or-blocked set"
+}

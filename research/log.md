@@ -354,3 +354,15 @@ bridge and all six existential instances now elaborate. The only error is
 Native.helper_histogram written with card(Fin9), after the target had simplified
 that card to9. Added a typed lemma obtained by simp only [Fintype.card_fin],
 then rewrite with that exact expression. No circuit or assertion changed.
+
+### CI 42530701139 — finite witness and complete new Fourier reduction accepted
+
+At 68f917b7012b119ba86353f7601f57e20ed4f74b, the kernel accepted
+Finite.rawCert_exists, FFTChainDFT.engine, all new Fourier modules and
+transform_mainChain18. Printed finite/engine/seam axiom sets contain only
+propext, Classical.choice, Quot.sound. The only failure is Race.bound's last
+simpa: decimalTimeChain18 is a partially applied function under IsBigO and
+simp did not unfold it. Replaced that with an explicit function equality by
+rfl and rewrite, then project htime.2.1. No mathematical assertion changed.
+The full all-length theorem at the exact target is now accepted upstream
+of this export, but the export and final audit still await CI.
