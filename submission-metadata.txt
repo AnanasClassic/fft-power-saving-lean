@@ -1,7 +1,4 @@
-NOT READY FOR SUBMISSION: Race.bound is absent and the repository is private.
-The following fields describe the intended target, not a verified claim.
-
 Problem: dft
 Repository URL: https://github.com/AnanasClassic/fft-power-saving-lean
-Commit SHA: NOT_AVAILABLE_UNTIL_THE_COMPLETE_PROOF_IS_VERIFIED
+Commit SHA: 38d22084f270723dbe769b94bd690c372a08e390
 Bound: 3363623/1000000000

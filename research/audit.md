@@ -7,14 +7,14 @@ competition verification receipt or a novelty claim.
 
 | Stage | Evidence and status |
 |---|---|
-| Python certificates | Earlier inventory, sparse native/controller replay and rational certificates passed; full CI reproduction is part of the normal build workflow. |
-| Lean source elaboration | [CI d48314b](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42531587924) accepted the root, exact statement and four-theorem axiom audit |
-| Lean kernel | The concrete live word, complete finite witness, tensor engine, all-length reduction and exact `Race.bound` were accepted in the root CI check. |
-| Axiom audit | `Submission/FinalAudit.lean` checks `wordCert`, `rawCert_exists`, `FFTChainDFT.engine`, and `Race.bound`; only `propext`, `Classical.choice`, `Quot.sound` are permitted. See the associated CI artifact. |
-| Full `lake build` | CI run [42531656698](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42531656698), tracked independently from the incremental source check. Consult that run's conclusion. |
-| Official Comparator profile | Private test-only workflow prepared at the unchanged official verifier pin; its receipt must be inspected separately. A source/type check is not Comparator acceptance. |
-| Nanoda | Separate replay in that private workflow; no pass is inferred from Lean acceptance. |
-| Public `Lean Verified` status | Not obtained. Repository private; no issue or PR submitted. |
+| Python certificates | Passed in the [full CI run](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42532864715), including rejection controls and deterministic generation. |
+| Lean source elaboration | Passed for the complete exact `Race.bound` source closure. [Root CI](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42531587924). |
+| Lean kernel | Accepted the concrete live word, finite witness, tensor engine, all-length reduction and exact bound. [Root CI](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42531587924). |
+| Axiom audit | The full CI audit and the independent test-only verifier audit passed. `Race.bound` uses only `propext`, `Classical.choice`, and `Quot.sound`. [Full CI](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42532864715), [verifier rerun](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42547883869). |
+| Full `lake build` | Passed on `38d22084f270723dbe769b94bd690c372a08e390`. [Full CI](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42532864715). |
+| Official Comparator | Accepted the exact claim at the pinned verifier revision in the [initial test-only run](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42532755546) and the [rerun](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42547883869). |
+| Nanoda | Passed independently in the [test-only rerun](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42547883869). |
+| Public `Lean Verified` status | Pending a separate competition submission and verification. |
 
 `certificates/ci_live_kernel.json` binds the first accepted concrete live word to
 its source commit and SHA256. That earlier CI run failed in the downstream
@@ -66,25 +66,19 @@ alternative at the target bound, not an assertion of byte identity to the
 missing archive. The paired controller is also an explicitly documented
 lowering of the pinned raw caller.
 
-## Remaining verification and publication obligations
+## Test-only verification and publication
 
-1. Complete the ordinary CI build and inspect every required check, including
-   deterministic source generation and actual final axiom output.
-2. Complete the private unchanged official Comparator run on an immutable source
-   commit. Preserve its exact challenge, tool/source pins, axiom result and
-   per-kernel status. A resource-limited or ambiguous nanoda result must remain
-   distinguished from acceptance or rejection.
-3. Prepare the source-only package and exact full SHA using those receipts.
-   Keep all inherited attribution, original notices and licenses.
-4. Before any public submission, recheck the competition's current profile and
-   record gate and obtain the user's explicit authorization to publish the
-   repository and submit an issue. No private CI receipt grants the public
-   leaderboard label, mathematical novelty, priority or authorship.
-5. Reconcile the original archive digest only if that archive becomes available;
-   this provenance limitation is independent of the proved reconstruction.
+The verified source commit is `38d22084f270723dbe769b94bd690c372a08e390`. The verifier revision is
+`e4195cbf8c813772227a5fe4fd21c03c0a1a4fa4`. The initial test-only run accepted the Lean proof in Comparator.
+Its separate axiom audit stopped at an uninitialized `threads` variable and
+nanoda could not start with the disk space available on the CI runner.
+The rerun used the same proof files, target, checker binaries and sandbox.
+It initialized `threads` in the generated audit entrypoint and reclaimed space
+on the temporary runner. Comparator, the independent axiom audit and nanoda
+all passed. [Initial run](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42532755546), [rerun](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42547883869), [upstream issue](https://github.com/bigospeedrun/verifier/issues/188).
 
-All continuation builds run on GitHub Actions. Local task build objects and
-large temporary downloads were removed; they are not prerequisites of the
-source-only submission. The official proof run uses only staged Lean sources
-and its own allowed dependencies, with no repository Lake hooks or proof-data
-network downloads.
+The public competition submission remains a separate step. The exact tested
+commit and claim are in [submission-metadata.txt](../submission-metadata.txt).
+The official verifier stages the allowed Lean sources and supplies its own
+trusted dependencies. The unavailable source archive still limits provenance
+for the reconstructed native word.

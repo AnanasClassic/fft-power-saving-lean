@@ -1,11 +1,12 @@
 {
-  "objective": "Lean proof completed; independent verification pending",
+  "objective": "Exact Lean proof and independent test-only verification passed",
   "as_of": "2026-11-09 Europe/Moscow",
   "exact_saving": "3363623/1000000000",
   "kernel_source_commit": "d48314bd395a76b7aa4066dc9cb3a2796605fe2e",
   "root_ci": "https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42531587924",
   "python_certificates": {
-    "status": "passed previously; complete CI reproduction running"
+    "status": "passed",
+    "run": "https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42532864715"
   },
   "lean_source_elaboration": {
     "status": "passed",
@@ -27,23 +28,32 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
-    ]
+    ],
+    "independent_test_only_run": "https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42547883869",
+    "upstream_launcher_issue": "https://github.com/bigospeedrun/verifier/issues/188"
   },
   "full_lake_build": {
-    "status": "running",
-    "run": "https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42531656698"
+    "status": "passed",
+    "source_commit": "38d22084f270723dbe769b94bd690c372a08e390",
+    "run": "https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42532864715"
   },
   "official_comparator": {
-    "status": "private preflight prepared; not yet run"
+    "status": "passed",
+    "scope": "test-only",
+    "verifier_commit": "e4195cbf8c813772227a5fe4fd21c03c0a1a4fa4",
+    "source_commit": "38d22084f270723dbe769b94bd690c372a08e390",
+    "run": "https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42532755546"
   },
   "nanoda": {
-    "status": "not_run"
+    "status": "passed",
+    "scope": "test-only",
+    "run": "https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42547883869"
   },
   "official_lean_verified": {
     "status": "not_obtained"
   },
   "publication": {
-    "repository": "private",
+    "repository": "https://github.com/AnanasClassic/fft-power-saving-lean",
     "competition_submission": "not_created"
   },
   "remaining_obligations": "research/audit.md"

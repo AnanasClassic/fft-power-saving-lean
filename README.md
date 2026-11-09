@@ -4,9 +4,14 @@ The project proves the exact saving **δ = 3363623/1000000000** in the original
 `OAI.PowerSaving.DFTProgram` model. The exported theorem is `Race.bound` in
 `Submission/Chain/Bound.lean`; the root `Submission.lean` imports it.
 
-**Acceptance evidence:** [CI d48314b](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42531587924) accepted the root, exact statement and four-theorem axiom audit. This repository is private and has no
-public Big O Speedrun `Lean Verified` status. A private preflight with the
-unchanged official checker is separate from an authorized public submission.
+The verified proof source is pinned at
+[`38d22084f270723dbe769b94bd690c372a08e390`](https://github.com/AnanasClassic/fft-power-saving-lean/commit/38d22084f270723dbe769b94bd690c372a08e390).
+The [full CI build](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42532864715) passed `lake build`, certificate
+reproduction and the final Lean axiom audit. The [test-only verifier
+rerun](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42547883869) passed Comparator, the separate axiom audit
+and nanoda. The rerun used a one-line fix for the verifier's audit launcher
+and extra disk space on the CI runner. [Verifier issue](https://github.com/bigospeedrun/verifier/issues/188).
+Public Big O Speedrun `Lean Verified` status has yet to be obtained.
 
 ## What the proof contains
 
@@ -30,13 +35,12 @@ premises substituted for physical correctness or Lean proofs.
 
 ## Reproduce on CI
 
-All ongoing builds run on GitHub Actions; the Mac's local build cache is absent.
-The manual incremental workflow checks changed source/dependency closures. The
-full workflow runs Python reproduction, source guards, **`lake build`**, the
-exact statement check and axiom audits. The private preflight pins Comparator and nanoda to the official verifier
-revision. It initializes the audit worker setting in the generated runner
-entrypoint and reserves disk space for replay on the hosted VM. See the
-[research log](research/log.md) for the acceptance evidence and runner fixes.
+The manual incremental workflow checks changed source and dependency closures.
+The full workflow runs Python reproduction, source guards, `lake build`, the
+exact statement check and axiom audits. The test-only preflight pins Comparator
+and nanoda to the official verifier revision. It initializes the audit worker
+setting in the generated runner entrypoint and reserves disk space for replay
+on the hosted VM. See the [research log](research/log.md) for the CI results.
 
 Lean: `leanprover/lean4:v4.34.1`. Mathlib:
 `d13f23b723b8a846827a245b89c10fc7d3f11612`. The manifest and `autoImplicit=false`
@@ -76,4 +80,4 @@ reconstruction, not recovery of that archive.
 
 See [the proof map](research/proof.md), [verification audit](research/audit.md),
 [pinned sources and credits](research/sources.md), and [research log](research/log.md).
-No issue, PR, public repository or record announcement has been authorized.
+The [submission metadata](submission-metadata.txt) identifies the tested source commit.

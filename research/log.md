@@ -424,3 +424,15 @@ axiom receipt before attempting replay, reclaims unused SDKs and download
 archives on the disposable VM, and checks available space before the long
 build and again before swap. The submission commit, proof checker binaries,
 trusted statement, sandbox, and admission policy use the same pins.
+
+### Full CI and independent verifier rerun
+
+The [full CI build](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42532864715) passed certificate
+reproduction, `lake build`, and the final four-theorem axiom audit.
+The [test-only verifier rerun](https://github.com/AnanasClassic/fft-power-saving-lean/actions/runs/42547883869) passed
+Comparator, the independent axiom audit and nanoda on the same proof source
+commit `38d22084f270723dbe769b94bd690c372a08e390`.
+All 531 verifier-staged Lean source hashes match the tested source package.
+The competition submission metadata pins this commit. The public competition
+verification remains a separate step. The audit launcher bug and its one-line
+patch are documented in the [upstream issue](https://github.com/bigospeedrun/verifier/issues/188).
