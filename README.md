@@ -33,9 +33,10 @@ premises substituted for physical correctness or Lean proofs.
 All ongoing builds run on GitHub Actions; the Mac's local build cache is absent.
 The manual incremental workflow checks changed source/dependency closures. The
 full workflow runs Python reproduction, source guards, **`lake build`**, the
-exact statement check and axiom audits. The private-preflight workflow uses the
-unchanged official verifier at an immutable pin, including Comparator and
-nanoda, and cannot publish an issue or a leaderboard result.
+exact statement check and axiom audits. The private preflight pins Comparator and nanoda to the official verifier
+revision. It initializes the audit worker setting in the generated runner
+entrypoint and reserves disk space for replay on the hosted VM. See the
+[research log](research/log.md) for the acceptance evidence and runner fixes.
 
 Lean: `leanprover/lean4:v4.34.1`. Mathlib:
 `d13f23b723b8a846827a245b89c10fc7d3f11612`. The manifest and `autoImplicit=false`

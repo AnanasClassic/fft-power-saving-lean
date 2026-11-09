@@ -407,3 +407,20 @@ preflight, offline proof sandbox and resource limits remain unchanged. This
 OS pin is an explicitly recorded reproduction-environment difference from
 the official workflow's moving ubuntu-latest label. No security check was
 disabled and no Lean source byte changed.
+
+### Private preflight 42532755546
+
+Comparator accepted `Race.bound` at saving `3363623/1000000000` on
+`38d22084f270723dbe769b94bd690c372a08e390` using pinned official verifier
+`e4195cbf8c813772227a5fe4fd21c03c0a1a4fa4`. The separate verifier axiom
+audit crashed before invoking Lean because `threads` was unbound in its
+`audit` branch. The ordinary CI axiom audit passed in run 42532864715.
+Nanoda stopped before replay when the hosted VM had less than 20 GiB free
+for the 16 GiB swap and working space.
+
+The private retry initializes `threads` to `4` only in the generated audit
+entrypoint, after checking its pinned SHA256. It validates the Lean and
+axiom receipt before attempting replay, reclaims unused SDKs and download
+archives on the disposable VM, and checks available space before the long
+build and again before swap. The submission commit, proof checker binaries,
+trusted statement, sandbox, and admission policy use the same pins.

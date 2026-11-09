@@ -64,13 +64,43 @@ jobs:
       - name: Build pinned tools and trusted dependencies on disposable CI VM
         timeout-minutes: 45
         run: python3 scripts/verifier.py setup
+      - name: Prepare private audit and reserve nanoda disk space
+        run: |
+          test "$RUNNER_ENVIRONMENT" = github-hosted
+          verifier_work="$RUNNER_TEMP/bos-verifier"
+          df -h "$verifier_work"
+          # These SDKs are idle after the verifier has built its pinned tools.
+          sudo rm -rf --one-file-system -- /opt/hostedtoolcache /usr/share/swift /usr/local/share/powershell
+          # Cache extraction is complete. Keep the extracted, read-only packages.
+          rm -rf -- "$verifier_work/mathlib-downloads"
+          df -h "$verifier_work"
+          /usr/bin/python3 - <<'PY'
+          import hashlib, os, shutil
+          from pathlib import Path
+
+          work = Path(os.environ['RUNNER_TEMP']) / 'bos-verifier'
+          # The pinned audit branch uses threads without initializing it.
+          entrypoint = work / 'control/inside.py'
+          original = entrypoint.read_bytes()
+          expected_sha256 = '3392cf2ac4c9d8ad5638ee4c7db42e6295b121f5c8cb9a643cbefe37f4e78fd7'
+          if hashlib.sha256(original).hexdigest() != expected_sha256:
+              raise SystemExit('Unexpected verifier entrypoint bytes')
+          audit_branch = b"if phase == 'audit':\n    args = "
+          if original.count(audit_branch) != 1:
+              raise SystemExit('Unexpected verifier audit branch')
+          patched = original.replace(audit_branch, b"if phase == 'audit':\n    threads = '4'\n    args = ")
+          entrypoint.write_bytes(patched)
+          print('Private audit entrypoint sha256:', hashlib.sha256(patched).hexdigest())
+          if shutil.disk_usage(work).free < 24 * 1024**3:
+              raise SystemExit('Need 24 GiB free before Comparator to reserve room for nanoda swap and Lean build output')
+          PY
       - name: Official Comparator and Lean axiom audit
-        run: python3 scripts/verifier.py verify_lean
+        run: /usr/bin/python3 scripts/verifier.py verify_lean
       - name: Preserve early Lean receipt
         if: always()
         env:
           BOS_RECEIPT_STAGE: lean
-        run: python3 scripts/verifier.py finalize
+        run: /usr/bin/python3 scripts/verifier.py finalize
       - name: Upload early private evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
@@ -79,13 +109,35 @@ jobs:
           path: official/artifacts/
           retention-days: 30
           if-no-files-found: warn
+      - name: Require Comparator acceptance and audited axioms before replay
+        run: |
+          /usr/bin/python3 - <<'PY'
+          import json, sys
+          from pathlib import Path
+          sys.path.insert(0, 'scripts')
+          from verdicts import admission
+
+          receipt = json.loads(Path('artifacts/receipt.json').read_text())
+          status, reason = admission(receipt, ['Race.bound'])
+          if receipt.get('test_only') is not True or status != 'passed':
+              raise SystemExit(f'Private Lean checkpoint {status}: {reason}')
+          print('Private Lean checkpoint accepted:', reason)
+          PY
+      - name: Check nanoda disk space after Comparator
+        run: |
+          test "$RUNNER_ENVIRONMENT" = github-hosted
+          verifier_work="$RUNNER_TEMP/bos-verifier"
+          # Comparator has exited. Discard the contents of its temporary mount.
+          find "$verifier_work/scratch" -xdev -mindepth 1 -delete
+          df -h "$verifier_work"
+          /usr/bin/python3 -c 'import shutil, sys; sys.exit("Need 20 GiB free before nanoda swap" if shutil.disk_usage(sys.argv[1]).free < 20 * 1024**3 else 0)' "$verifier_work"
       - name: Independent nanoda replay
-        run: python3 scripts/verifier.py verify_nanoda
+        run: /usr/bin/python3 scripts/verifier.py verify_nanoda
       - name: Finalize private receipt
         if: always()
         env:
           BOS_RECEIPT_STAGE: final
-        run: python3 scripts/verifier.py finalize
+        run: /usr/bin/python3 scripts/verifier.py finalize
       - name: Upload private receipts and logs
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
@@ -96,7 +148,7 @@ jobs:
           if-no-files-found: warn
       - name: Require explicit accepted Lean evidence
         run: |
-          python3 - <<'PY'
+          /usr/bin/python3 - <<'PY'
           import json, sys
           from pathlib import Path
           sys.path.insert(0, 'scripts')
