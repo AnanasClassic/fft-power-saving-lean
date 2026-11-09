@@ -1,81 +1,24 @@
-name: Full exact DFT build and audits
+name: Delta 0.005 finite research (not a Lean proof)
 on:
   push:
-  pull_request:
+    branches: [research/delta-005]
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  local-lemmas:
-    name: Pinned source build and exact theorem audits
-    runs-on: ubuntu-latest
-    timeout-minutes: 350
-    env:
-      LEAN_NUM_THREADS: 2
+  research:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           persist-credentials: false
-      - name: Install pinned elan
-        shell: bash
-        run: |
-          curl -fsSL --retry 3 -o /tmp/elan.tar.gz https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz
-          echo '42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63  /tmp/elan.tar.gz' | sha256sum -c -
-          tar -xzf /tmp/elan.tar.gz -C /tmp
-          /tmp/elan-init -y --no-modify-path --default-toolchain none
-          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
-      - name: Reproduce Python certificates
-        run: bash scripts/check_python.sh
-      - name: Check source integrity and proof shortcuts
-        run: python3 scripts/source_guard.py
-      - name: Reproduce native and controller Lean certificates
-        run: |
-          python3 scripts/generate_native_lean.py .
-          python3 scripts/generate_controller_lean.py .
-      - name: Check deterministic generated sources
-        run: git diff --exit-code -- Submission/ inventory_receipt.json moment_receipt.json certificates/
-      - name: Restore project build cache
-        id: project-cache
-        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
-        with:
-          path: .lake/build
-          key: ${{ runner.os }}-lean4341-physical-v2-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-lean4341-physical-v2-
-      - name: Restore pinned dependency cache on CI runner
-        id: mathlib-cache
-        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
-        with:
-          path: .lake/packages
-          key: Linux-mathlib-d13f23b723b8a846827a245b89c10fc7d3f11612-lean4341-v1
-      - name: Fetch the official pinned Mathlib cache
-        run: lake exe cache get
-      - name: Build local proofs and audit their axioms
-        run: bash scripts/check_lean.sh
-      - name: Build concrete native supplier and paired controller
-        run: lake build Submission.Native.Supplier:olean Submission.Chain.Controller:olean
-      - name: Audit concrete supplier and controller axioms
-        run: |
-          python3 scripts/audit_axioms.py --file Submission/NativeAudit.lean --receipt certificates/native_axioms.json --scope "modified native supplier; not GLiveKernelM"
-          python3 scripts/audit_axioms.py --file Submission/ChainAudit.lean --receipt certificates/chain_axioms.json --scope "scalar paired controller; not physical GWord realization"
-      - name: Build physical arrays, windows and schedule accounting
-        run: lake build Submission.Native.HelperHistogram:olean Submission.Chain.Compiler:olean Submission.Chain.ScheduleHistogram:olean Submission.Chain.Physical.NativeStages:olean Submission.Chain.Physical.Windows:olean
-      - name: Audit physical finite operator theorems
-        run: python3 scripts/audit_axioms.py --file Submission/PhysicalAudit.lean --receipt certificates/physical_axioms.json --scope "physical finite primitives and scalar controller; complete live/final audit is separate"
-      - name: Require the exact final theorem
-        run: bash scripts/check_final.sh
-      - name: Audit complete finite and asymptotic theorem axioms
-        run: python3 scripts/audit_axioms.py --file Submission/FinalAudit.lean --receipt certificates/final_axioms.json --scope "concrete live kernel, raw finite witness, new tensor engine and exact Race.bound"
-      - name: Preserve proof audit evidence
+      - name: Pinned source replay and rational split search
+        run: python3 -u research/delta005/probe.py --budget 180
+      - name: Retain research evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: full-build-axiom-receipts
-          path: certificates/*axioms.json
-          retention-days: 30
-      - name: Save incremental project build cache
-        if: always()
-        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
-        with:
-          path: .lake/build
-          key: ${{ runner.os }}-lean4341-physical-v2-${{ github.sha }}
+          name: delta005-research-evidence
+          path: research/delta005/out
+          retention-days: 14
