@@ -13,8 +13,8 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           persist-credentials: false
-      - name: Pinned source replay and rational split search
-        run: python3 -u research/delta005/probe.py --budget 180
+      - name: Cost-aware intermediate-stop search and exact literal replay
+        run: python3 -u research/delta005/refine.py --rounds 64 --budget 120
       - name: Retain research evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
