@@ -13,12 +13,19 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           persist-credentials: false
-      - name: Cost-aware intermediate-stop search and exact literal replay
+      - name: Reconstruct pinned predecessor word
         run: python3 -u research/delta005/refine.py --rounds 64 --budget 120
-      - name: Retain research evidence
+      - name: Exact chart edit and all-stage obstruction
+        run: |
+          python3 research/delta005/continuation/verify.py --native research/delta005/out/refined-word.json.gz
+          python3 -O research/delta005/continuation/verify.py --native research/delta005/out/refined-word.json.gz --output research/delta005/out/continuation-optimized
+          diff research/delta005/out/continuation/receipt.json research/delta005/out/continuation-optimized/receipt.json
+          python3 research/delta005/continuation/frontier.py
+          python3 -O research/delta005/continuation/frontier.py
+      - name: Retain finite research evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: delta005-research-evidence
+          name: delta005-continuation-evidence
           path: research/delta005/out
           retention-days: 14
