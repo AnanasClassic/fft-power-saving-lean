@@ -1,31 +1,45 @@
-name: Delta 0.005 finite research (not a Lean proof)
+name: Pinned finite-source export (not theorem verification)
 on:
   push:
-    branches: [research/delta-005]
+    branches: [research/best-delta]
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  research:
+  export:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           persist-credentials: false
-      - name: Reconstruct pinned predecessor word
-        run: python3 -u research/delta005/refine.py --rounds 64 --budget 120
-      - name: Exact chart edit and all-stage obstruction
+      - name: Export pinned external research inputs without executing them
         run: |
-          python3 research/delta005/continuation/verify.py --native research/delta005/out/refined-word.json.gz
-          python3 -O research/delta005/continuation/verify.py --native research/delta005/out/refined-word.json.gz --output research/delta005/out/continuation-optimized
-          diff research/delta005/out/continuation/receipt.json research/delta005/out/continuation-optimized/receipt.json
-          python3 research/delta005/continuation/frontier.py
-          python3 -O research/delta005/continuation/frontier.py
-      - name: Retain finite research evidence
-        if: always()
+          python3 - <<'PY'
+          import urllib.request,json,hashlib,pathlib,time
+          repo='ToikY/integer-mult-bounds'; pin='2ee11a4460f23abf06d16b12f18c8ef9aca889f1'
+          out=pathlib.Path('research-export');out.mkdir()
+          rows=[]
+          def get(url):
+              request=urllib.request.Request(url,headers={'User-Agent':'exact-dft-pinned-input-export'})
+              with urllib.request.urlopen(request,timeout=60) as f:return f.read()
+          def walk(path):
+              items=json.loads(get(f'https://api.github.com/repos/{repo}/contents/{path}?ref={pin}'))
+              for item in items:
+                  p=item['path']
+                  if item['type']=='dir':walk(p)
+                  elif item['type']=='file':
+                      if item['size']>10000000:raise ValueError('unexpected large input '+p)
+                      data=get(f'https://raw.githubusercontent.com/{repo}/{pin}/{p}')
+                      target=out/p;target.parent.mkdir(exist_ok=True,parents=True);target.write_bytes(data)
+                      rows.append({'path':p,'sha256':hashlib.sha256(data).hexdigest(),'bytes':len(data),'git_blob':item['sha']})
+          for path in ('research/peer-move-retiming','research/shared-wire-stop-fusion','research/shared-wire-split-composition'):walk(path)
+          (out/'EXPORT.json').write_text(json.dumps({'repository':repo,'commit':pin,'scope':'source export only; no source code executed','files':rows},indent=2))
+          print('EXPORTED',len(rows),sum(r['bytes'] for r in rows))
+          PY
+      - name: Retain immutable sources
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: delta005-continuation-evidence
-          path: research/delta005/out
-          retention-days: 14
+          name: best-delta-pinned-inputs
+          path: research-export
+          retention-days: 30
